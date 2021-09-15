@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" sizes="16x16" type="image/png" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Title -->
+    <title>SiQuisSoftware</title>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+    
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- Name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">Your name</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <!-- Password -->
+                  <div class="form-floating">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-info mt-3 lift">
+                    Request a demo
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account: Horizontal  -->
+    <div class="modal fade" id="modalAccountHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalAccountHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalAccountHorizontalTitle">
+                    My Account Information
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Building upon your passions.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalAccountHorizontalCompanyName" placeholder="Company name *">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalAccountHorizontalUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalAccountHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalAccountHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalAccountHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a style="color:orange" data-bs-toggle="modal" href="#modalSignupHorizontal"><i> Log in</i></a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.<br><br>
+
+                    We're excited to have you join the "Beta-Site" team! By adding your information to our list we'll be able to keep you informed about our Beta-Site and its initial launch. 
+                    <br><br>
+
+                    In addition, once launched, you'll gain access to take a look at how the Si Quis platform can help you create and grow your passion business. 
+                    <br><br>
+
+                    We'll only send information as our milestones unfold... otherwise we'll keep quite and not add to your inbox! 
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupHorizontalCompanyName" placeholder="Company name">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupHorizontaltUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                        Enter your password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign in
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Don't have an account yet? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSignupHorizontal">Sign up</a>.
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Password Reset: Horizontal  -->
+    <div class="modal fade" id="modalPasswordReset" tabindex="-1" role="dialog" aria-labelledby="modalPasswordResetTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalPasswordResetTitle">
+                    Reset Password
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Keep your account information secure.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalPasswordResetEmail">
+                        Your email address
+                      </label>
+                      <input type="email" class="form-control" id="modalPasswordResetEmail" placeholder="Your email">
+                    </div>
+                                        <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-success mb-5" type="submit">
+                      Send "Reset Code" To My Email
+                    </button>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetPassword">
+                        Create a new password
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword" placeholder="Create a new password">
+                    </div>
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetResetPassword">
+                        Retype password
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword2" placeholder="Retype password">
+                    </div>
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetResetPassword">
+                        Enter "Reset Code"
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword2" placeholder="Enter Reset Code">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Reset Password
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    If we have your email on file, we will send you a reset code.<br>
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-info mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-pattern-2">
+      <div class="container-md">
+
+        <!-- Brand -->
+        <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
+          <img src="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button> 
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Who We Are
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>Who We Are</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>About</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-ABOUT-1.html">
+                            Si Quis Software
+                          </a>
+                          <a class="dropdown-item" href="./SiQuis-ABOUT-2.html">
+                            The Passion Economy
+                          </a>
+                          <a class="dropdown-item mb-5" href="./SiQuis-ABOUT-3.html">
+                            The Team
+                          </a>    
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Our Name</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item mb-5" href="./SiQuis-ABOUT-5.html">
+                            <i>Si Quis</i>
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Contact Us</b>
+                          </h4>
+                          <!-- List -->
+                          <a href="mailto:support@siquisoft.com" class="text-reset">Email Us</a>
+
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                What We Build
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>What We Build</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Overview</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item mb-5" href="./SiQuis-Platform-1.html">
+                            Platform
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Back-end</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Platform-2.html">
+                            Management
+                          </a>
+                          <a class="dropdown-item mb-5" href="./SiQuis-Platform-3.html">
+                            Operations
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Front-end</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Platform-4.html">
+                            Beautiful Themes
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                What's Happening
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h1 class="text-info text-wrap">
+                            <b>What's Happening</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header pb-4" style="color:orange">
+                            <b>Newsroom</b>
+                          </h4>
+                          <div class="list-group list-group-flush">
+                            <a class="list-group-item" href="./SiQuis-Newsroom-1.html">
+                              <!-- Icon -->
+                              <div class="icon icon-sm text-primary">
+                                <img src="https://img.icons8.com/ios/50/000000/learn-information.png"/> 
+                              </div>
+                              <!-- Content -->
+                              <div class="ms-4">
+                                <!-- Heading -->
+                                <h6 class="fw-bold text-uppercase text-info mb-0">
+                                  <b>All Feeds</b>
+                                </h6>
+                                <!-- Text -->
+                                <p class="fs-sm text-gray-700 mb-0">
+                                  News, Blogs & Pods
+                                </p>
+                              </div>
+                              <!-- Badge -->
+                              <span class="badge rounded-pill bg-info-soft ms-auto">
+                                11
+                              </span>
+                            </a>
+
+                          <h4 class="dropdown-header pb-4" style="color:orange">
+                            <b>At si quis</b>
+                          </h4>
+                          <div class="list-group list-group-flush">
+                            <a class="list-group-item" href="./SiQuis-Newsroom-1.html">
+                              <!-- Icon -->
+                              <div class="icon icon-sm text-primary">
+                                <img src="https://img.icons8.com/ios/50/000000/microphone.png"/> 
+                              </div>
+                              <!-- Content -->
+                              <div class="ms-4">
+                                <!-- Heading -->
+                                <h6 class="fw-bold text-uppercase text-info mb-0">
+                                  <b>All Feeds</b>
+                                </h6>
+                                <!-- Text -->
+                                <p class="fs-sm text-gray-700 mb-0">
+                                  Updates from here
+                                </p>
+                              </div>
+                              <!-- Badge -->
+                              <span class="badge rounded-pill bg-info-soft ms-auto">
+                                11
+                              </span>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn btn-xs btn-info text-black lift ms-auto" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
+            Login 
+          </a>
+          <!-- Avatar -->
+          <a class="avatar avatar-md ms-4" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="View Account Information" href="./SiQuis-Account-1.html" >
+            <img class="avatar-img rounded-circle" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
+          </a>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <nav class="bg-dark d-md-none">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Policy Statements
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  Terms of Service
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER -->
+    <header class="bg-black pt-4 pb-9 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="fw-bold text-white mb-2">
+              Policy Statements
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-white-75 mb-0">
+              And other information that may be of help...
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Button -->
+            <a class="btn btn-xs btn-gray-300-20 lift" href="./index.html">
+              Log Out
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="bg-pattern-2 pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12 col-md-3">
+
+            <!-- Card -->
+            <div class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg">
+
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <h6 class="fw-bold text-uppercase text-info mb-3">
+                    <b>Policy Statements</b>
+                  </h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700 mb-6">
+                    <li class="list-item active">
+                      <a class="list-link text-reset" href="./SiQuis-TOS-1.html">
+                        Terms of Service
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="./SiQuis-TOS-2.html">
+                        Privacy Statement
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="./SiQuis-TOS-3.html">
+                        Report An Issue
+                      </a>
+                    </li>
+                  </ul>
+
+                <!-- Heading -->
+                <h6 class="fw-bold text-uppercase text-info mb-3">
+                  <b>Have a question?</b>
+                </h6>
+
+                <!-- Text -->
+                <p class="fs-sm text-gray-800 mb-5">
+                  Not sure exactly what your're looking for or just want clarification?
+                </p>
+
+                <!-- Heading -->
+                <h6 class="fw-bold text-uppercase text-info mb-2">
+                  <b>Call anytime</b>
+                </h6>
+
+                <!-- Text -->
+                <p class="fs-sm mb-5">
+                  <a href="tel:555-123-4567" class="text-reset">(206) 498-2957</a>
+                </p>
+
+                <!-- Heading -->
+                <h6 class="fw-bold text-uppercase text-info mb-2">
+                  <b>Email us</b>
+                </h6>
+
+                <!-- Text -->
+                <p class="fs-sm mb-0">
+                  <a href="mailto:support@siquisoft.com" class="text-reset">info@siquisoft.com</a>
+                </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h4 class="mb-0 text-dark">
+                  Policy Statements - Terms Of Use & Service
+                </h4>
+
+              </div>
+              <div class="card-body"><small>
+
+                <div>
+                  <p>
+                    <b>Terms of use and service</b><br>
+                    This web page represents our Terms of Use and Sale ("Agreement") regarding our website, located at SiQuiSoft.com, and the tools we provide you (the "Website" or the "Service"). It was last posted on January 15, 2021. The terms, "we" and "our" as used in this Agreement refer to SiQuiSoft.
+                    <br><br>
+
+                    We may amend this Agreement at any time by posting the amended terms on our Website. We may or may not post notices on the homepage of our Website when such changes occur.
+                    <br><br>
+
+                    We refer to this Agreement, our Privacy Policy accessible at https://siquisoft.com/legal/policy-statements, and any other terms, rules, or guidelines on our Website collectively as our "Legal Terms." You explicitly and implicitly agree to be bound by our Legal Terms each time you access our Website. If you do not wish to be so bound, please do not use or access our Website.<br><br>
+                  </p>
+                  <p>
+                    <b>Limited License</b><br>
+                    Siquisoft grants you a non-exclusive, non-transferable, revocable license to access and use our Website in order for you to make purchases of electronic documents and related services through our Website, strictly in accordance with our Legal Terms.<br><br>
+                  </p>
+                  <p>
+                    <b>Copyrights and Trademarks</b><br>
+                    Unless otherwise noted, all materials including without limitation, logos, brand names, images, designs, photographs, video clips and written and other materials that appear as part of our Website are copyrights, trademarks, service marks, trade dress and/or other intellectual property whether registered or unregistered ("Intellectual Property") owned, controlled or licensed by Siquisoft. Our Website as a whole is protected by copyright and trade dress. Nothing on our Website should be construed as granting, by implication, estoppel or otherwise, any license or right to use any Intellectual Property displayed or used on our Website, without the prior written permission of the Intellectual Property owner. Siquisoft aggressively enforces its intellectual property rights to the fullest extent of the law. The names and logos of Siquisoft, may not be used in any way, including in advertising or publicity pertaining to distribution of materials on our Website, without prior, written permission from Siquisoft. Siquisoft prohibits use of any logo of Siquisoft or any of its affiliates as part of a link to or from any Website unless Siquisoft approves such link in advance and in writing. Fair use of Siquisoft’s Intellectual Property requires proper acknowledgment. Other product and company names mentioned in our Website may be the Intellectual Property of their respective owners.<br><br>
+                  </p>
+                  <p>
+                    <b>Links to Third-Party Websites</b><br>
+                    Our Website may contain links to Websites owned or operated by parties other than Siquisoft. Such links are provided for your reference only. Siquisoft does not monitor or control outside Websites and is not responsible for their content. Siquisoft’s inclusion of links to an outside Website does not imply any endorsement of the material on our Website or, unless expressly disclosed otherwise, any sponsorship, affiliation or association with its owner, operator or sponsor, nor does Siquisoft’ inclusion of the links imply that Siquisoft is authorized to use any trade name, trademark, logo, legal or official seal, or copyrighted symbol that may be reflected in the linked Website.
+                  </p>
+                  <p>
+                    <b>Content Disclaimer</b><br>
+                    Postings on our Website are made at such times as Siquisoft determines in its discretion. You should not assume that the information contained on our Website has been updated or otherwise contains current information. Siquisoft does not review past postings to determine whether they remain accurate and information contained in such postings may have been superseded. THE INFORMATION AND MATERIALS IN OUR WEBSITE ARE PROVIDED FOR YOUR REVIEW IN ACCORDANCE WITH THE NOTICES, TERMS AND CONDITIONS SET FORTH HEREIN. THESE MATERIALS ARE NOT GUARANTEED OR REPRESENTED TO BE COMPLETE, CORRECT OR UP TO DATE. THESE MATERIALS MAY BE CHANGED FROM TIME TO TIME WITHOUT NOTICE.
+                  </p>
+                  <p>
+                    <b>Contracts and Legal Advice Disclaimer</b><br>
+                    You understand that we offer legal contracts ("Contracts"), as created and/or verified by attorneys or paralegals for sale through our Website. You acknowledge that we are not attorneys or paralegals nor do we offer legal advice. You acknowledge that we do not endorse any specific attorney or paralegal or any Contracts as being better than another. We do not otherwise guarantee the legal accuracy or applicability of any Contracts for your legal needs. You will at all times look to any attorney or paralegal that you select for services as to any legal claims related to such services.
+                  </p>
+                  <p>
+                    <b>Refunds</b><br>
+                    We issue refunds for Contracts within 7 days of the original purchase of the Contract.
+
+                    No Warranties; Exclusion of Liability; Indemnification
+                    OUR WEBSITE IS OPERATED BY Siquisoft ON AN "AS IS," "AS AVAILABLE" BASIS, WITHOUT REPRESENTATIONS OR WARRANTIES OF ANY KIND. TO THE FULLEST EXTENT PERMITTED BY LAW, Siquisoft SPECIFICALLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, INCLUDING ALL IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NONINFRINGEMENT FOR OUR WEBSITE AND ANY CONTRACTS AND SERVICES YOU PURCHASE THROUGH IT. Siquisoft SHALL NOT HAVE ANY LIABILITY OR RESPONSIBILITY FOR ANY ERRORS OR OMISSIONS IN THE CONTENT OF OUR WEBSITE, FOR CONTRACTS OR SERVICES SOLD THROUGH OUR WEBSITE, FOR YOUR ACTION OR INACTION IN CONNECTION WITH OUR WEBSITE OR FOR ANY DAMAGE TO YOUR COMPUTER OR DATA OR ANY OTHER DAMAGE YOU MAY INCUR IN CONNECTION WITH OUR WEBSITE. YOUR USE OF OUR WEBSITE AND ANY CONTRACTS OR SERVICES ARE AT YOUR OWN RISK. IN NO EVENT SHALL EITHER Siquisoft OR THEIR AGENTS BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OF OUR WEBSITE, CONTRACTS AND SERVICES PURCHASED THROUGH OUR WEBSITE, THE DELAY OR INABILITY TO USE OUR WEBSITE OR OTHERWISE ARISING IN CONNECTION WITH OUR WEBSITE, CONTRACTS OR RELATED SERVICES, WHETHER BASED ON CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF ANY SUCH DAMAGES. IN NO EVENT SHALL Siquisoft’ LIABILITY FOR ANY DAMAGE CLAIM EXCEED THE AMOUNT PAID BY YOU TO Siquisoft FOR THE TRANSACTION GIVING RISE TO SUCH DAMAGE CLAIM.
+
+                    SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE EXCLUSION MAY NOT APPLY TO YOU.
+
+                    WITHOUT LIMITING THE FOREGOING, Siquisoft DO NOT REPRESENT OR WARRANT THAT THE INFORMATION ON THE WEBITE IS ACCURATE, COMPLETE, RELIABLE, USEFUL, TIMELY OR CURRENT OR THAT OUR WEBSITE WILL OPERATE WITHOUT INTERRUPTION OR ERROR.
+
+                    YOU AGREE THAT ALL TIMES, YOU WILL LOOK TO ATTORNEYS FROM WHOM YOU PURCHASE SERVICES FOR ANY CLAIMS OF ANY NATURE, INCLUDING LOSS, DAMAGE, OR WARRANTY. Siquisoft AND THEIR RESPECTIVE AFFILIATES MAKE NO REPRESENTATION OR GUARANTEES ABOUT ANY CONTRACTS AND SERVICES OFFERED THROUGH OUR WEBSITE.
+
+                    Siquisoft MAKES NO REPRESENTATION THAT CONTENT PROVIDED ON OUR WEBSITE, CONTRACTS, OR RELATED SERVICES ARE APPLICABLE OR APPROPRIATE FOR USE IN ALL JURISDICTIONS.
+                  </p>
+                  <p>
+                    <b>Indemnification</b><br>
+                    You agree to defend, indemnify and hold Siquisoft harmless from and against any and all claims, damages, costs and expenses, including attorneys' fees, arising from or related to your use of our Website or any Contracts or Services you purchase through it.
+                  </p></small>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Unsubscribe Text -->
+            <p class="text-center mb-0">
+              <small class="text-muted">No longer interested in Si Quis Software? You can delete your account <a class="text-success" href="#!"><i>here</i></a>.</small>
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- CURVE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-black">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg> 
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="py-5 py-md-10 bg-black">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Pretitle -->
+            <h3 class="text-uppercase text-info mb-6">
+              Start creating
+            </h3>
+
+            <!-- Heading -->
+            <h3 class="display-3 fw-bold text-white">
+              a renewable, <br>sustainable future.
+            </h3>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-500 mb-6 mb-md-8">
+              The first step is easy, so let your passions take the rest in stride.<br>
+              What are you waiting for?           
+            </p>
+
+            <!-- Button -->
+            <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
+              <a class="text-black btn btn-info shadow lift" data-bs-toggle="modal" href="#modalSignupHorizontal">
+                Sign up now !<i class="fe fe-arrow-right ms-3"></i>
+              </a> 
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- BORDER -->
+    <div class="bg-black">
+      <div class="container border-top border-white-900-50"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-4 py-md-8 bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
+              <img src="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+            </a>
+    
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social ml-md-5 mt-6 mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              About
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-1.html" class="text-reset">
+                  Si Quis Software
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-2.html" class="text-reset">
+                  The Passion Economy
+                </a>
+              </li>
+              <li class="mb-3">
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-3.html" class="text-reset">
+                  Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              Contact Us
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a>Email us at:</a><br>
+                <a href="mailto:info@siquisoft.com" class="text-reset">
+                  <span class="text-white">info@siquisoft.com</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a>Call us at:</a><br>
+                <a href="#!" class="text-reset">
+                  <span class="text-white">206-498-2957</span>
+                </a>
+              </li>        
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              Legal
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="./SiQuis-TOS-1.html" class="text-reset">
+                  Policy Statements
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./SiQuis-TOS-2.html" class="text-reset">
+                  Privacy Statements
+                </a>
+                <li class="mb-3">
+                <a href="./SiQuis-TOS-3.html" class="text-reset">
+                  Report An Issue
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+  </body>
+</html>
+

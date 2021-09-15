@@ -1,0 +1,1693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" sizes="16x16" type="image/png" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Title -->
+    <title>SiQuisSoftware</title>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+    
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- Name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">Your name</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <!-- Password -->
+                  <div class="form-floating">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-info mt-3 lift">
+                    Request a demo
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account: Horizontal  -->
+    <div class="modal fade" id="modalAccountHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalAccountHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalAccountHorizontalTitle">
+                    My Account Information
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Building upon your passions.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalAccountHorizontalCompanyName" placeholder="Company name *">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalAccountHorizontalUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalAccountHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalAccountHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalAccountHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a style="color:orange" href="./signin-illustration.html"><i> Log in</i></a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.<br><br>
+
+                    We want to keep you informed about the launch of our passion economy "Beta-Site". Sign up here and we'll keep you in the loop.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupHorizontalCompanyName" placeholder="Company name *">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupHorizontaltUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a style="color:orange" href="./signin-illustration.html"><i> Log in</i></a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                        Enter your password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign in
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Don't have an account yet? <a style="color:orange" href="./signin-illustration.html"><i> Sign up</i></a>.
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Password Reset: Horizontal  -->
+    <div class="modal fade" id="modalPasswordReset" tabindex="-1" role="dialog" aria-labelledby="modalPasswordResetTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalPasswordResetTitle">
+                    Reset Password
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Keep your account information secure.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalPasswordResetEmail">
+                        Your email address
+                      </label>
+                      <input type="email" class="form-control" id="modalPasswordResetEmail" placeholder="Your email">
+                    </div>
+                                        <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-success mb-5" type="submit">
+                      Send "Reset Code" To My Email
+                    </button>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetPassword">
+                        Create a new password
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword" placeholder="Create a new password">
+                    </div>
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetResetPassword">
+                        Retype password
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword2" placeholder="Retype password">
+                    </div>
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetResetPassword">
+                        Enter "Reset Code"
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword2" placeholder="Enter Reset Code">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Reset Password
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    If we have your email on file, we will send you a reset code.<br>
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-info mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-pattern-2">
+      <div class="container-md">
+
+        <!-- Brand -->
+        <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
+          <img src="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button> 
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Who We Are
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>Who We Are</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>About</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-ABOUT-1.html">
+                            Si Quis Software
+                          </a>
+                          <a class="dropdown-item" href="./SiQuis-ABOUT-2.html">
+                            The Passion Economy
+                          </a>
+                          <a class="dropdown-item mb-5" href="./SiQuis-ABOUT-3.html">
+                            The Team
+                          </a>    
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Our Name</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item mb-5" href="./SiQuis-ABOUT-5.html">
+                            <i>Si Quis</i>
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Contact Us</b>
+                          </h4>
+                          <!-- List -->
+                          <a href="mailto:support@siquisoft.com" class="text-reset">Email Us</a>
+
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                What We Build
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>What We Build</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Overview</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item mb-5" href="./SiQuis-Platform-1.html">
+                            Platform
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Back-end</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Platform-2.html">
+                            Management
+                          </a>
+                          <a class="dropdown-item mb-5" href="./SiQuis-Platform-3.html">
+                            Operations
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Front-end</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Platform-4.html">
+                            Beautiful Themes
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                What's Happening
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h1 class="text-info text-wrap">
+                            <b>What's Happening</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header pb-4" style="color:orange">
+                            <b>Newsroom</b>
+                          </h4>
+                          <div class="list-group list-group-flush">
+                            <a class="list-group-item" href="./SiQuis-Newsroom-1.html">
+                              <!-- Icon -->
+                              <div class="icon icon-sm text-primary">
+                                <img src="https://img.icons8.com/ios/50/000000/learn-information.png"/> 
+                              </div>
+                              <!-- Content -->
+                              <div class="ms-4">
+                                <!-- Heading -->
+                                <h6 class="fw-bold text-uppercase text-info mb-0">
+                                  <b>All Feeds</b>
+                                </h6>
+                                <!-- Text -->
+                                <p class="fs-sm text-gray-700 mb-0">
+                                  News, Blogs & Pods
+                                </p>
+                              </div>
+                              <!-- Badge -->
+                              <span class="badge rounded-pill bg-info-soft ms-auto">
+                                11
+                              </span>
+                            </a>
+
+                          <h4 class="dropdown-header pb-4" style="color:orange">
+                            <b>At si quis</b>
+                          </h4>
+                          <div class="list-group list-group-flush">
+                            <a class="list-group-item" href="./SiQuis-Newsroom-1.html">
+                              <!-- Icon -->
+                              <div class="icon icon-sm text-primary">
+                                <img src="https://img.icons8.com/ios/50/000000/microphone.png"/> 
+                              </div>
+                              <!-- Content -->
+                              <div class="ms-4">
+                                <!-- Heading -->
+                                <h6 class="fw-bold text-uppercase text-info mb-0">
+                                  <b>All Feeds</b>
+                                </h6>
+                                <!-- Text -->
+                                <p class="fs-sm text-gray-700 mb-0">
+                                  Updates from here
+                                </p>
+                              </div>
+                              <!-- Badge -->
+                              <span class="badge rounded-pill bg-info-soft ms-auto">
+                                11
+                              </span>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn btn-xs btn-info text-black lift ms-auto" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
+            Login 
+          </a>
+          <!-- Avatar -->
+          <a class="avatar avatar-md ms-4" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="View Account Information" href="./SiQuis-Account-1.html" >
+            <img class="avatar-img rounded-circle" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
+          </a>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section data-jarallax data-speed=".8" class="py-10 py-md-14 overlay overlay-black overlay-40 bg-cover jarallax" style="background-image: url(assets/img/covers/cover-13.jpg);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white">
+              Our Newsroom
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-0 text-white-75">
+              Keep up to date with what we're working on. What the world is working on. And how the Passion Economy is working.
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg> 
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <section class="mt-n6">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Form -->
+            <form class="rounded shadow mb-4">
+              <div class="input-group input-group-lg">
+
+                <!-- Text -->
+                <span class="input-group-text border-0 pe-1">
+                  <i class="fe fe-search"></i>
+                </span>
+
+                <!-- Input -->
+                <input class="form-control border-0 px-1" type="text" aria-label="Search our blog..." placeholder="Search news, blogs, podcasts and more...">
+
+                <!-- Text -->
+                <span class="input-group-text border-0 py-0 ps-1 pe-3">
+                  <a class="btn btn-sm btn-info" href="blog-search.html">
+                    Search
+                  </a>
+                </span>
+
+              </div>
+            </form>
+
+            <!-- Badges -->
+            <div class="row align-items-center">
+              <div class="col-auto">
+
+                <!-- Heading -->
+                <h6 class="fw-bold text-uppercase text-muted mb-0">
+                  Tags:
+                </h6>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Badges -->
+                <a class="badge rounded-pill bg-secondary-soft" href="blog-search.html">
+                  <span class="h6 text-uppercase">Passion Economy</span>
+                </a>
+                <a class="badge rounded-pill bg-secondary-soft" href="blog-search.html">
+                  <span class="h6 text-uppercase">Gig Economy</span>
+                </a>
+                <a class="badge rounded-pill bg-secondary-soft" href="blog-search.html">
+                  <span class="h6 text-uppercase">Si Quis Software</span>
+                </a>
+                <a class="badge rounded-pill bg-secondary-soft" href="blog-search.html">
+                  <span class="h6 text-uppercase">Work From Home</span>
+                </a>
+
+              </div>
+              <div class="col-auto">
+                <!-- Button -->
+                <a class="btn btn-xs lift" href="./index.html">
+                  Log Out
+                </a>
+              </div>
+            </div> <!-- / .row -->
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+
+    <!-- ARTICLES -->
+    <section class="bg-pattern-2 pt-7 pt-md-10 pb-8 pb-md-11 mt-md-n6">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Card -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg">
+              <div class="row gx-0">
+                <div class="col-12">
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-light badge-float badge-float-inside">
+                    <span class="h6 text-uppercase">Featured</span>
+                  </span>
+                </div>
+                <a class="col-12 col-md-4 order-md-2 bg-cover card-img-end" style="background-image: url(https://i.postimg.cc/HspsfNj0/90.jpg);" href="#!">
+                  <!-- Image (placeholder) -->
+                  <img src="https://i.postimg.cc/HspsfNj0/90.jpg" alt="..." class="img-fluid d-md-none invisible">
+                  <!-- Shape -->
+                  <div class="shape shape-start shape-fluid-y text-white d-none d-md-block">
+                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor"/></svg>                  
+                  </div>
+                </a>
+                <div class="col-12 col-md-8 order-md-1">
+                  <!-- Body -->
+                  <a class="card-body" href="#!">
+                    <!-- Heading -->
+                    <h3>
+                      'This is the new normal,' Microsoft tells US workers: <br>Work from home until further notice
+                    </h3>
+                    <!-- Text -->
+                    <p class="mb-0 text-muted">
+                      <small>The Register</small><br><br>
+                
+                      Microsoft will let its employees in the US continue working from home until further notice as the 
+                      COVID-19 coronavirus continues to spread through the country. The Windows giant had planned to 
+                      recall staff to their offices next month.
+                    </p>
+                  </a>
+                  <!-- Meta -->
+                  <a class="card-meta" href="https://www.theregister.com/2021/09/09/microsoft_covid_lockdown/">
+                    <!-- Divider -->
+                    <hr class="card-meta-divider">
+                    <!-- Avatar -->
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-muted me-2 mb-0">
+                      Katyanna Quach
+                    </h6>
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                      <time datetime="2021-09-09">Thu 9 Sep 2021 // 22:08 UTC</time>
+                    </p>
+                  </a>
+                </div>
+              </div> <!-- / .row -->
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="pt-7 pt-md-10 container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+            <!-- Heading -->
+            <h2 class="mb-0" style="color:orange">
+              Latest Stories
+            </h2>
+            <!-- Text -->
+            <p class="mb-0 text-info">
+              Here’s whats been happening recently.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="https://www.sfexaminer.com/news/tech-workers-arent-leaving-san-francisco-theyre-just-working-from-home/">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/NFVkTtrT/26425906-web1-210908-SFE-TECHHEARING-1.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.sfexaminer.com/news/tech-workers-arent-leaving-san-francisco-theyre-just-working-from-home/">
+                <!-- Heading -->
+                <h3>
+                  Tech workers aren’t leaving San Francisco. They’re just working from home.
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  The big risk to San Francisco’s economy is not tech workers who are leaving the state. It’s tech workers who are not leaving their couch.
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.sfexaminer.com/news/tech-workers-arent-leaving-san-francisco-theyre-just-working-from-home/">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Jeff Elder
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2021-09-08">9.8.21 4:00pm</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/rsvmXVHf/bloomberg2.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  
+                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.bloomberg.com/news/features/2021-08-26/will-remote-work-become-the-norm-hybrid-offices-are-transforming-economies">
+                <!-- Heading -->
+                <h3>
+                  The Hybrid Work Revolution Is Already Transforming Economies
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Office workers are being set free. Experts say that offers a rare opportunity to kickstart sluggish economies.
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.bloomberg.com/news/features/2021-08-26/will-remote-work-become-the-norm-hybrid-offices-are-transforming-economies">
+              <!-- Divider -->
+              <hr class="card-meta-divider">
+              <!-- Avatar -->
+              <!-- Author -->
+              <h6 class="text-uppercase text-muted me-2 mb-0">
+                 Libby Cherry
+              </h6>
+              <!-- Date -->
+              <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+              <time datetime="2021-08-25">8.25.21 9:01 PM PDT</time>
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <!-- Card -->
+          <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+            <!-- Image -->
+            <a class="card-img-top" href="https://www.theguardian.com/us-news/2021/sep/05/covid-coronavirus-work-home-office-surveillance">
+              <!-- Image -->
+              <img src="https://i.postimg.cc/Vkz2kBm8/3000.jpg" alt="..." class="card-img-top">
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  
+                </div>
+              </div>
+            </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.theguardian.com/us-news/2021/sep/05/covid-coronavirus-work-home-office-surveillance">
+                <!-- Heading -->
+                <h3>
+                  Bosses turn to ‘tattleware’ to keep tabs on employees working from home
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  The pandemic prompted a surge in the use of workplace surveillance programs – and they’re not going away any time soon
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.theguardian.com/us-news/2021/sep/05/covid-coronavirus-work-home-office-surveillance">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Sandy Milne
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2021-09-05 5:00 EDT">9.5.21 5:00 EDT</time>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card d-lg-none shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/5ttzb003/imrs-php.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  
+                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.washingtonpost.com/business/2021/08/17/work-from-home-permanently/">
+                <!-- Heading -->
+                <h3>
+                  Remote work should be a permanent employee benefit
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Yes, working from home or a hybrid option should be a permanent employee perk, given the resurgence of coronavirus cases
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.washingtonpost.com/business/2021/08/17/work-from-home-permanently/">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Michelle Singletary<br>
+                  Columnist<br>
+                  August 17, 2021 at 5:54 p.m. EDT
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">May 02</time>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+      <div class="pt-7 pt-md-10 container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+            <!-- Heading -->
+            <h2 class="mb-0" style="color:orange">
+              Podcasts You Don't Want to Miss
+            </h2>
+            <!-- Text -->
+            <p class="mb-0 text-info">
+              Leaders talk about the Passion Economy
+            </p>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Card -->
+            <div class="card card-row shadow-light-lg mb-6">
+              <div class="row gx-0">
+                <div class="col-12 col-md-4">
+
+                  <!-- Slider -->
+                  <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
+                    <a class="card-img-start w-100 bg-cover" style="background-image: url(assets/img/photos/photo-1.jpg);" href="#!">
+                      <!-- Image (placeholder) -->
+                      <img src="assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+                    </a>
+                    <a class="card-img-start w-100 bg-cover" style="background-image: url(https://i.postimg.cc/x8yk1CCd/Screen-Shot-2021-09-10-at-2-27-36-PM.png);" href="#!">
+                      <!-- Image (placeholder) -->
+                      <img src="https://i.postimg.cc/x8yk1CCd/Screen-Shot-2021-09-10-at-2-27-36-PM.png" alt="..." class="img-fluid d-md-none invisible">
+                    </a>
+                    <a class="card-img-start w-100 bg-cover" style="background-image: url(https://i.postimg.cc/s1dhP43f/woman-office.jpg);" href="#!">
+                      <!-- Image (placeholder) -->
+                      <img src="https://i.postimg.cc/s1dhP43f/woman-office.jpg" alt="..." class="img-fluid d-md-none invisible">
+                    </a>
+                    <a class="card-img-start w-100 bg-cover" style="background-image: url(https://i.postimg.cc/8C77xvFR/10823-matcha-tea-fragrance.jpg);" href="#!">
+                      <!-- Image (placeholder) -->
+                      <img src="https://i.postimg.cc/8C77xvFR/10823-matcha-tea-fragrance.jpg" alt="..." class="img-fluid d-md-none invisible">
+                    </a>
+                  </div>
+                  <!-- Shape -->
+                  <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>                  
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 position-static">
+                  <!-- Slider -->
+                  <div class="position-static" data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}' id="blogSlider">
+                    <div class="w-100">
+                      <!-- Body -->
+                      <div class="card-body" >
+                        <!-- Heading -->
+                        <h3>
+                          a16z Podcast: 
+                          <br>
+                          How the Passion Economy Is Redefining Work.
+                        </h3>
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          This episode of the a16z Podcast covers the the rise of online platforms that enable people to make a living off their unique interests and skills. It’s a trend that’s become increasingly relevant as the demand for virtual work grows.<br><br>
+                          <a href="https://a16z.simplecast.com/episodes/the-passion-economy" class="btn btn-xs btn-info d-none d-md-inline">
+                            Listen Here
+                          </a>
+                        </p>
+                      </div>
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="#!">
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+                        <!-- Avatar -->
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted me-2 mb-0">
+                          by Sam Yam, Li Jin, and Lauren Murrow
+                        </h6>
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                          <time datetime="2019-05-02">2021 Andreessen Horowitz</time>
+                        </p>
+                      </a>
+                    </div>
+
+                    <div class="w-100">
+                      <!-- Body -->
+                      <div class="card-body" >
+                        <!-- Heading -->
+                        <h3>
+                          Healthy Marketing: 
+                          <br>
+                          Within The Passion Economy
+                        </h3>
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Jeffrey Jordan is really good at convincing people to make healthier choices with his marketing company Rescue Agency. It doesn't hurt that he's had a lot of experience. He's been doing it since he was 17.
+                          <br><br>
+                          <a href="https://www.threeuncannyfour.com/show/the-passion-economy/" class="btn btn-xs btn-info d-none d-md-inline">
+                            Listen Here 
+                          </a>
+                        </p>
+                      </div>
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="#!">
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+                        <!-- Avatar -->
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted me-2 mb-0">
+                          by Adam Davidson
+                        </h6>
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                          <time datetime="2019-05-02">Three Uncanny Four - 2020</time>
+                        </p>
+                      </a>
+                    </div>
+
+                    <div class="w-100">
+                      <!-- Body -->
+                      <div class="card-body" >
+                        <!-- Heading -->
+                        <h3>
+                          How to succeed in the Passion Economy 
+                          <br>
+                          Lessons in entrepreneurial grit from the events industry
+                        </h3>
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          The Passion Economy got its name in 2018 and it's a new economic framework that lets people live their passions and break free from the 9 to 5 job. Anyone can participate.
+                          <br><br>
+                          <a href="https://podcasts.apple.com/us/podcast/the-passion-economy/id1459910839" class="btn btn-xs btn-info d-none d-md-inline">
+                            Listen Here 
+                          </a>
+                        </p>
+                      </div>
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="#!">
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+                        <!-- Avatar -->
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted me-2 mb-0">
+                          by Adam Davidson
+                        </h6>
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                          <time datetime="2019-05-02">Three Uncanny Four - 2020</time>
+                        </p>
+                      </a>
+                    </div>
+
+                    <div class="w-100">
+                      <!-- Body -->
+                      <div class="card-body" >
+                        <!-- Heading -->
+                        <h3>
+                          Passion > Experience
+                          <br>
+                          Experience First Hand The Passion Economy
+                        </h3>
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lauren Danson had zero business experience, but she believed her passion for tea could be contagious. So she started Mizuba Tea Co., a brand that only sells the finest matcha green tea.
+                          <br><br>
+                          <a href="https://podtail.com/podcast/the-passion-economy/passion-experience/" class="btn btn-xs btn-info d-none d-md-inline">
+                            Listen Here 
+                          </a>
+                        </p>
+                      </div>
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="#!">
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+                        <!-- Avatar -->
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted me-2 mb-0">
+                          by Adam Davidson
+                        </h6>
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                          <time datetime="2019-05-02">Three Uncanny Four - 2020</time>
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+      <div class="pt-7 pt-md-10 container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Heading -->
+            <h2 class="mb-0" style="color:orange">
+              Incase You Missed It
+            </h2>
+            <!-- Text -->
+            <p class="mb-5 text-white">
+              Here’s what’s big in the past few week!
+            </p>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/5ttzb003/imrs-php.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.washingtonpost.com/business/2021/08/17/work-from-home-permanently/">
+                <!-- Heading -->
+                <h3>
+                  Remote work should be a permanent employee benefit
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Yes, working from home or a hybrid option should be a permanent employee perk, given the resurgence of coronavirus cases
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.washingtonpost.com/business/2021/08/17/work-from-home-permanently/">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://s3.amazonaws.com/arc-authors/washpost/ca34136e-253b-4bc5-97d9-6af9aa6588de.png&w=64&h=64" alt="..." class="avatar-img rounded-circle">
+                </div>
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Michelle Singletary
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2021-08-17">8.17.21 5:54 EDT</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/SNBkfQHK/Screen-Shot-2021-09-10-at-5-21-04-PM.png" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.nydailynews.com/news/national/ny-facebook-virtual-reality-20210819-g2na5uoo2nabxaoc2xi4n4jw7e-story.html">
+                <!-- Heading -->
+                <h3>
+                  Facebook launches virtual reality app for work-from-home
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Facebook launched Horizon Workrooms on Thursday, a new virtual-reality remote work app that allows users to put on their Oculus Quest 2 headsets and call into company meetings, all from the comfort of their own home.
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.nydailynews.com/news/national/ny-facebook-virtual-reality-20210819-g2na5uoo2nabxaoc2xi4n4jw7e-story.html">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <!-- Author -->
+                <h6 class=" text-muted me-2 mb-0">
+                  KATE FELDMAN - New York Daily News
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <<time datetime="2021-08-17">8.19.21 8:51 EDT</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/7YRPfnqj/106727767-1601662195259-gettyimages-1252473576-aria-jade-2020-4815.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  
+                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.cnbc.com/2021/08/26/covid-pandemic-pushes-hunt-for-remote-jobs-up-460percent.html">
+                <!-- Heading -->
+                <h3>
+                  Pandemic pushes search for remote jobs up 460%
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Interest in working remotely has surged during the Covid-19 pandemic and is lingering even as the economy reopens, a new study suggests.
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.cnbc.com/2021/08/26/covid-pandemic-pushes-hunt-for-remote-jobs-up-460percent.html">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img src="https://image.cnbcfm.com/api/v1/image/106931725-1629729759450-greg_iacurci.jpg?v=1629729828&w=60&h=60" alt="..." class="avatar-img rounded-circle">
+                </div>
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Greg Iacurci
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">8.26.21 12:35 PM EDT</time>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/L68hqsLg/5gk-WEqt4-Uc6-Zqsoq-Jz-LWa-D-970-80.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  
+                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.techradar.com/news/logitechs-new-dock-is-designed-for-a-work-from-home-world">
+                <!-- Heading -->
+                <h3>
+                  Logitech’s new dock is designed for a work from home world
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Logi Dock eliminates desk clutter while improving your video conferencing experience
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.techradar.com/news/logitechs-new-dock-is-designed-for-a-work-from-home-world">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Anthony Spadafora
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">9.7.2021</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="https://i.postimg.cc/MphybBmF/201803-CURRENTEDITION-303149994-AR-0-0.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  
+                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="https://www.mainebiz.biz/article/portland-based-tilson-makes-work-from-home-a-permanent-option">
+                <!-- Heading -->
+                <h3>
+                  Portland-based Tilson makes work-from-home a permanent option
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Tilson announced wednesday it will allow eligible staff to work from home for as long as they want.
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="https://www.mainebiz.biz/article/portland-based-tilson-makes-work-from-home-a-permanent-option">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Renee Cordes
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">9.9.21</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card d-lg-none shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+                <!-- Image -->
+                <img src="assets/img/photos/photo-27.jpg" alt="..." class="card-img-top">
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  
+                  </div>
+                </div>
+              </a>
+              <!-- Body -->
+              <a class="card-body" href="#!">
+                <!-- Heading -->
+                <h3>
+                  Travel Can Keep You Creatively Inspired.
+                </h3>
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                </p>
+              </a>
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Ab Hadley
+                </h6>
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">May 02</time>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 py-md-10 bg-black">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Pretitle -->
+            <h3 class="text-uppercase text-info mb-6">
+              Start creating
+            </h3>
+            <!-- Heading -->
+            <h3 class="display-3 fw-bold text-white">
+              a renewable, <br>sustainable future.
+            </h3>
+            <!-- Text -->
+            <p class="fs-lg text-gray-500 mb-6 mb-md-8">
+              The first step is easy, so let your passions take the rest in stride.<br>
+              What are you waiting for?           
+            </p>
+            <!-- Button -->
+            <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
+              <a class="text-black btn btn-info shadow lift" data-bs-toggle="modal" href="#modalSignupHorizontal">
+                Sign up now !<i class="fe fe-arrow-right ms-3"></i>
+              </a> 
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- BORDER -->
+    <div class="bg-black">
+      <div class="container border-top border-white-900-50"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-4 py-md-8 bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+    
+        <!-- Brand -->
+        <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
+          <img src="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+        </a>
+        
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social ml-md-5 mt-6 mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              About
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-1.html" class="text-reset">
+                  Si Quis Software
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-2.html" class="text-reset">
+                  The Passion Economy
+                </a>
+              </li>
+              <li class="mb-3">
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-3.html" class="text-reset">
+                  Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              Contact Us
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a>Email us at:</a><br>
+                <a href="mailto:info@siquisoft.com" class="text-reset">
+                  <span class="text-white">info@siquisoft.com</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a>Call us at:</a><br>
+                <a href="#!" class="text-reset">
+                  <span class="text-white">206-498-2957</span>
+                </a>
+              </li>        
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              Legal
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="./SiQuis-TOS-1.html" class="text-reset">
+                  Policy Statements
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./SiQuis-TOS-2.html" class="text-reset">
+                  Privacy Statements
+                </a>
+                <li class="mb-3">
+                <a href="./SiQuis-TOS-3.html" class="text-reset">
+                  Report An Issue
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+  </body>
+</html>
