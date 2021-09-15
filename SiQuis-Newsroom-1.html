@@ -178,7 +178,7 @@
     
                   <!-- Text -->
                   <p class="mb-0 fs-sm text-center text-muted">
-                    Already have an account? <a style="color:orange" href="./signin-illustration.html"><i> Log in</i></a>.
+                    Already have an account? <a style="color:orange" data-bs-toggle="modal" href="#modalSignupHorizontal"><i> Log in</i></a>.
                   </p>
                   <p class="mb-0 fs-sm text-center text-muted">
                     * Required fields
@@ -224,7 +224,13 @@
                   <p class="mb-6 text-center text-muted">
                     Start building upon your passions.<br><br>
 
-                    We want to keep you informed about the launch of our passion economy "Beta-Site". Sign up here and we'll keep you in the loop.
+                    We're excited to have you join the "Beta-Site" team! By adding your information to our list we'll be able to keep you informed about our Beta-Site and its initial launch. 
+                    <br><br>
+
+                    In addition, once launched, you'll gain access to take a look at how the Si Quis platform can help you create and grow your passion business. 
+                    <br><br>
+
+                    We'll only send information as our milestones unfold... otherwise we'll keep quite and not add to your inbox! 
                   </p>
     
                   <!-- Form -->
@@ -235,7 +241,7 @@
                       <label class="visually-hidden" for="modalSignupHorizontalCompanyName">
                         Company Name
                       </label>
-                      <input type="text" class="form-control" id="modalSignupHorizontalCompanyName" placeholder="Company name *">
+                      <input type="text" class="form-control" id="modalSignupHorizontalCompanyName" placeholder="Company name">
                     </div>
     
                     <!-- User Name -->
@@ -271,7 +277,7 @@
     
                   <!-- Text -->
                   <p class="mb-0 fs-sm text-center text-muted">
-                    Already have an account? <a style="color:orange" href="./signin-illustration.html"><i> Log in</i></a>.
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
                   </p>
                   <p class="mb-0 fs-sm text-center text-muted">
                     * Required fields
@@ -346,7 +352,7 @@
     
                   <!-- Text -->
                   <p class="mb-0 fs-sm text-center text-muted">
-                    Don't have an account yet? <a style="color:orange" href="./signin-illustration.html"><i> Sign up</i></a>.
+                    Don't have an account yet? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSignupHorizontal">Sign up</a>.
                   </p>
     
                 </div>
@@ -533,14 +539,14 @@
                   <div class="col-12 col-lg-12">
                     <div class="dropdown-body">
                       <div class="row gx-0">
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                           <!-- Heading -->
                           <h1 class="text-info">
                             <b>Who We Are</b>
                           </h1>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                           <!-- Heading -->
                           <h4 class="dropdown-header" style="color:orange">
                             <b>About</b>
@@ -587,14 +593,14 @@
                   <div class="col-12 col-lg-12">
                     <div class="dropdown-body">
                       <div class="row gx-0">
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                           <!-- Heading -->
                           <h1 class="text-info">
                             <b>What We Build</b>
                           </h1>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                           <!-- Heading -->
                           <h4 class="dropdown-header" style="color:orange">
                             <b>Overview</b>
@@ -639,14 +645,14 @@
                   <div class="col-12 col-lg-12">
                     <div class="dropdown-body">
                       <div class="row gx-0">
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                           <!-- Heading -->
                           <h1 class="text-info text-wrap">
                             <b>What's Happening</b>
                           </h1>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                           <!-- Heading -->
                           <h4 class="dropdown-header pb-4" style="color:orange">
                             <b>Newsroom</b>
@@ -660,7 +666,7 @@
                               <!-- Content -->
                               <div class="ms-4">
                                 <!-- Heading -->
-                                <h6 class="fw-bold text-uppercase text-info mb-0">
+                                <h6 class="fw-bold text-uppercase text-info mb-0 active">
                                   <b>All Feeds</b>
                                 </h6>
                                 <!-- Text -->
@@ -670,12 +676,12 @@
                               </div>
                               <!-- Badge -->
                               <span class="badge rounded-pill bg-info-soft ms-auto">
-                                11
+                                18
                               </span>
                             </a>
 
                           <h4 class="dropdown-header pb-4" style="color:orange">
-                            <b>At si quis</b>
+                            <b>At Si Quis</b>
                           </h4>
                           <div class="list-group list-group-flush">
                             <a class="list-group-item" href="./SiQuis-Newsroom-1.html">
@@ -696,7 +702,7 @@
                               </div>
                               <!-- Badge -->
                               <span class="badge rounded-pill bg-info-soft ms-auto">
-                                11
+                                7
                               </span>
                             </a>
                            
@@ -708,15 +714,68 @@
                 </div>
               </div>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                <i><small><small>Account</small></small></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>Account Information</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Acount</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Account-1.html">
+                            General
+                          </a>
+                          <a class="dropdown-item" href="./SiQuis-Account-2.html">
+                            Security
+                          </a>
+                          <a class="dropdown-item" data-bs-toggle="modal" href="#modalSigninHorizontal">
+                            Login
+                          </a>   
+                          <!-- List -->
+                          <a class="dropdown-item" data-bs-toggle="modal" href="#modalSignupHorizontal">
+                            Signup
+                          </a>
+                          <a class="dropdown-item mb-5" data-bs-toggle="modal" href="#modalPasswordReset">
+                            Reset Password
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Contact Us</b>
+                          </h4>
+                          <!-- List -->
+                          <a href="mailto:support@siquisoft.com" class="text-reset">Email Us</a>
+
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </li>
           </ul>
-    
+          
           <!-- Button -->
-          <a class="navbar-btn btn btn-xs btn-info text-black lift ms-auto" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
+          <a class="navbar-btn btn btn-xs text-black lift ms-auto" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
             Login 
           </a>
           <!-- Avatar -->
           <a class="avatar avatar-md ms-4" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="View Account Information" href="./SiQuis-Account-1.html" >
-            <img class="avatar-img rounded-circle" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
+            <img class="avatar-img rounded-circle bg-black" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
           </a>
 
         </div>
@@ -1564,12 +1623,12 @@
     <footer class="py-4 py-md-8 bg-black">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
     
-        <!-- Brand -->
-        <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
-          <img src="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
-        </a>
+            <!-- Brand -->
+            <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
+              <img src="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+            </a>
         
             <!-- Social -->
             <ul class="list-unstyled list-inline list-social ml-md-5 mt-6 mb-6 mb-md-0">
@@ -1596,7 +1655,7 @@
             </ul>
     
           </div>
-          <div class="col-6 col-md-4 col-lg-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
     
             <!-- Heading -->
             <h5 class="fw-bold text-uppercase text-gray-700">
@@ -1625,7 +1684,7 @@
             </ul>
     
           </div>
-          <div class="col-6 col-md-4 col-lg-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
     
             <!-- Heading -->
             <h5 class="fw-bold text-uppercase text-gray-700">
@@ -1649,7 +1708,7 @@
             </ul>
     
           </div>
-          <div class="col-6 col-md-4 col-lg-3">
+          <div class="col-sm-12 col-md-4 col-lg-3">
     
             <!-- Heading -->
             <h5 class="fw-bold text-uppercase text-gray-700">
