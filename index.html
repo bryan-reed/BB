@@ -192,16 +192,117 @@
       </div>
     </div>
 
-    <!-- Signup: Horizontal  -->
+   
+
+    <!-- Signup: Horizontal Drop-In -->
+    <div class="modal fade" id="modalSignupDIHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupDIHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/QNfrqX1Z/Drop-in.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/QNfrqX1Z/Drop-in.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupDIHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.<br><br>
+
+                    We're excited to have you join the "Beta-Site" team! By adding your information to our list we'll be able to keep you informed about our Beta-Site and its initial launch. 
+                    <br><br>
+
+                    In addition, once launched, you'll gain access to take a look at how the Si Quis platform can help you create and grow your passion business. 
+                    <br><br>
+
+                    We'll only send information as our milestones unfold... otherwise we'll keep quite and not add to your inbox! 
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupDIHorizontalCompanyName" placeholder="Company name">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupDIHorizontaltUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupDIHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupDIHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal Ellie -->
     <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="card card-row">
             <div class="row gx-0">
-              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url( https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
     
                 <!-- Image (placeholder) -->
-                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+                <img src=" https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
     
                 <!-- Shape -->
                 <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
@@ -715,11 +816,19 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                <i><small><small>Account</small></small></i>
+            <li class="nav-item">
+              <!-- Button -->
+              <a class="navbar-btn btn btn-xs text-black lift ms-10 mt-1" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
+                Login 
               </a>
-              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+            </li>
+
+            <!-- Avatar -->
+            <li class="nav-item dropstart">
+              <a class="text-white nav-link lift" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar-img rounded-circle bg-black" style="width:30px" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2 mt-8" aria-labelledby="navbarLandings">
                 <div class="row gx-0">
                   <div class="col-12 col-lg-12">
                     <div class="dropdown-body">
@@ -768,15 +877,6 @@
               </div>
             </li>
           </ul>
-          
-          <!-- Button -->
-          <a class="navbar-btn btn btn-xs text-black lift ms-auto" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
-            Login 
-          </a>
-          <!-- Avatar -->
-          <a class="avatar avatar-md ms-4" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="View Account Information" href="./SiQuis-Account-1.html" >
-            <img class="avatar-img rounded-circle bg-black" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
-          </a>
 
         </div>
       </div>
@@ -829,7 +929,7 @@
             <!-- Text -->
             <p class="lead text-muted mb-9">
               Create niche businesses of all types (verticals within horizontal markets) and insert them into the massive revenue streams larger and well-established internet companies have mostly kept for themselves. <br><br>
-              <span class="text-info">Uniquely position your business to appeal to highly productive market segments (fiercely passionate individuals) by focusing on their core interests and commerce within these vertical markets.</span>
+              <span class="text-info">Uniquely position businesses to appeal to highly productive market segments (fiercely passionate individuals) by focusing on their core interests and commerce within these vertical markets.</span>
             </p>
 
           </div>
@@ -842,12 +942,12 @@
 
             <!-- Heading -->
             <h2 class="text-white mb-0">
-              Core Elements we like
+              Core Elements 
             </h2>
 
             <!-- Text -->
             <p class="mb-0 text-muted">
-              To build your passion-based business.
+              Build your passion-based business.
             </p>
 
           </div>
@@ -935,7 +1035,7 @@
                           Finding the right products and services is time consuming. Providing a curated directory enables your audience to save time and keep up-to-date on trending products, services, events and more.
                         </p>
                         <p class="mb-6 text-center text-info"><b><i>The Si Quis platform allows users to build and manage directories that rely upon your
-                          expertise and experiences to deliver quality experiences.</b></i>
+                          knowledge and expertise to deliver quality user experiences.</b></i>
                         </p>
                       </a>
                     </div>
@@ -987,7 +1087,7 @@
                         <!-- Text -->
                         <p class="mb-6 text-left text-muted">
                           <br>
-                          <span class="text-info"><b><i> The Si Quis platform automatically monetize multiple points of activity on your site, allowing you to focus on what makes your business great.</span></b></i><br><br>
+                          <span class="text-info"><b><i> The Si Quis platform automatically monetizes multiple points of activity on your site, allowing you to stay focused on the core elements of your business.</span></b></i><br><br>
                           <span class="text-info"><b><i>Value Created: </span></b></i> Share your passion with like-minded people.<br><br>
                           <span class="text-info"><b><i>Value Captured: </span></b></i> Monetize your passion with these audiences.
                         </p>
@@ -1035,7 +1135,7 @@
             </span></h2>
             <!-- Text -->
             <p class="text-muted lead mb-5">
-              <span class="text-white fw-bold">Build upon your passions.<br></span> We build technologies for people to create niche businesses around the things they are passionate about. Our platform provides the infrastructure needed to monetize your experiences, expertise and knowledge by creating tangible value for like-minded and <i>fiercely passionate</i> individuals. <br>
+              <span class="text-white fw-bold">Build upon your passions.<br></span> We build technologies for you to create niche businesses around the things that ignite your passion. Our platform provides the infrastructure needed to monetize your experiences, expertise and knowledge by creating tangible value for like-minded and <i>fiercely passionate</i> individuals. <br>
               <a class="btn btn-lg-black text-info" data-bs-toggle="collapse" href="#collapseRM1" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <i>Read more...</i>
               </a>
@@ -1068,7 +1168,7 @@
                 The Si Quis platform makes it possible for people to convert their knowledge and skills into thriving, money-making businesses. Our technologies allow people to create and curate content, directories and advertising; develop markets to buy and sell products and services; engage in ecommerce and host enhanced classifieds; provide functionality for real-time peer-to-peer connections and a lot more.
                 <br><br>
 
-                Our tools allow people to create niche businesses of all types and provide value to the cohorts of equally passionate individuals seeking information, products, services more about what they care about.
+                Our tools allow people to create niche businesses of all types and provide value to the cohorts of equally passionate individuals seeking information, products, services and more about what they care about.
               </div>
             </div>
           </div>    
@@ -1213,16 +1313,16 @@
             </h3>
             <!-- Heading -->
             <h3 class="display-3 fw-bold text-white">
-              a renewable, <br>sustainable future.
+              a renewable, sustainable,<br>passion-based future.
             </h3>
             <!-- Text -->
             <p class="fs-lg text-gray-500 mb-6 mb-md-8">
-              The first step is easy, so let your passions take the rest in stride.<br>
-              What are you waiting for?           
+              The passion economy groundswell has begun.<br>
+              Si Quis Software can help you drop in.          
             </p>
             <!-- Button -->
             <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
-              <a class="text-black btn btn-info shadow lift" data-bs-toggle="modal" href="#modalSignupHorizontal">
+              <a class="text-black btn btn-info shadow lift" data-bs-toggle="modal" href="#modalSignupDIHorizontal">
                 Sign up now !<i class="fe fe-arrow-right ms-3"></i>
               </a> 
             </p>
