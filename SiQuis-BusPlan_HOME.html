@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://i.postimg.cc/qq6pfdnP/Si-Quis-Icon.png" sizes="16x16" type="image/png" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Animation CSS -->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Example: h1 class="animate__animated animate__bounce">An animated element</h1 Goto: https://animate.style/#attention_seekers -->
+
+    <style>
+    #more {display: none;}
+    </style>
+
+    <style>
+    #more2 {display: none;}
+    </style>
+
+    <!-- Title -->
+    <title>SiQuisSoftware</title>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+    
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- Name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">Your name</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <!-- Password -->
+                  <div class="form-floating">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-info mt-3 lift">
+                    Request a demo
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account: Horizontal  -->
+    <div class="modal fade" id="modalAccountHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalAccountHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalAccountHorizontalTitle">
+                    My Account Information
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Building upon your passions.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalAccountHorizontalCompanyName" placeholder="Company name *">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalAccountHorizontalUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalAccountHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalAccountHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalAccountHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalAccountHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a style="color:orange" data-bs-toggle="modal" href="#modalSignupHorizontal"><i> Log in</i></a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.<br><br>
+
+                    We're excited to have you join the "Beta-Site" team! By adding your information to our list we'll be able to keep you informed about our Beta-Site and its initial launch. 
+                    <br><br>
+
+                    In addition, once launched, you'll gain access to take a look at how the Si Quis platform can help you create and grow your passion business. 
+                    <br><br>
+
+                    We'll only send information as our milestones unfold... otherwise we'll keep quite and not add to your inbox! 
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupHorizontalCompanyName" placeholder="Company name">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupHorizontaltUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                        Enter your password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign in
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Don't have an account yet? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSignupHorizontal">Sign up</a>.
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Password Reset: Horizontal  -->
+    <div class="modal fade" id="modalPasswordReset" tabindex="-1" role="dialog" aria-labelledby="modalPasswordResetTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalPasswordResetTitle">
+                    Reset Password
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Keep your account information secure.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalPasswordResetEmail">
+                        Your email address
+                      </label>
+                      <input type="email" class="form-control" id="modalPasswordResetEmail" placeholder="Your email">
+                    </div>
+                                        <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-success mb-5" type="submit">
+                      Send "Reset Code" To My Email
+                    </button>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetPassword">
+                        Create a new password
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword" placeholder="Create a new password">
+                    </div>
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetResetPassword">
+                        Retype password
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword2" placeholder="Retype password">
+                    </div>
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalPasswordResetResetPassword">
+                        Enter "Reset Code"
+                      </label>
+                      <input type="password" class="form-control" id="modalPasswordResetPassword2" placeholder="Enter Reset Code">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Reset Password
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    If we have your email on file, we will send you a reset code.<br>
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-info mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-pattern-2">
+      <div class="container-md">
+
+        <!-- Brand -->
+        <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
+          <img src="https://i.postimg.cc/qq6pfdnP/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button> 
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Who We Are
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>Who We Are</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>About</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-ABOUT-1.html">
+                            Si Quis Software
+                          </a>
+                          <a class="dropdown-item" href="./SiQuis-ABOUT-2.html">
+                            The Passion Economy
+                          </a>
+                          <a class="dropdown-item mb-5" href="./SiQuis-ABOUT-3.html">
+                            The Team
+                          </a>    
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Our Name</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item mb-5" href="./SiQuis-ABOUT-5.html">
+                            <i>Si Quis</i>
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Contact Us</b>
+                          </h4>
+                          <!-- List -->
+                          <a href="mailto:support@siquisoft.com" class="text-reset">Email Us</a>
+
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                What We Build
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>What We Build</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Overview</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item mb-5" href="./SiQuis-Platform-1.html">
+                            Platform
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Back-end</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Platform-2.html">
+                            Management
+                          </a>
+                          <a class="dropdown-item mb-5" href="./SiQuis-Platform-3.html">
+                            Operations
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Front-end</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Platform-4.html">
+                            Beautiful Themes
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                What's Happening
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h1 class="text-info text-wrap">
+                            <b>What's Happening</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header pb-4" style="color:orange">
+                            <b>Newsroom</b>
+                          </h4>
+                          <div class="list-group list-group-flush">
+                            <a class="list-group-item" href="./SiQuis-Newsroom-1.html">
+                              <!-- Icon -->
+                              <div class="icon icon-sm text-primary">
+                                <img src="https://img.icons8.com/ios/50/000000/learn-information.png"/> 
+                              </div>
+                              <!-- Content -->
+                              <div class="ms-4">
+                                <!-- Heading -->
+                                <h6 class="fw-bold text-uppercase text-info mb-0 active">
+                                  <b>All Feeds</b>
+                                </h6>
+                                <!-- Text -->
+                                <p class="fs-sm text-gray-700 mb-0">
+                                  News, Blogs & Pods
+                                </p>
+                              </div>
+                              <!-- Badge -->
+                              <span class="badge rounded-pill bg-info-soft ms-auto">
+                                18
+                              </span>
+                            </a>
+
+                          <h4 class="dropdown-header pb-4" style="color:orange">
+                            <b>At Si Quis</b>
+                          </h4>
+                          <div class="list-group list-group-flush">
+                            <a class="list-group-item" href="./SiQuis-Newsroom-1.html">
+                              <!-- Icon -->
+                              <div class="icon icon-sm text-primary">
+                                <img src="https://img.icons8.com/ios/50/000000/microphone.png"/> 
+                              </div>
+                              <!-- Content -->
+                              <div class="ms-4">
+                                <!-- Heading -->
+                                <h6 class="fw-bold text-uppercase text-info mb-0">
+                                  <b>All Feeds</b>
+                                </h6>
+                                <!-- Text -->
+                                <p class="fs-sm text-gray-700 mb-0">
+                                  Updates from here
+                                </p>
+                              </div>
+                              <!-- Badge -->
+                              <span class="badge rounded-pill bg-info-soft ms-auto">
+                                7
+                              </span>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                <i>Account</i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-12">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h1 class="text-info">
+                            <b>Account Information</b>
+                          </h1>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Acount</b>
+                          </h4>
+                          <!-- List -->
+                          <a class="dropdown-item" href="./SiQuis-Account-1.html">
+                            General
+                          </a>
+                          <a class="dropdown-item" href="./SiQuis-Account-2.html">
+                            Security
+                          </a>
+                          <a class="dropdown-item" data-bs-toggle="modal" href="#modalSigninHorizontal">
+                            Login
+                          </a>   
+                          <!-- List -->
+                          <a class="dropdown-item" data-bs-toggle="modal" href="#modalSignupHorizontal">
+                            Signup
+                          </a>
+                          <a class="dropdown-item mb-5" data-bs-toggle="modal" href="#modalPasswordReset">
+                            Reset Password
+                          </a>
+                          <!-- Heading -->
+                          <h4 class="dropdown-header" style="color:orange">
+                            <b>Contact Us</b>
+                          </h4>
+                          <!-- List -->
+                          <a href="mailto:support@siquisoft.com" class="text-reset">Email Us</a>
+
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </li>
+          </ul>
+          
+          <!-- Button -->
+          <a class="navbar-btn btn btn-xs text-black lift ms-auto" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
+            Login 
+          </a>
+          <!-- Avatar -->
+          <a class="avatar avatar-md ms-4" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="View Account Information" href="./SiQuis-Account-1.html" >
+            <img class="avatar-img rounded-circle bg-black" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
+          </a>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section data-jarallax data-speed=".8" class="py-10 py-md-14 overlay overlay-black overlay-40 bg-cover jarallax" style="background-image: url(assets/img/covers/cover-13.jpg);">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white">
+              Welcome
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-0 text-white-75">
+              Keep up to date with what we're working on. What the world is working on. And how the Passion Economy is working.
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg> 
+      </div>
+    </div>
+
+   <!-- CONTENT -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 mt-5">
+            <nav id="toc" data-toggle="toc" class="sticky-top">
+              <ul class="nav navbar-nav">
+                <!-- Heading -->
+                <h4 class="text-uppercase mt-5 mb-2">
+                  <b>Business Plan</b>
+                </h4>
+                <h6 class="text-uppercase fw-bold">
+                  Table of Contents
+                </h6><br>
+                <li>
+                  <a class="list-link active" href="#EXE_SUM"><b>EXECUTIVE SUMMARY</b></a>
+                </li>
+                <li>
+                  <a class="list-link" href="#1_Fast" data-scroll>1 Fast Facts</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#2_Over" data-scroll>2 Overview</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#3_Miss" data-scroll>3 Mission / Vision</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#4_Team" data-scroll>4 Team</a>
+                </li>
+                <li class="list-item mb-4">
+                  <a class="list-link" href="#5_Name" data-scroll>5 Our Name</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#Comp_Over" data-scroll><b>COMPANY OVERVIEW</b></a>
+                </li>
+                <li>
+                  <a class="list-link" href="#6_Market" data-scroll>6 Market Opportunity</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#7_Key" data-scroll>7 Key Features & Benefits</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#8_Client" data-scroll>8 Client Monetization</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#9_Pricing" data-scroll>9 Pricing & Revenue</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#10_Milestone" data-scroll>10 Company Milestones</a>
+                </li>                  
+                <li class="list-item mb-4">
+                  <a class="list-link" href="#11_Future" data-scroll>11 Future Development</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#Industry" data-scroll><b>INDUSTRY OVERVIEW</b></a>
+                </li>
+                <li>
+                  <a class="list-link" href="#12_Analysis" data-scroll>12 Industry Analysis</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#13_Target" data-scroll>13 Target Audience</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#14_Market" data-scroll>14 Market Strategy</a>
+                </li>
+                <li>
+                  <a class="list-link" href="#15_Comp" data-scroll>15 Competitive Landscape</a>
+                </li>                  
+                <li>
+                  <a class="list-link" href="#16_Different" data-scroll>16 Differentiating Factors</a>
+                </li>
+                <li class="list-item mb-4">
+                  <a class="list-link" href="#17_Investment" data-scroll>17 Investment Opportunity </a>
+                </li>
+                <li>
+                  <a class="list-link" href="#FINANCIALS" data-scroll><b>FINANCIALS</b></a>
+                </li>
+              </ul>            
+            </nav>
+          </div>
+          <div class="col-sm-9 mt-5">
+
+            <h1 class="display-3 text-black mt-5" id="EXE_SUM"><b>EXECUTIVE SUMMARY</b></h1>
+
+              <h2 class="display-5 text-primary" id="2_Over">2 | OVERVIEW</h2>
+              <p>Si Quis Software (Siquis.com) is a Pacific Northwest based software development company. We create a customizable framework for people to build, manage and grow “passion-based” businesses online. Virtually any type of passion-based business is possible, and virtually any number of unique websites can be built using our framework.
+              <br><br>
+
+              These passion-based businesses are verticals within horizontal markets and uniquely positioned to appeal to highly productive market segments (fiercely passionate individuals) by focusing on their core interests and commerce within these verticals. Once built, our clients have a platform to reach their audiences 24/7/365.
+              <br><br>
+
+              The emergence of the “Passion Economy” — a new model of internet-powered entrepreneurship, <span class="text-success"> [citation here]</span> is gaining momentum in both number of participants and financial opportunity. Fueled in part by a cultural shift in the way people work, a desire to create a balanced and even flow of income, the advent of digital platforms enabling online markets, and a trend towards a more focused online community experience, the passion economy is poised for rapid growth <span class="text-success"> [citation here]</span>.  
+              <br>
+
+              <div class="container">
+                <div class="col-1"></div>
+              <div class="col-11 text-muted">
+                <i>In contrast to the "gig economy", the passion economy is open to anyone  interested in following their passion. It's not necessary to be a creator, an  influencer, a freelancer or even a merchant. It's true, all of these amazing  people can (and do) flourish in the passion economy, but others can too.</i>
+              </div>
+            </div>
+              <br>
+
+              Different from other platforms operating within the passion economy, the Si Quis Software (SQS) platform not only enables creators, influencers and gig-economy professional to participate, it enables virtually anyone who has experiences, expertise and knowledge about something they are truly passionate about and create monetizable value along the way.
+              <br><br>
+
+              <h2 class="display-5 text-primary" id="3_Miss">3 | OUR MISSION / VISION</h2>
+
+              Provide technologies to create, grow and support businesses in the thriving Passion Economy / Create a place where passionate people gather to learn, inform and consume things they are passionate about. 
+              <br><br>
+
+              <h2 class="text-primary" id="4_Team">4 | TEAM</h2>
+              <hr>
+              <div class="row">
+                <div class="col-1">
+                  <!-- Avatar -->
+                  <a class="avatar avatar-md ms-4" id="Brent" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="Brent Bostwick" href="#4_Team" >
+                    <img class="avatar-img rounded-circle bg-black" src="https://avatars.githubusercontent.com/u/81263659?v=4" alt="...">
+                  </a>
+                </div>
+                <div class="col-11">
+                  <b>Brent Bostwick,</b><i> Founder and Managing Member</i><br>
+              
+                  Brent is a passionate entrepreneur with years of experience running companies in the b2b software, alternative energy and multi-channel consumer products space. From small organizations of 10 to larger organizations of 700+; revenues from $1M to $150M; and equity raises with angles to VC’s of $750K to $134M. 
+                  <span class="text-primary" href=""> [Linkedin]</span><br>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-1">
+                  <!-- Avatar -->
+                  <a class="avatar avatar-md ms-4" id="Brent" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="Bryan Reed" href="#4_Team" >
+                    <img class="avatar-img rounded-circle bg-black" src="https://avatars.githubusercontent.com/u/17071750?s=48&v=4" alt="...">
+                  </a>
+                </div>
+                <div class="col-11">
+                  <b>Reed Bryant,</b><i> Founder and Member</i><br>
+              
+                  Reed is passionate about system architecture and scale, more here and more here. He has years of experience with this here and here and has completed that and this other thing. Some more things here would be good as well but the best part is this part here. <span class="text-primary" href=""> [Linkedin]</span>
+              
+                  <hr>
+                </div>
+              </div>
+
+              <h2 class="text-primary" id="5_Name">5 | OUR NAME</h2>
+              The concept of classified ads began appearing in England in the 1600s. Handwritten messages were nailed to posts by scribes and became known as “Si Quis”, a term borrowed from ancient Rome where most posted notices began with the words Si Quis — meaning "If anybody knows of…" <span class="text-success"> [citation here]</span>
+              <br><br>
+
+              Today the sheer number and variety of classifieds worldwide has grown exponentially into broad, albeit fragmented horizontal markets. Never before has creating and posting a “Si Quis” been so easy and affordable with a reach far beyond the street posts of the 17th century.  
+              <br><br>
+
+              Most importantly however, never before have individuals had the resources to pursue things they are passionate about, which brings us to back to our name… Si Quis Software.  
+              <br><br>
+
+              We've taken liberty to expand upon the definitions of "Si Quis", taking it beyond the concept of classifieds in the 1600's and associating it with the emergence of the Passion Economy of the 21st century. "If anybody knows of something related to my passions…”
+              
+              <h1 class="display-3 text-black mt-5" id="COMP_OVER"><b>COMPANY OVERVIEW </b></h1>
+
+              <h2 class="display-5 text-primary" id="6_Market">6 | Market Opportunity </h2>
+              The Passion Economy is reinventing the way people work and the structure of our economic future. The “new owners” of this future will be many, varied and pushing an expansion of the P2P (“Passions to Profits”) paradigm. <span class="text-success"> [citation here]</span>
+              <br><br>
+
+              The market opportunity for Si Quis Software is broad, under served and supported by financial opportunity for our clients. We’ve structured our business model to couple our growth to our client’s growth across a diverse class of businesses. 
+              <br><br>
+
+              We believe the Total Addressable Market (TAM) of the Passion Economy is generally comprised of four components fueling it’s potential.
+              <br><br>
+
+            </p>
+            <h1 Class="display-1 text-centered text-success"><b>TAM </b>
+              <span class="display-4 text-muted"> - Total Addressable Market</span>
+              <hr style="bg-gray my-6 text-align:center">
+            </h1>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                  <b>Online and Global: </b><br>
+                  Advertising: $470 B USD in 2020<br>
+                  Classified Advertising $22.57 B USD in 2020<br>
+                  E-commerce $5 T USD in 2020<br>
+                  Gig-economy $297 B USD in 2020<br>
+                  <span class="text-success"> [citation here]</span><br>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                  <br>
+                  <h1 class="text-success text-center"><b>Passion Economy</b></h1>
+                  <p class="text-muted text-center text-lg"><b>$38 B USD in 2020</b></p>
+                </div>
+              </div>
+              <hr style="bg-gray-300 my-6 text-align:center">
+              <br>
+
+              <p>
+                Each of these segments will contribute to the passion economy’s growth at varying degrees. In our analysis, we believe the passion economy will create incremental economic activity accross all sectors, but will disruptively migrate economic activity towards the “new owners” and away from the traditional norms of today. 
+                <br><br>
+
+                Companies that have largely kept advertising revenue for themselves will see competition for these dollars as the passion economy platforms provide better access to the audiences driving these spends. <span class="text-success"> [citation here]</span> To what degree the disruptive migration takes place remains unclear. But a quick look back at the “Passion Economy”, from $0 to $38B in 2 years, would suggest a groundswell afoot. <span class="text-success"> [citation here]</span> We believe the Passion Economy TAM will eclipse $100 B by 2025.
+                <br><br>
+
+                <a class="text-primary">Stats and [citation here] – Graphs etc  
+
+                2020: Passion Economy $38.66 B USD      2025: Passion Economy $250 B USD</a>
+                <br><br>
+
+                <b>Contributing Factors</b><br>
+                The COVID-19 pandemic has accelerated online economic activity and reconfigured the way in which people work. <span class="text-success"> [citation here]</span> Although not seamless, the financial and social impacts of working remotely has given rise to a collective desire to work differently across a broad spectrum of disciplines. <span class="text-success"> [citation here PEW]</span> Moreover, an increasing number of digital platforms are enabling individuals to create, foster and grow meaningful and sustainable businesses of all types never before imagined.
+                <br><br>
+
+                <h2 class="display-5 text-primary" id="7_Key">7 | Key Features & Benefits</h2>
+                In general, the SQS platform enables our clients to build beautiful and focused websites that become a place for people to gather, learn, discuss and consume things they are passionate about and deeply interested in.
+                <br><br>
+
+                Our websites are built from a collection of website themes, customizable to reflect existing brand attributes or “as is” to create the look and feel desired, in days, not months, with no programing experience required. The websites are structured around five key fundamentals:<br>
+
+                <b>Content, Resources, Forums, Classifieds and Ecommerce.</b><br>
+
+                <button type="button" class="btn btn-link text-info text-strong" onclick="changeText1()" id="myBtn">Read more details</button><br>
+
+                <span id="dots"></span>
+                  <span id="more" class="text-secondary">
+
+                <b class="text-strong">Content:</b><br>
+                Curate content: Display and provide links to a wide assortment of blogs, news, podcasts and white-papers that are relevant to the site’s audiences. 
+                Create content: Blogs, podcasts, news feeds, white papers. Just about anything that’s relevant to your audiences. Make it available on your site as well as available to other sites to drive traffic and revenue.
+                <br><br>
+
+                <b class="text-strong">Resources:</b><br>
+                Create curated resource pages dedicated to recognizing suppliers, products, services, websites and people that you feel your audience would be interested in. In addition, provide your suppliers with a platform to showcase, demonstrate, advertise and promote their products and services. 
+                <br><br>
+
+                <b class="text-strong">Forums:</b><br>
+                Develop forums to express, share and collaborate on ideas relevant to the audience. Use our tools to manage, organize and moderate.
+                <br><br>
+
+                <b class="text-strong">Classifieds:</b><br>
+                Our full-stack CMS functionality provides back-end management of listings, user accounts, billing information, scheduling, conflict resolution, marketing and more. 
+                <br><br>
+
+                <b class="text-strong">Ecommerce:</b><br>
+                Create an exciting ecommerce portal or integrate to an existing ecommerce site to further enhance the site’s user experience.
+                <br><br>
+                </span>
+
+                While the look and feel of these sites are unique, the infrastructure supporting them is not. Our Content Management System (CMS) provides back-end administrative functionality for our clients to autonomously manage, maintain, market and monetize their websites. In addition, our full-stack, multi-tenant architecture ensures Si Quis Software is able to efficiently and cost effectively maintain our client’s sites. 
+                <br><br>
+
+                <h2 class="text-primary" id="8_Client">8 | Client Monetization</h2>
+                The SQS platform is designed to monetize multiple points of activity simultaneously within the site. The distribution is dependent upon the business owner's approach, execution and resources available to manage and build their businesses. 
+                <br><br>
+
+                <b class="display-4 text-muted">Monetizable events within the platform:</b>
+                <br><br>
+
+                <b class="text-Strong">Advertising Revenue:</b> Internal and external sources</b><br>
+                <b class="text-Strong">Forums:</b> Membership subscriptions<br>
+                <b class="text-Strong">Classifieds Ad Revenue:</b> Listings, featured placement, boosting<br>
+                <b class="text-Strong">Ecommerce Revenue:</b> Direct sales
+                <br>
+
+                <button type="button" class="btn btn-link text-info text-strong" onclick="changeText2()" id="myBtn2">Read more details</button><br>
+
+                <span id="dots2"></span>
+                  <span id="more2" class="text-secondary">
+
+                    <b class="text-strong">Advertising Revenue:</b><i> (Internal and external sources)</i><br>
+                    Advertising revenue is generated from internal. Pricing for internal ads are set by site owner along with placement and duration. External advertisments are automatically positioned on the site by hosting ad administrator Internal sources are comprised of three different types and sizes. <br>
+                    Banner ads: 200px x 500px, 1 image <i>(.jpg, .png, .gif)</i> and up to 634 characters of type.<br>
+                    Box ads: 300px x 300px, 1 image <i>(.jpg, .png, .gif)</i> and up to 380 characters of type.<br>
+                    Full-width ads: 400px x 100%, Up to 4 images <i>(.jpg, .png, .gif)</i> and up to 2000 characters of type.<br>
+                    All pages host internal advertising throughout the site.
+                    <br><br>
+
+                    <b class="text-strong">Resources:</b><br>
+                    Create curated resource pages dedicated to recognizing suppliers, products, services, websites and people that you feel your audience would be interested in. In addition, provide your suppliers with a platform to showcase, demonstrate, advertise and promote their products and services. 
+                    <br><br>
+
+                    <b class="text-strong">Forums:</b><br>
+                    Develop forums to express, share and collaborate on ideas relevant to the audience. Use our tools to manage, organize and moderate.
+                    <br><br>
+
+                    <b class="text-strong">Classifieds:</b><br>
+                    Our full-stack CMS functionality provides back-end management of listings, user accounts, billing information, scheduling, conflict resolution, marketing and more. 
+                    <br><br>
+
+                    <b class="text-strong">Ecommerce:</b><br>
+                    Create an exciting ecommerce portal or integrate to an existing ecommerce site to further enhance the site’s user experience.
+                    <br><br>
+                  </span>
+
+              </p>
+              <p>
+
+                <b>Advertising Revenue: Internal and external sources</b><br>
+                Advertising revenue is generated from internal and external sources. Internal sources are comprised of three different size ads, banner ads, box ads and full-width ads located throughout the site.
+                <br><br>
+
+
+                Outside Advertisements: 
+                Ads matched to client’s site based on content and visitors.
+                Participating agencies: Google Adsense, XXXXXX, YYYYYY, and ZZZZZZ 
+
+
+                Assumptions: 
+                CPC of $2 
+                CTR of 2% (National average for < six figure income websites)
+                Desired Income from outside advertisers is $3,000 per month ($100 per day)
+
+                Formula:
+                Desired Income per day / CPC (Costs per Click) = Clicks
+                Clicks / CTR (Click through Rate) = Visitors per day 
+                Visitors per Day * 30 Days = Visitors per Month
+
+                $100 / $2.00 = 50 
+                50 / 2% (0.02) = 2,500
+                2,500 * 30 = 75,000 visitors per month to generate $3,000 per month in advertising revenue 
+
+
+                Internal Advertisers: 
+                Typically, these are companies listed in the resources page.
+                Landing page ads, banner ads, pop-ups and showcase presentations.
+
+
+                Selected areas within the website dedicated to trusted resources for display ads.
+                Selected areas within the website dedicated to product demonstrations, podcasts etc.
+
+                Carousel of banner ads, full width ads 
+                Pricing dependent upon views, clicks etc.
+                $100/week to $500/week
+                MMMMMOOOORRRRREEEEE 
+
+                Content Provider Revenue:
+                PPC revenue based upon readership.
+
+                Classifieds Revenue:
+                Listings fees are set by the site owner. The Si Quis platform has the ability to customize certain settings in the listings section, providing opportunity to upsell features and increase the listing fee. These include “Featured Listing”, Boosting listing on the web, email pushes to interested parties and more. 
+                  
+                Ecommerce Revenue:
+                Product sales controlled by site owner.
+                Product sales on ecommerce portal but passed to third party fulfillment. 
+                Percentage of sales and credit card processing fee.
+
+                Forum Revenue:
+                Membership fees
+                Access to forums and other areas of membership status.
+                 
+
+                Spreadsheet table showing average revenue structures
+
+
+
+              </p>
+
+
+
+                <p><br></p>
+                <table class=""><tbody><tr><td class=""><div style="text-align:center" id="HR2531_Top">
+                <span class="">116th CONGRESS</span><br><span class="">1st Session</span>
+                </div></td></tr></tbody></table>
+                <table class="">
+                <tbody><tr><td></td></tr>
+                <tr><td></td></tr>
+                </tbody></table>
+                <div style="text-align:center"><span >
+
+                  <h1><b>H. R. 2513</span></b></h1>
+
+                </div>
+                <p></p>
+                <hr style="text-align:center">
+                <p></p>
+                <div style="text-align:center"><span class=""><h3>IN THE SENATE OF THE UNITED STATES</h3><div style="text-align:center">
+                <p></p>
+                <span class="">October 23, 2019</span><p></p>
+                </div>
+                <div style="text-align:center;" class="lbexHang"><p style="text-align:center" class="lbexHangSmalllWithMargin">Received; read twice and referred to the Committee on Banking, Housing, and Urban Affairs</p></div>
+                <p></p></span></div>
+                <hr style="text-align:center">
+                <p></p>
+                <div style="text-align:center"><span class="lbexLegisType"><h2><b>AN ACT</b></h2></span></div>
+                <p></p>
+             061414C9C54C3C50D9FBFB7" id="H72336D0C2061414C9C54C3C50D9FBFB7">Sec. 210. Return of profits and bonuses.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC211"><br><a href="#toc-H0571AA31474746D98ACA836F1FF14588" id="H0571AA31474746D98ACA836F1FF14588">Sec. 211. Application of Bank Secrecy Act to dealers in antiquities.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC212"><br><a href="#toc-HBF2820E8BEF24CAB9F48071FC342B9F5" id="HBF2820E8BEF24CAB9F48071FC342B9F5">Sec. 212. Geographic targeting order.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC213"><br><a href="#toc-H6B6F6726E59B4FCCAD1F957EEF1EDCFB" id="H6B6F6726E59B4FCCAD1F957EEF1EDCFB">Sec. 213. Study and revisions to currency transaction reports and suspicious activity reports.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC214"><br><a href="#toc-HE63735E9F1904DD6A7C3D42ACF668E9D" id="HE63735E9F1904DD6A7C3D42ACF668E9D">Sec. 214. Streamlining requirements for currency transaction reports and suspicious activity
+                       reports.</a></span></span><span><div style="text-align:center" class="lbexTocDivisionOLC" id="TITLE2">
+                <p></p>
+                <a href="#toc-H38808747A856470285ECE3B413D57DF0" id="H38808747A856470285ECE3B413D57DF0">TITLE III—MODERNIZING THE AML SYSTEM<p></p></a>
+                </div></span><span><span class="lbexTocSectionOLC" id="SEC301"><br><a href="#toc-H099CA02A067242938674FDBCF9E21B27" id="H099CA02A067242938674FDBCF9E21B27">Sec. 301. Encouraging innovation in BSA compliance.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC302"><br><a href="#toc-H2D489DC6602C4686A81EC03A54A86B2C" id="H2D489DC6602C4686A81EC03A54A86B2C">Sec. 302. Innovation Labs.</a></span></span><span><span class="lbexTocSectionOLC"
+                <hr class="bg-gray-300 my-6">
+              </div>
+            </div> <!-- / .row -->
+          </div>
+        </section>
+
+
+    <!-- BORDER -->
+    <div class="bg-black">
+      <div class="container border-top border-white-900-50"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-4 py-md-8 bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-3">
+    
+            <!-- Brand -->
+            <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
+              <img src="https://i.postimg.cc/wBXM1CBc/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+            </a>
+        
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social ml-md-5 mt-6 mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              About
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-1.html" class="text-reset">
+                  Si Quis Software
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-2.html" class="text-reset">
+                  The Passion Economy
+                </a>
+              </li>
+              <li class="mb-3">
+              <li class="mb-3">
+                <a href="./SiQuis-ABOUT-3.html" class="text-reset">
+                  Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+            </ul>
+    
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              Contact Us
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a>Email us at:</a><br>
+                <a href="mailto:info@siquisoft.com" class="text-reset">
+                  <span class="text-white">info@siquisoft.com</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a>Call us at:</a><br>
+                <a href="#!" class="text-reset">
+                  <span class="text-white">206-498-2957</span>
+                </a>
+              </li>        
+            </ul>
+    
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3">
+    
+            <!-- Heading -->
+            <h5 class="fw-bold text-uppercase text-gray-700">
+              Legal
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="./SiQuis-TOS-1.html" class="text-reset">
+                  Policy Statements
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./SiQuis-TOS-2.html" class="text-reset">
+                  Privacy Statements
+                </a>
+                <li class="mb-3">
+                <a href="./SiQuis-TOS-3.html" class="text-reset">
+                  Report An Issue
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Read more / Real Less -->
+    <script>
+    function changeText1() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more details"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less details"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+        <!-- Read more / Real Less -->
+    <script>
+    function changeText2() {
+      var dots2 = document.getElementById("dots2");
+      var moreText2 = document.getElementById("more2");
+      var btnText2 = document.getElementById("myBtn2");
+
+      if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText2.innerHTML = "Read more details"; 
+        moreText2.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText2.innerHTML = "Read less details"; 
+        moreText2.style.display = "inline";
+      }
+    }
+    </script>
+
+
+  </body>
+</html>
