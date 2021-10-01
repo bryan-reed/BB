@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" Content="width=device-width, initial-scale=1" />
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://i.postimg.cc/qq6pfdnP/Si-Quis-Icon.png" sizes="16x16" type="image/png" />
@@ -16,23 +16,23 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
-    <!-- Animation CSS -->
-    <link
-    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Example: h1 class="animate__animated animate__bounce">An animated element</h1 Goto: https://animate.style/#attention_seekers -->
-
     <style>
     #more {display: none;}
-    </style>
-
-    <style>
     #more2 {display: none;}
+    #more3 {display: none;}
+    #more4 {display: none;}
     </style>
 
     <!-- Title -->
-    <title>SiQuisSoftware</title>
+    <title>SiQuisSoftware</title> 
+    
   </head>
   <body>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHWQ4SS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- MODALS -->
 
@@ -205,16 +205,115 @@
       </div>
     </div>
 
-    <!-- Signup: Horizontal  -->
+    <!-- Signup: Horizontal Drop-In -->
+    <div class="modal fade" id="modalSignupDIHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupDIHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/QNfrqX1Z/Drop-in.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="https://i.postimg.cc/QNfrqX1Z/Drop-in.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            
+                </div>
+    
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupDIHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Start building upon your passions.<br><br>
+
+                    We're excited to have you join the "Beta-Site" team! By adding your information to our list we'll be able to keep you informed about our Beta-Site and its initial launch. 
+                    <br><br>
+
+                    In addition, once launched, you'll gain access to take a look at how the Si Quis platform can help you create and grow your passion business. 
+                    <br><br>
+
+                    We'll only send information as our milestones unfold... otherwise we'll keep quite and not add to your inbox! 
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalCompanyName">
+                        Company Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupDIHorizontalCompanyName" placeholder="Company name">
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalUserName">
+                        Your Name
+                      </label>
+                      <input type="text" class="form-control" id="modalSignupDIHorizontaltUserName" placeholder="Your name *">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupDIHorizontalEmail" placeholder="Your email *">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupDIHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupDIHorizontalPassword" placeholder="Create a password *">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn btn-xs w-100 btn-info" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#modalSigninHorizontal">Log in</a>.
+                  </p>
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    * Required fields
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal Ellie -->
     <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="card card-row">
             <div class="row gx-0">
-              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url(https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
+              <div class="col-12 col-md-4 bg-cover card-img-start" style="background-image: url( https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg);">
     
                 <!-- Image (placeholder) -->
-                <img src="https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
+                <img src=" https://i.postimg.cc/s1FkGFCJ/Ellie-Salishan2.jpg" alt="..." class="img-fluid d-md-none invisible">
     
                 <!-- Shape -->
                 <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
@@ -525,7 +624,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand lift" href="./index.html" style="color:orange"><b>
-          <img src="https://i.postimg.cc/qq6pfdnP/Si-Quis-Icon.png" alt="" width="34" height="34" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
+          <img src="https://i.postimg.cc/qq6pfdnP/Si-Quis-Icon.png" alt="" width="28" height="28" class="d-inline-block align-text-bottom"> Si Quis </b><span class="text-info"> Software</span>
         </a>
     
         <!-- Toggler -->
@@ -679,7 +778,7 @@
                               <!-- Content -->
                               <div class="ms-4">
                                 <!-- Heading -->
-                                <h6 class="fw-bold text-uppercase text-info mb-0 active">
+                                <h6 class="fw-bold text-uppercase text-info mb-0">
                                   <b>All Feeds</b>
                                 </h6>
                                 <!-- Text -->
@@ -689,7 +788,7 @@
                               </div>
                               <!-- Badge -->
                               <span class="badge rounded-pill bg-info-soft ms-auto">
-                                18
+                                11
                               </span>
                             </a>
 
@@ -715,7 +814,7 @@
                               </div>
                               <!-- Badge -->
                               <span class="badge rounded-pill bg-info-soft ms-auto">
-                                7
+                                11
                               </span>
                             </a>
                            
@@ -728,11 +827,19 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="text-white nav-link" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                <i>Account</i>
+            <li class="nav-item">
+              <!-- Button -->
+              <a class="navbar-btn btn btn-xs text-black lift ms-10 mt-1" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
+                Login 
               </a>
-              <div class="dropdown-menu dropdown-menu-xl p-2" aria-labelledby="navbarLandings">
+            </li>
+
+            <!-- Avatar -->
+            <li class="nav-item dropstart">
+              <a class="text-white nav-link lift" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar-img rounded-circle bg-black" style="width:30px" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-2 mt-8" aria-labelledby="navbarLandings">
                 <div class="row gx-0">
                   <div class="col-12 col-lg-12">
                     <div class="dropdown-body">
@@ -781,15 +888,6 @@
               </div>
             </li>
           </ul>
-          
-          <!-- Button -->
-          <a class="navbar-btn btn btn-xs text-black lift ms-auto" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
-            Login 
-          </a>
-          <!-- Avatar -->
-          <a class="avatar avatar-md ms-4" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="View Account Information" href="./SiQuis-Account-1.html" >
-            <img class="avatar-img rounded-circle bg-black" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
-          </a>
 
         </div>
       </div>
@@ -799,7 +897,7 @@
     <section data-jarallax data-speed=".8" class="py-10 py-md-14 overlay overlay-black overlay-40 bg-cover jarallax" style="background-image: url(assets/img/covers/cover-13.jpg);">
 
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-Content-center">
           <div class="col-12 col-md-10 col-lg-7 text-center">
 
             <!-- Heading -->
@@ -823,7 +921,7 @@
       </div>
     </div>
 
-   <!-- CONTENT -->
+   <!-- Content -->
     <section>
       <div class="container">
         <div class="row">
@@ -889,7 +987,7 @@
                   <a class="list-link" href="#14_Market" data-scroll>14 Market Strategy</a>
                 </li>
                 <li>
-                  <a class="list-link" href="#15_Comp" data-scroll>15 Competitive Landscape</a>
+                  <a class="list-link" href="#15_Competitive" data-scroll>15 Competitive Landscape</a>
                 </li>                  
                 <li>
                   <a class="list-link" href="#16_Different" data-scroll>16 Differentiating Factors</a>
@@ -905,96 +1003,99 @@
           </div>
           <div class="col-sm-9 mt-5">
 
-            <h1 class="display-3 text-black mt-5" id="EXE_SUM"><b>EXECUTIVE SUMMARY</b></h1>
+            <h1 class="display-4 text-black mt-5" id="EXE_SUM"><b>EXECUTIVE SUMMARY</b></h1>
 
               <h2 class="display-5 text-primary" id="2_Over">2 | OVERVIEW</h2>
-              <p>Si Quis Software (Siquis.com) is a Pacific Northwest based software development company. We create a customizable framework for people to build, manage and grow “passion-based” businesses online. Virtually any type of passion-based business is possible, and virtually any number of unique websites can be built using our framework.
-              <br><br>
-
-              These passion-based businesses are verticals within horizontal markets and uniquely positioned to appeal to highly productive market segments (fiercely passionate individuals) by focusing on their core interests and commerce within these verticals. Once built, our clients have a platform to reach their audiences 24/7/365.
-              <br><br>
-
-              The emergence of the “Passion Economy” — a new model of internet-powered entrepreneurship, <span class="text-success"> [citation here]</span> is gaining momentum in both number of participants and financial opportunity. Fueled in part by a cultural shift in the way people work, a desire to create a balanced and even flow of income, the advent of digital platforms enabling online markets, and a trend towards a more focused online community experience, the passion economy is poised for rapid growth <span class="text-success"> [citation here]</span>.  
-              <br>
-
-              <div class="container">
-                <div class="col-1"></div>
-              <div class="col-11 text-muted">
-                <i>In contrast to the "gig economy", the passion economy is open to anyone  interested in following their passion. It's not necessary to be a creator, an  influencer, a freelancer or even a merchant. It's true, all of these amazing  people can (and do) flourish in the passion economy, but others can too.</i>
-              </div>
-            </div>
-              <br>
-
-              Different from other platforms operating within the passion economy, the Si Quis Software (SQS) platform not only enables creators, influencers and gig-economy professional to participate, it enables virtually anyone who has experiences, expertise and knowledge about something they are truly passionate about and create monetizable value along the way.
-              <br><br>
-
-              <h2 class="display-5 text-primary" id="3_Miss">3 | OUR MISSION / VISION</h2>
-
-              Provide technologies to create, grow and support businesses in the thriving Passion Economy / Create a place where passionate people gather to learn, inform and consume things they are passionate about. 
-              <br><br>
-
-              <h2 class="text-primary" id="4_Team">4 | TEAM</h2>
               <hr>
-              <div class="row">
-                <div class="col-1">
-                  <!-- Avatar -->
-                  <a class="avatar avatar-md ms-4" id="Brent" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="Brent Bostwick" href="#4_Team" >
-                    <img class="avatar-img rounded-circle bg-black" src="https://avatars.githubusercontent.com/u/81263659?v=4" alt="...">
-                  </a>
-                </div>
-                <div class="col-11">
-                  <b>Brent Bostwick,</b><i> Founder and Managing Member</i><br>
-              
-                  Brent is a passionate entrepreneur with years of experience running companies in the b2b software, alternative energy and multi-channel consumer products space. From small organizations of 10 to larger organizations of 700+; revenues from $1M to $150M; and equity raises with angles to VC’s of $750K to $134M. 
-                  <span class="text-primary" href=""> [Linkedin]</span><br>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-1">
-                  <!-- Avatar -->
-                  <a class="avatar avatar-md ms-4" id="Brent" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="Bryan Reed" href="#4_Team" >
-                    <img class="avatar-img rounded-circle bg-black" src="https://avatars.githubusercontent.com/u/17071750?s=48&v=4" alt="...">
-                  </a>
-                </div>
-                <div class="col-11">
-                  <b>Reed Bryant,</b><i> Founder and Member</i><br>
-              
-                  Reed is passionate about system architecture and scale, more here and more here. He has years of experience with this here and here and has completed that and this other thing. Some more things here would be good as well but the best part is this part here. <span class="text-primary" href=""> [Linkedin]</span>
-              
-                  <hr>
+              <p>
+                Si Quis Software (Siquis.com) is a Pacific Northwest based software development company. We create a customizable framework for  people to build, manage and grow “passion-based” businesses online. Virtually any type of passion-based business is possible, and virtually any number of unique websites can be built using our framework.
+                <br><br>
+
+                These passion-based businesses are verticals within horizontal markets and uniquely positioned to appeal to highly productive market segments (fiercely passionate individuals) by focusing on their core interests and commerce within these verticals. Once built, our clients have a platform to reach their audiences 24/7/365.
+                <br><br>
+
+                The emergence of the “Passion Economy” — a new model of internet-powered entrepreneurship, <span class="text-success"> [citation here]</span> is gaining momentum in both number of participants and financial opportunity. Fueled in part by a cultural shift in the way people work, a desire to create a balanced and even flow of income, the advent of digital platforms enabling online markets, and a trend towards a more focused online community experience, the passion economy is poised for rapid growth <span class="text-success"> [citation here]</span>.  
+                <br>
+
+                <div class="container">
+                  <div class="col-1"></div>
+                <div class="col-11 text-muted">
+                  <i>In contrast to the "gig economy", the passion economy is open to anyone  interested in following their passion. It's not necessary to be a creator, an  influencer, a freelancer or even a merchant. It's true, all of these amazing  people can (and do) flourish in the passion economy, but others can too.</i>
                 </div>
               </div>
+                <br>
 
-              <h2 class="text-primary" id="5_Name">5 | OUR NAME</h2>
-              The concept of classified ads began appearing in England in the 1600s. Handwritten messages were nailed to posts by scribes and became known as “Si Quis”, a term borrowed from ancient Rome where most posted notices began with the words Si Quis — meaning "If anybody knows of…" <span class="text-success"> [citation here]</span>
-              <br><br>
+                Different from other platforms operating within the passion economy, the Si Quis Software (SQS) platform not only enables creators, influencers and gig-economy professional to participate, it enables virtually anyone who has experiences, expertise and knowledge about something they are truly passionate about and create monetizable value along the way.
+                <br><br>
 
-              Today the sheer number and variety of classifieds worldwide has grown exponentially into broad, albeit fragmented horizontal markets. Never before has creating and posting a “Si Quis” been so easy and affordable with a reach far beyond the street posts of the 17th century.  
-              <br><br>
+                <h2 class="display-5 text-primary" id="3_Miss">3 | OUR MISSION / VISION</h2>
+                <hr>
+                Provide technologies to create, grow and support businesses in the thriving Passion Economy / Create a place where passionate people gather to learn, inform and consume things they are passionate about. 
+                <br><br>
 
-              Most importantly however, never before have individuals had the resources to pursue things they are passionate about, which brings us to back to our name… Si Quis Software.  
-              <br><br>
+                <h2 class="text-primary" id="4_Team">4 | TEAM</h2>
+                <hr>
+                <div class="row">
+                  <div class="col-1">
+                    <!-- Avatar -->
+                    <a class="avatar avatar-md ms-4" id="Brent" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-Content="Brent Bostwick" href="#4_Team" >
+                      <img class="avatar-img rounded-circle bg-black" src="https://avatars.githubuserContent.com/u/81263659?v=4" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-11">
+                    <b>Brent Bostwick,</b><i> Founder and Managing Member</i><br>
+                
+                    Brent is a passionate entrepreneur with years of experience running companies in the b2b software, alternative energy and multi-channel consumer products space. From small organizations of 10 to larger organizations of 700+; revenues from $1M to $150M; and equity raises with angles to VC’s of $750K to $134M. 
+                    <span class="text-primary" href=""> [Linkedin]</span><br>
+                  </div>
+                </div>
 
-              We've taken liberty to expand upon the definitions of "Si Quis", taking it beyond the concept of classifieds in the 1600's and associating it with the emergence of the Passion Economy of the 21st century. "If anybody knows of something related to my passions…”
-              
-              <h1 class="display-3 text-black mt-5" id="COMP_OVER"><b>COMPANY OVERVIEW </b></h1>
+                <div class="row">
+                  <div class="col-1">
+                    <!-- Avatar -->
+                    <a class="avatar avatar-md ms-4" id="Brent" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-Content="Bryan Reed" href="#4_Team" >
+                      <img class="avatar-img rounded-circle bg-black" src="https://avatars.githubuserContent.com/u/17071750?s=48&v=4" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-11">
+                    <b>Reed Bryant,</b><i> Founder and Member</i><br>
+                
+                    Reed is passionate about system architecture and scale, more here and more here. He has years of experience with this here and here and has completed that and this other thing. Some more things here would be good as well but the best part is this part here. <span class="text-primary" href=""> [Linkedin]</span>
+                  </div>
+                </div>
+                <br>
 
-              <h2 class="display-5 text-primary" id="6_Market">6 | Market Opportunity </h2>
-              The Passion Economy is reinventing the way people work and the structure of our economic future. The “new owners” of this future will be many, varied and pushing an expansion of the P2P (“Passions to Profits”) paradigm. <span class="text-success"> [citation here]</span>
-              <br><br>
+                <h2 class="text-primary" id="5_Name">5 | OUR NAME</h2>
+                <hr>
+                The concept of classified ads began appearing in England in the 1600s. Handwritten messages were nailed to posts by scribes and became known as “Si Quis”, a term borrowed from ancient Rome where most posted notices began with the words Si Quis — meaning "If anybody knows of…" <span class="text-success"> [citation here]</span>
+                <br><br>
 
-              The market opportunity for Si Quis Software is broad, under served and supported by financial opportunity for our clients. We’ve structured our business model to couple our growth to our client’s growth across a diverse class of businesses. 
-              <br><br>
+                Today the sheer number and variety of classifieds worldwide has grown exponentially into broad, albeit fragmented horizontal markets. Never before has creating and posting a “Si Quis” been so easy and affordable with a reach far beyond the street posts of the 17th century.  
+                <br><br>
 
-              We believe the Total Addressable Market (TAM) of the Passion Economy is generally comprised of four components fueling it’s potential.
-              <br><br>
+                Most importantly however, never before have individuals had the resources to pursue things they are passionate about, which brings us to back to our name… Si Quis Software.  
+                <br><br>
 
-            </p>
-            <h1 Class="display-1 text-centered text-success"><b>TAM </b>
-              <span class="display-4 text-muted"> - Total Addressable Market</span>
-              <hr style="bg-gray my-6 text-align:center">
-            </h1>
+                We've taken liberty to expand upon the definitions of "Si Quis", taking it beyond the concept of classifieds in the 1600's and associating it with the emergence of the Passion Economy of the 21st century. "If anybody knows of something related to my passions…”
+                
+                <h1 class="display-4 text-black mt-5" id="Comp_Over"><b>COMPANY OVERVIEW </b></h1>
+
+                <h2 class="display-5 text-primary" id="6_Market">6 | Market Opportunity </h2>
+                <hr>
+                The Passion Economy is reinventing the way people work and the structure of our economic future. The “new owners” of this future will be many, varied and pushing an expansion of the P2P (“Passions to Profits”) paradigm. <span class="text-success"> [citation here]</span>
+                <br><br>
+
+                The market opportunity for Si Quis Software is broad, under served and supported by financial opportunity for our clients. We’ve structured our business model to couple our growth to our client’s growth across a diverse class of businesses. 
+                <br><br>
+
+                We believe the Total Addressable Market (TAM) of the Passion Economy is generally comprised of four components fueling it’s potential.
+                <br><br>
+
+              </p>
+              <h1 Class="display-1 text-centered text-success"><b>TAM </b>
+                <span class="display-4 text-muted"> - Total Addressable Market</span>
+                <hr style="bg-gray my-6 text-align:center">
+              </h1>
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6">
                   <b>Online and Global: </b><br>
@@ -1013,204 +1114,453 @@
               <hr style="bg-gray-300 my-6 text-align:center">
               <br>
 
-              <p>
-                Each of these segments will contribute to the passion economy’s growth at varying degrees. In our analysis, we believe the passion economy will create incremental economic activity accross all sectors, but will disruptively migrate economic activity towards the “new owners” and away from the traditional norms of today. 
-                <br><br>
+              <p>Each of these segments will contribute to the passion economy’s growth at varying degrees. In our analysis, we believe the passion economy will create incremental economic activity accross all sectors, but will disruptively migrate economic activity towards the “new owners” and away from the traditional norms of today. 
+              <br><br>
 
-                Companies that have largely kept advertising revenue for themselves will see competition for these dollars as the passion economy platforms provide better access to the audiences driving these spends. <span class="text-success"> [citation here]</span> To what degree the disruptive migration takes place remains unclear. But a quick look back at the “Passion Economy”, from $0 to $38B in 2 years, would suggest a groundswell afoot. <span class="text-success"> [citation here]</span> We believe the Passion Economy TAM will eclipse $100 B by 2025.
-                <br><br>
+              Companies that have largely kept advertising revenue for themselves will see competition for these dollars as the passion economy platforms provide better access to the audiences driving these spends. <span class="text-success"> [citation here]</span> To what degree the disruptive migration takes place remains unclear. But a quick look back at the “Passion Economy”, from $0 to $38B in 2 years, would suggest a groundswell afoot. <span class="text-success"> [citation here]</span> We believe the Passion Economy TAM will eclipse $100 B by 2025.
+              <br><br>
 
-                <a class="text-primary">Stats and [citation here] – Graphs etc  
+              <a class="text-primary">Stats and [citation here] – Graphs etc  
 
-                2020: Passion Economy $38.66 B USD      2025: Passion Economy $250 B USD</a>
-                <br><br>
+              2020: Passion Economy $38.66 B USD      2025: Passion Economy $250 B USD</a>
+              <br><br>
 
-                <b>Contributing Factors</b><br>
-                The COVID-19 pandemic has accelerated online economic activity and reconfigured the way in which people work. <span class="text-success"> [citation here]</span> Although not seamless, the financial and social impacts of working remotely has given rise to a collective desire to work differently across a broad spectrum of disciplines. <span class="text-success"> [citation here PEW]</span> Moreover, an increasing number of digital platforms are enabling individuals to create, foster and grow meaningful and sustainable businesses of all types never before imagined.
-                <br><br>
+              <b>Contributing Factors</b><br>
+              The COVID-19 pandemic has accelerated online economic activity and reconfigured the way in which people work. <span class="text-success"> [citation here]</span> Although not seamless, the financial and social impacts of working remotely has given rise to a collective desire to work differently across a broad spectrum of disciplines. <span class="text-success"> [citation here PEW]</span> Moreover, an increasing number of digital platforms are enabling individuals to create, foster and grow meaningful and sustainable businesses of all types never before imagined.
+              <br><br>
 
-                <h2 class="display-5 text-primary" id="7_Key">7 | Key Features & Benefits</h2>
-                In general, the SQS platform enables our clients to build beautiful and focused websites that become a place for people to gather, learn, discuss and consume things they are passionate about and deeply interested in.
-                <br><br>
-
-                Our websites are built from a collection of website themes, customizable to reflect existing brand attributes or “as is” to create the look and feel desired, in days, not months, with no programing experience required. The websites are structured around five key fundamentals:<br>
-
-                <b>Content, Resources, Forums, Classifieds and Ecommerce.</b><br>
-
-                <button type="button" class="btn btn-link text-info text-strong" onclick="changeText1()" id="myBtn">Read more details</button><br>
-
-                <span id="dots"></span>
-                  <span id="more" class="text-secondary">
-
-                <b class="text-strong">Content:</b><br>
-                Curate content: Display and provide links to a wide assortment of blogs, news, podcasts and white-papers that are relevant to the site’s audiences. 
-                Create content: Blogs, podcasts, news feeds, white papers. Just about anything that’s relevant to your audiences. Make it available on your site as well as available to other sites to drive traffic and revenue.
-                <br><br>
-
-                <b class="text-strong">Resources:</b><br>
-                Create curated resource pages dedicated to recognizing suppliers, products, services, websites and people that you feel your audience would be interested in. In addition, provide your suppliers with a platform to showcase, demonstrate, advertise and promote their products and services. 
-                <br><br>
-
-                <b class="text-strong">Forums:</b><br>
-                Develop forums to express, share and collaborate on ideas relevant to the audience. Use our tools to manage, organize and moderate.
-                <br><br>
-
-                <b class="text-strong">Classifieds:</b><br>
-                Our full-stack CMS functionality provides back-end management of listings, user accounts, billing information, scheduling, conflict resolution, marketing and more. 
-                <br><br>
-
-                <b class="text-strong">Ecommerce:</b><br>
-                Create an exciting ecommerce portal or integrate to an existing ecommerce site to further enhance the site’s user experience.
-                <br><br>
-                </span>
-
-                While the look and feel of these sites are unique, the infrastructure supporting them is not. Our Content Management System (CMS) provides back-end administrative functionality for our clients to autonomously manage, maintain, market and monetize their websites. In addition, our full-stack, multi-tenant architecture ensures Si Quis Software is able to efficiently and cost effectively maintain our client’s sites. 
-                <br><br>
-
-                <h2 class="text-primary" id="8_Client">8 | Client Monetization</h2>
-                The SQS platform is designed to monetize multiple points of activity simultaneously within the site. The distribution is dependent upon the business owner's approach, execution and resources available to manage and build their businesses. 
-                <br><br>
-
-                <b class="display-4 text-muted">Monetizable events within the platform:</b>
-                <br><br>
-
-                <b class="text-Strong">Advertising Revenue:</b> Internal and external sources</b><br>
-                <b class="text-Strong">Forums:</b> Membership subscriptions<br>
-                <b class="text-Strong">Classifieds Ad Revenue:</b> Listings, featured placement, boosting<br>
-                <b class="text-Strong">Ecommerce Revenue:</b> Direct sales
-                <br>
-
-                <button type="button" class="btn btn-link text-info text-strong" onclick="changeText2()" id="myBtn2">Read more details</button><br>
-
-                <span id="dots2"></span>
-                  <span id="more2" class="text-secondary">
-
-                    <b class="text-strong">Advertising Revenue:</b><i> (Internal and external sources)</i><br>
-                    Advertising revenue is generated from internal. Pricing for internal ads are set by site owner along with placement and duration. External advertisments are automatically positioned on the site by hosting ad administrator Internal sources are comprised of three different types and sizes. <br>
-                    Banner ads: 200px x 500px, 1 image <i>(.jpg, .png, .gif)</i> and up to 634 characters of type.<br>
-                    Box ads: 300px x 300px, 1 image <i>(.jpg, .png, .gif)</i> and up to 380 characters of type.<br>
-                    Full-width ads: 400px x 100%, Up to 4 images <i>(.jpg, .png, .gif)</i> and up to 2000 characters of type.<br>
-                    All pages host internal advertising throughout the site.
-                    <br><br>
-
-                    <b class="text-strong">Resources:</b><br>
-                    Create curated resource pages dedicated to recognizing suppliers, products, services, websites and people that you feel your audience would be interested in. In addition, provide your suppliers with a platform to showcase, demonstrate, advertise and promote their products and services. 
-                    <br><br>
-
-                    <b class="text-strong">Forums:</b><br>
-                    Develop forums to express, share and collaborate on ideas relevant to the audience. Use our tools to manage, organize and moderate.
-                    <br><br>
-
-                    <b class="text-strong">Classifieds:</b><br>
-                    Our full-stack CMS functionality provides back-end management of listings, user accounts, billing information, scheduling, conflict resolution, marketing and more. 
-                    <br><br>
-
-                    <b class="text-strong">Ecommerce:</b><br>
-                    Create an exciting ecommerce portal or integrate to an existing ecommerce site to further enhance the site’s user experience.
-                    <br><br>
-                  </span>
-
-              </p>
-              <p>
-
-                <b>Advertising Revenue: Internal and external sources</b><br>
-                Advertising revenue is generated from internal and external sources. Internal sources are comprised of three different size ads, banner ads, box ads and full-width ads located throughout the site.
-                <br><br>
-
-
-                Outside Advertisements: 
-                Ads matched to client’s site based on content and visitors.
-                Participating agencies: Google Adsense, XXXXXX, YYYYYY, and ZZZZZZ 
-
-
-                Assumptions: 
-                CPC of $2 
-                CTR of 2% (National average for < six figure income websites)
-                Desired Income from outside advertisers is $3,000 per month ($100 per day)
-
-                Formula:
-                Desired Income per day / CPC (Costs per Click) = Clicks
-                Clicks / CTR (Click through Rate) = Visitors per day 
-                Visitors per Day * 30 Days = Visitors per Month
-
-                $100 / $2.00 = 50 
-                50 / 2% (0.02) = 2,500
-                2,500 * 30 = 75,000 visitors per month to generate $3,000 per month in advertising revenue 
-
-
-                Internal Advertisers: 
-                Typically, these are companies listed in the resources page.
-                Landing page ads, banner ads, pop-ups and showcase presentations.
-
-
-                Selected areas within the website dedicated to trusted resources for display ads.
-                Selected areas within the website dedicated to product demonstrations, podcasts etc.
-
-                Carousel of banner ads, full width ads 
-                Pricing dependent upon views, clicks etc.
-                $100/week to $500/week
-                MMMMMOOOORRRRREEEEE 
-
-                Content Provider Revenue:
-                PPC revenue based upon readership.
-
-                Classifieds Revenue:
-                Listings fees are set by the site owner. The Si Quis platform has the ability to customize certain settings in the listings section, providing opportunity to upsell features and increase the listing fee. These include “Featured Listing”, Boosting listing on the web, email pushes to interested parties and more. 
                   
-                Ecommerce Revenue:
-                Product sales controlled by site owner.
-                Product sales on ecommerce portal but passed to third party fulfillment. 
-                Percentage of sales and credit card processing fee.
+              <h2 class="display-5 text-primary" id="7_Key">7 | Key Features & Benefits</h2>
+              <hr>
+              In general, the SQS platform enables our clients to build beautiful and focused websites that become a place for people to gather, learn, discuss and consume things they are passionate about and deeply interested in.
+              <br><br>
 
-                Forum Revenue:
-                Membership fees
-                Access to forums and other areas of membership status.
-                 
+              Our websites are built from a collection of website themes and are customizable to reflect existing brand attributes or use them “as is” to create the look and feel desired in days, not months, with no programing experience required. 
+              <br><br>
 
-                Spreadsheet table showing average revenue structures
+              The websites are structured around five key fundamentals:<br>
+              <b>Content, Resources, Forums, Classifieds and Ecommerce</b>
+              <br><button type="button" class="row btn btn-link text-info text-strong" onclick="changeText1()" id="myBtn">See Details</button>
 
+              <div><span id="dots"></span>
+                <span id="more" class="text-secondary">
+                  <b class="text-strong">Content:</b><br>
+                  Curate Content: Display and provide links to a wide assortment of blogs, news, podcasts and white-papers that are relevant to the site’s audiences. 
+                  Create Content: Blogs, podcasts, news feeds, white papers. Just about anything that’s relevant to your audiences. Make it available on your site as well as available to other sites to drive traffic and revenue.
+                  <br><br>
 
+                  <b class="text-strong">Resources:</b><br>
+                  Create curated resource pages dedicated to recognizing suppliers, products, services, websites and people that you feel your audience would be interested in. In addition, provide your suppliers with a platform to showcase, demonstrate, advertise and promote their products and services. 
+                  <br><br>
 
-              </p>
+                  <b class="text-strong">Forums:</b><br>
+                  Develop forums to express, share and collaborate on ideas relevant to the audience. Use our tools to manage, organize and moderate.
+                  <br><br>
 
+                  <b class="text-strong">Classifieds:</b><br>
+                  Our full-stack CMS functionality provides back-end management of listings, user accounts, billing information, scheduling, conflict resolution, marketing and more. 
+                  <br><br>
 
-
-                <p><br></p>
-                <table class=""><tbody><tr><td class=""><div style="text-align:center" id="HR2531_Top">
-                <span class="">116th CONGRESS</span><br><span class="">1st Session</span>
-                </div></td></tr></tbody></table>
-                <table class="">
-                <tbody><tr><td></td></tr>
-                <tr><td></td></tr>
-                </tbody></table>
-                <div style="text-align:center"><span >
-
-                  <h1><b>H. R. 2513</span></b></h1>
-
-                </div>
-                <p></p>
-                <hr style="text-align:center">
-                <p></p>
-                <div style="text-align:center"><span class=""><h3>IN THE SENATE OF THE UNITED STATES</h3><div style="text-align:center">
-                <p></p>
-                <span class="">October 23, 2019</span><p></p>
-                </div>
-                <div style="text-align:center;" class="lbexHang"><p style="text-align:center" class="lbexHangSmalllWithMargin">Received; read twice and referred to the Committee on Banking, Housing, and Urban Affairs</p></div>
-                <p></p></span></div>
-                <hr style="text-align:center">
-                <p></p>
-                <div style="text-align:center"><span class="lbexLegisType"><h2><b>AN ACT</b></h2></span></div>
-                <p></p>
-             061414C9C54C3C50D9FBFB7" id="H72336D0C2061414C9C54C3C50D9FBFB7">Sec. 210. Return of profits and bonuses.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC211"><br><a href="#toc-H0571AA31474746D98ACA836F1FF14588" id="H0571AA31474746D98ACA836F1FF14588">Sec. 211. Application of Bank Secrecy Act to dealers in antiquities.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC212"><br><a href="#toc-HBF2820E8BEF24CAB9F48071FC342B9F5" id="HBF2820E8BEF24CAB9F48071FC342B9F5">Sec. 212. Geographic targeting order.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC213"><br><a href="#toc-H6B6F6726E59B4FCCAD1F957EEF1EDCFB" id="H6B6F6726E59B4FCCAD1F957EEF1EDCFB">Sec. 213. Study and revisions to currency transaction reports and suspicious activity reports.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC214"><br><a href="#toc-HE63735E9F1904DD6A7C3D42ACF668E9D" id="HE63735E9F1904DD6A7C3D42ACF668E9D">Sec. 214. Streamlining requirements for currency transaction reports and suspicious activity
-                       reports.</a></span></span><span><div style="text-align:center" class="lbexTocDivisionOLC" id="TITLE2">
-                <p></p>
-                <a href="#toc-H38808747A856470285ECE3B413D57DF0" id="H38808747A856470285ECE3B413D57DF0">TITLE III—MODERNIZING THE AML SYSTEM<p></p></a>
-                </div></span><span><span class="lbexTocSectionOLC" id="SEC301"><br><a href="#toc-H099CA02A067242938674FDBCF9E21B27" id="H099CA02A067242938674FDBCF9E21B27">Sec. 301. Encouraging innovation in BSA compliance.</a></span></span><span><span class="lbexTocSectionOLC" id="SEC302"><br><a href="#toc-H2D489DC6602C4686A81EC03A54A86B2C" id="H2D489DC6602C4686A81EC03A54A86B2C">Sec. 302. Innovation Labs.</a></span></span><span><span class="lbexTocSectionOLC"
-                <hr class="bg-gray-300 my-6">
+                  <b class="text-strong">Ecommerce:</b><br>
+                  Create an exciting ecommerce portal or integrate to an existing ecommerce site to further enhance the site’s user experience.
+                  <br><br>
+                </span>
               </div>
-            </div> <!-- / .row -->
+                    
+              While the look and feel of these sites are unique, the infrastructure supporting them is not. Our Content Management System (CMS) provides back-end administrative functionality for our clients to autonomously manage, maintain, market and monetize their websites. In addition, our full-stack, multi-tenant architecture ensures Si Quis Software is able to efficiently and cost effectively maintain our client’s sites. 
+              <br><br>
+
+              <h2 class="text-primary" id="8_Client">8 | Client Monetization</h2>
+              <hr>
+              The SQS platform is designed to monetize multiple points of activity within the site simultaneously. The distribution is dependent upon the business owner's approach, execution and resources available to manage and build their businesses. 
+              <br><br>
+
+              <h2 class="text-muted">Monetizable events within the platform:</h2>
+
+              <b class="text-Strong">Advertising Revenue:</b> Internal and external sources</b><br>
+              <b class="text-Strong">Forums:</b> Membership subscriptions<br>
+              <b class="text-Strong">Classifieds Ad Revenue:</b> Listings, featured placement, boosting<br>
+              <b class="text-Strong">Ecommerce Revenue:</b> Direct sales
+              <br>
+
+              <button type="button" class="row btn btn-link text-info text-strong" onclick="changeText2()" id="myBtn2">See Details</button>
+
+              <div><span id="dots2"></span>
+                <span id="more2" class="text-secondary">
+                  <h2 class="text-muted">Advertising Revenue:</h2>
+                  <b>Advertising revenue generated from internal sources:</b><br> Internal sources of ads are are advertisments provided by an approved company, or can be created by the site overs if so inclined, typically for a fee. Pricing for internal advertisments are set by site owner along with placement and duration. <br><br>
+
+                  <b>Advertising revenue generated from external sources:</b><br> External advertisments are ads tailored to your site audience generated by third party platforms like Google AdSense, xxxxxx, yyyyyy and zzzz, to name a few. These ads are optimized for pricing, position and Content to maximize the potential of revenue generated. Pricing is not set by the site owner but rather on the market's best price for the audience and number of page views.<br><br>
+
+                  Banner ads: 200px x 500px, 1 image <i>(.jpg, .png, .gif)</i> and up to 634 characters of type.<br>
+                  Box ads: 300px x 300px, 1 image <i>(.jpg, .png, .gif)</i> and up to 380 characters of type.<br>
+                  Full-width ads: 100% x 4500px, Up to 4 images <i>(.jpg, .png, .gif)</i> and up to 2000 characters of type.<br>
+                  All pages host internal advertising throughout the site.
+                  <br>
+
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+                        <!-- Image -->
+                        <div class="mt-2 p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                          <img src="https://i.postimg.cc/SxTd44VD/AirProp.png" class="img-fluid" alt="...">
+                          Full Width Ads: 100% x 450px .jpg
+                        </div>
+                      </div>
+                      <div class="col-5 ">
+                        <div class="mt-5 p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                          <img src="https://i.postimg.cc/SRXfn10P/display-asset.gif" class="img-fluid" alt="...">
+                          Box Ads: 300px x 300px .gif
+                        </div>
+                      </div>
+                      <div class="col-2 "></div>
+                      <div class="col-5 ">
+                        <div class="mt-5 p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                          <img src="https://i.postimg.cc/3rbL3mM6/display-asset-16.jpg" class="img-fluid" alt="...">
+                          Box Ads: 300px x 300px .jpg
+                        </div>
+                      </div>
+                      <div class="col-12 position-relative">
+                        <!-- Image -->
+                        <div class="w-auto mt-5 p-1 bg-white shadow-lg" data-aos="fade-up">
+                          <img src="https://i.postimg.cc/xTfcP25j/display-asset.gif" class="img-fluid" alt="...">
+                          Banner Ads: 100px x 500px .gif
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <b class="text-strong">Resources:</b><br>
+                  Create curated resource pages dedicated to recognizing suppliers, products, services, websites and people that you feel your audience would be interested in. In addition, provide your suppliers with a platform to showcase, demonstrate, advertise and promote their products and services. 
+                  <br><br>
+
+                  <b class="text-strong">Forums:</b><br>
+                  Develop forums to express, share and collaborate on ideas relevant to the audience. Use our tools to manage, organize and moderate.
+                  <br><br>
+
+                  <b class="text-strong">Classifieds:</b><br>
+                  Our full-stack CMS functionality provides back-end management of listings, user accounts, billing information, scheduling, conflict resolution, marketing and more. 
+                  <br><br>
+
+                  <b class="text-strong">Ecommerce:</b><br>
+                  Create an exciting ecommerce portal or integrate to an existing ecommerce site to further enhance the site’s user experience.
+                  <br>
+                  <button type="button" class="row btn btn-link text-info text-strong" onclick="changeText2()" id="myBtn2">Close Details</button>
+                </span>
+              </div>
+
+              <h2 class="text-primary" id="9_Pricing">9 | Pricing & Revenue </h2>
+              <hr>
+              Our business model relies upon our customer's success. Pricing is approachable and flexible allowing clients to invest in and grow their businesses, yet requires "skin-in-the-game" in the form of a setup fee to launch their sites. The SiQuis pricing structure is comprised of four elements across two <i>(Base and Professional)</i> levels of paltform functionality.<br><br>
+
+              <div class=""><b>Base level platform:</b><button type="button" class="d-inline-flex btn btn-link text-info text-strong" onclick="changeText3()" id="myBtn3">See Details</button>
+
+              <div class="row">
+                <div class="col-4">
+                Setup Fee
+                </div>
+                <div class="row col-4">
+                One time fee
+                </div>
+                <div class="row col-4">
+                $1,500
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                Subscriptions
+                </div>
+                <div class="row col-4">
+                Recurring revenue
+                </div>
+                <div class="row col-4">
+                $99.00 per month
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                Site Advertising Revenue
+                </div>
+                <div class="row col-4">
+                Recurring tiered revenue
+                </div>
+                <div class="row col-4">
+                Dependent upon volume
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4"> 
+                Credit Card Processing Fee
+                </div>
+                <div class="row col-4"> 
+                Recurring revenue
+                </div>
+                <div class="row col-4"> 
+                CC & Handling fees: 5% 
+                </div>
+              </div>
+              <div><span id="dots3"></span>
+                <span id="more3" class="text-secondary"><br>
+                  Text here about the base level pricing etc.
+                </span>
+              </div> 
+
+              <hr>
+
+              <div class=""><b>Professional level platform:</b><button type="button" class="d-inline-flex btn btn-link text-info text-strong" onclick="changeText4()" id="myBtn4">See Details</button>
+
+              <div class="row">
+                <div class="col-4">
+                Setup Fee
+                </div>
+                <div class="row col-4">
+                One time fee
+                </div>
+                <div class="row col-4">
+                $2,900
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                Subscriptions
+                </div>
+                <div class="row col-4">
+                Recurring revenue
+                </div>
+                <div class="row col-4">
+                $249.00 per month
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                Site Advertising Revenue
+                </div>
+                <div class="row col-4">
+                Recurring tiered revenue
+                </div>
+                <div class="row col-4">
+                Dependent upon volume
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4"> 
+                Credit Card Processing Fee
+                </div>
+                <div class="row col-4"> 
+                Recurring revenue
+                </div>
+                <div class="row col-4"> 
+                CC & Handling fees: 4.5% 
+                </div>
+              </div>
+              <div><span id="dots4"></span>
+                <span id="more4" class="text-secondary"><br>
+                  Text here about the professional level pricing etc.
+                </span>
+              </div> 
+              <hr>
+              <b>Summary Assumptions:</b><br>
+              
+              The table below summarizes projected clients and revenue for the first two yers of operations. <br>
+
+              <table class="table table-sm table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Description</th>
+                    <th scope="col" class="text-center">Year 1</th>
+                    <th scope="col" class="text-center">Year 2</th>
+                    <th scope="col" class="text-center">Year 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Total Clients</td>
+                    <td class="text-center">44</td>
+                    <td class="text-center">168</td>
+                    <td class="text-center">883</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Setup Fees</td>
+                    <td class="text-center">$88,986</td>
+                    <td class="text-center">$340,206</td>
+                    <td class="text-center">$1,909,892</td>                
+                  </tr>
+                  <tr>
+                    <td scope="row">Subscription Fees</td>
+                    <td class="text-center">$33,717</td>
+                    <td class="text-center">$207,484</td>
+                    <td class="text-center">$1,030,849</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Ad Fees</td>
+                    <td class="text-center">$84,100</td>
+                    <td class="text-center">$605,100</td>
+                    <td class="text-center">$3,278,500</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">CC Fees</td>
+                    <td class="text-center">$67,900</td>
+                    <td class="text-center">$521,700</td>
+                    <td class="text-center">$2,834,000</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Programming</td>
+                    <td class="text-center">$48,000</td>
+                    <td class="text-center">$207,000</td>
+                    <td class="text-center">$1,227,500</td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Total For Year</b></td>
+                    <td class="text-center"><b>$322,703</b></td>
+                    <td class="text-center"><b>$1,881,490</b></td>
+                    <td class="text-center"><b>$10,280,741</b></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Growth Rate</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">483%</td>
+                    <td class="text-center">446%</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Revenue/Client</td>
+                    <td class="text-center">$7,334</td>
+                    <td class="text-center">$11,199</td>
+                    <td class="text-center">$11,643</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <hr style="bg-gray my-6 text-align:center">
+
+              <br>
+
+              <h2 class="text-primary" id="10_Milestone">10 | Company Milestones </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h2 class="text-primary" id="11_Future">11 | Future Development </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h1 class="display-4 text-black mt-5" id="Industry"><b>INDUSTRY OVERVIEW</b></h1>
+
+              <h2 class="text-primary" id="12_Analysis">12 | Industry Analysis </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h2 class="text-primary" id="13_Target">13 | Target Audience </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h2 class="text-primary" id="14_Market">14 | Market Strategy  </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h2 class="text-primary" id="15_Competitive">15 | Competitive Landscape  </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h2 class="text-primary" id="16_Different">16 | Differentiating Factors  </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h2 class="text-primary" id="17_Investment">17 | Investment Opportunity  </h2>
+              <hr>
+                Content Here<br><br>
+
+              <h1 class="display-4 text-black mt-5" id="FINANCIALS"><b>FINANCIALS</b></h1>
+
+              Content Here<br><br>
+              1.  Individual level platform
+              a.  $99/month billed monthly
+              b.  $1,500 One-Time Start-up Fee
+              c.  Site Advertising Revenue (Billed Monthly)
+              i.  $3000 per month advertising revenue – 10%
+              ii. $3001 to $5,000 per month advertising revenue – 7.5%
+              iii.  $5001 to $10,000 per month advertising revenue – 5%
+              iv. $10,000+ per month advertising revenue – 2.5%
+              d.  Credit card processing fees + 2.0%
+
+              2.  Business level platform
+              a.  $299/month billed monthly
+              b.  $3,500 One-Time Start-up Fee
+              c.  Site Advertising Revenue (Billed Monthly)
+              i.  $0 to $5000 per month advertising revenue – 10%
+              ii. $5001 to $10,000 per month advertising revenue – 7.5%
+              iii.  $10,001 to $25,000 per month advertising revenue – 5%
+              iv. $25,001+ per month advertising revenue – 2.5%
+              d.  Credit card processing fees + 1.0%
+
+              8 Company Milestones  
+              a customizable framework
+            </p>
+            <p>
+              <b>Advertising Revenue: Internal and external sources</b><br>
+              Advertising revenue is generated from internal and external sources. Internal sources are comprised of three different size ads, banner ads, box ads and full-width ads located throughout the site.
+              <br><br>
+
+
+              Outside Advertisements: 
+              Ads matched to client’s site based on Content and visitors.
+              Participating agencies: Google Adsense, XXXXXX, YYYYYY, and ZZZZZZ 
+
+
+              Assumptions: 
+              CPC of $2 
+              CTR of 2% (National average for < six figure income websites)
+              Desired Income from outside advertisers is $3,000 per month ($100 per day)
+
+              Formula:
+              Desired Income per day / CPC (Costs per Click) = Clicks
+              Clicks / CTR (Click through Rate) = Visitors per day 
+              Visitors per Day * 30 Days = Visitors per Month
+
+              $100 / $2.00 = 50 
+              50 / 2% (0.02) = 2,500
+              2,500 * 30 = 75,000 visitors per month to generate $3,000 per month in advertising revenue 
+
+
+              Internal Advertisers: 
+              Typically, these are companies listed in the resources page.
+              Landing page ads, banner ads, pop-ups and showcase presentations.
+
+
+              Selected areas within the website dedicated to trusted resources for display ads.
+              Selected areas within the website dedicated to product demonstrations, podcasts etc.
+
+              Carousel of banner ads, full width ads 
+              Pricing dependent upon views, clicks etc.
+              $100/week to $500/week
+              MMMMMOOOORRRRREEEEE 
+
+              Content Provider Revenue:
+              PPC revenue based upon readership.
+
+              Classifieds Revenue:
+              Listings fees are set by the site owner. The Si Quis platform has the ability to customize certain settings in the listings section, providing opportunity to upsell features and increase the listing fee. These include “Featured Listing”, Boosting listing on the web, email pushes to interested parties and more. 
+                
+              Ecommerce Revenue:
+              Product sales controlled by site owner.
+              Product sales on ecommerce portal but passed to third party fulfillment. 
+              Percentage of sales and credit card processing fee.
+
+              Forum Revenue:
+              Membership fees
+              Access to forums and other areas of membership status.
+               
+
+              Spreadsheet table showing average revenue structures
+            </p>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>          
 
 
     <!-- BORDER -->
@@ -1347,6 +1697,26 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
 
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WHWQ4SS');</script>
+    <!-- End Google Tag Manager -->
+    
+    <script data-ad-client="ca-pub-8064256507953498" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWDPGYYQKC"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-YWDPGYYQKC');
+    </script>
+
     <!-- Read more / Real Less -->
     <script>
     function changeText1() {
@@ -1356,11 +1726,11 @@
 
       if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Read more details"; 
+        btnText.innerHTML = "See Details"; 
         moreText.style.display = "none";
       } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Read less details"; 
+        btnText.innerHTML = "Close Details"; 
         moreText.style.display = "inline";
       }
     }
@@ -1374,12 +1744,48 @@
 
       if (dots2.style.display === "none") {
         dots2.style.display = "inline";
-        btnText2.innerHTML = "Read more details"; 
+        btnText2.innerHTML = "See Details"; 
         moreText2.style.display = "none";
       } else {
         dots2.style.display = "none";
-        btnText2.innerHTML = "Read less details"; 
+        btnText2.innerHTML = "Close Details"; 
         moreText2.style.display = "inline";
+      }
+    }
+    </script>
+    
+    <script>
+    function changeText3() {
+      var dots3 = document.getElementById("dots3");
+      var moreText3 = document.getElementById("more3");
+      var btnText3 = document.getElementById("myBtn3");
+
+      if (dots3.style.display === "none") {
+        dots3.style.display = "inline";
+        btnText3.innerHTML = "See Details"; 
+        moreText3.style.display = "none";
+      } else {
+        dots3.style.display = "none";
+        btnText3.innerHTML = "Close Details"; 
+        moreText3.style.display = "inline";
+      }
+    }
+    </script>
+
+        <script>
+    function changeText4() {
+      var dots4 = document.getElementById("dots4");
+      var moreText4 = document.getElementById("more4");
+      var btnText4 = document.getElementById("myBtn4");
+
+      if (dots4.style.display === "none") {
+        dots4.style.display = "inline";
+        btnText4.innerHTML = "See Details"; 
+        moreText4.style.display = "none";
+      } else {
+        dots4.style.display = "none";
+        btnText4.innerHTML = "Close Details"; 
+        moreText4.style.display = "inline";
       }
     }
     </script>
