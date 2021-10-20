@@ -1100,7 +1100,7 @@
             </h1>
             <!-- Text -->
             <p class="lead text-white mb-6 mx-auto" data-aos="fade-up" data-aos-delay="100" style="max-width: 600px;">
-              A plan to enable the passionate to suceed on every level
+              A plan to enable the passionate to succeed on every level
             </p>
           </div>
         </div> <!-- / .row -->
@@ -1227,13 +1227,13 @@
                   <p class="p-2">Individuals and companies are looking for ways to monetize their expertise and knowledge, in addition to their skills and/or products, and create a new work/life balance.</p>
                 </td>
                 <td scope="p-2"><b class="text-muted p-2">4. Our Solution</b><br>
-                  <p class="p-2">Our customizable framework creates branded and engaging websites providing entrepreneurs with a platform to focus on verticals within horizontal markets and monitize their audiences.  
+                  <p class="p-2">Our customizable framework creates branded and engaging websites providing entrepreneurs with a platform to focus on verticals within horizontal markets and monetize their audiences.  
                   </p>
                 </td>
               </tr>
               <tr>
                 <td scope="p-2"><b class="text-muted p-2">5. The Competition</b><br>
-                  <p class="p-2">Other than Facebook, there are no "turn-key" platforms in existence today enabling individuals to follow and monetize their passions. There are many platforms for creators, influencers and gig-economy professionals, but none that have the infrastructure needed to create and monitize communities on expertise and knowledge alone.</p>
+                  <p class="p-2">Other than Facebook, there are no "turn-key" platforms in existence today enabling individuals to follow and monetize their passions. There are many platforms for creators, influencers and gig-economy professionals, but none that have the infrastructure needed to create and monetize communities on expertise and knowledge alone.</p>
                 </td>
                 <td scope="p-2"><b class="text-muted p-2">6. Revenue Streams</b><br>
                   <p class="p-2">
@@ -1254,14 +1254,14 @@
                     Company-owned beta-site: <b>Aircraftwest.</b><br>
                     • Demonstrate the platform<br>
                     • Validate financial projections<br>
-                    • Establish pricing treshholds<br>
+                    • Establish pricing thresholds<br>
                     <br>
 
                     Ongoing, the SiQuis platform will be marketed using traditional SaaS marketing protocols: Goal setting, budgeting, lead generation and pipeline marketing, website design and optimization and marketing reporting.
                   </p>
                 </td>
                 <td scope="p-2"><b class="text-muted p-2">8. Financials</b><br>
-                  <p class="p-2">SiQuis Software will incurr high development cost over the next 24 months as additional modules are developed.  Revenue will offset some of these expenses but will rely upon investment until the end of year three.<br><br>
+                  <p class="p-2">SiQuis Software will incur high development cost over the next 24 months as additional modules are developed.  Revenue will offset some of these expenses but will rely upon investment until the end of year three.<br><br>
                     <b><small>Financials available upon request.</b><br>
                     <a>Email Brent Bostwick</a><br>
                     <a href="mailto:brent@siquisoft.com" class="text-reset"><span class="text-info">brent@siquisoft.com</span></a></small>
@@ -1760,7 +1760,7 @@
                   baseGrowth: 100,
                   baseGrowth2: 50,
                   proGrowth: 100,
-                  proGrowth2: 50,
+                  proGrowth2: 75,
                   totalClients: 50,
                   totalClients2: 0,
                   totalClients3: 0,
@@ -1847,6 +1847,16 @@
                       return this.totalRevenue(2) != 0 ? (this.totalRevenue(2) - this.totalRevenue(1)) / this.totalRevenue(1) * 100 : 0;
                     } else if (clientVar == 3) {
                       return this.totalRevenue(3) != 0 ? (this.totalRevenue(3) - this.totalRevenue(2)) / this.totalRevenue(2) * 100: 0;
+                    }
+                  },
+                  revenueClient(clientVar) {
+                    switch(clientVar) {
+                      case 1:
+                        return (this.totalRevenue(1) / this.totalClients);
+                      case 2:
+                        return (this.totalRevenue(2) / this.totalClients2);
+                      case 3: 
+                        return (this.totalRevenue(3) / this.totalClients3);
                     }
                   }
                 }
@@ -2018,13 +2028,16 @@
                         </td>
                       <tr>
                       </tr>
+
                       <tr>
                         <td colspan="1">
                           <button onClick="window.location.reload();" class="btn btn-xs text-black" style="background-color:orange">Reset Sliders</button>
                         </td>
-                        <td colspan="3"><input type="range" min="0" max="250" step="1" x-on:input="updateClients(event.target, 'baseClients')" x-bind:value="baseClients" class="form-range px-5" /><span class="ps-5">Total Base Clients Year 1: </span><span x-text="baseClients"></span></td>
-                        <td colspan="3"><input type="range" min="0" max="250" step="1" x-on:input="updateClients(event.target, 'proClients')" x-bind:value="proClients" class="form-range px-5" /><span class="ps-5">Total Pro Clients Year 1: </span><span x-text="proClients"></span></td>
+                        <td colspan="3"><input type="range" min="0" max="250" step="1" x-on:input="updateClients(event.target, 'baseClients')" x-bind:value="baseClients" class="form-range px-5" /><span class="ps-5">Total Base Clients (Yr 1): </span><span x-text="baseClients"></span></td>
+
+                        <td colspan="3"><input type="range" min="0" max="250" step="1" x-on:input="updateClients(event.target, 'proClients')" x-bind:value="proClients" class="form-range px-5" /><span class="ps-5">Total Pro Clients (Yr 1): </span><span x-text="proClients"></span></td>
                       </tr>
+
                       </tr>
                         <td colspan="1">
                           <p class="text-muted"><small>
@@ -2035,7 +2048,8 @@
                             Adjust number of FIRST year clients using the sliders.<br>
                             The growth rate will calculate the number of clients for year 2 and year 3.<br> 
                             Adjust the growth rates for year 2 & 3 with the up/down selectors above.<br>
-                            Financial results will display in the table below.</small></p>
+                            Financial results will display in the table below.</small>
+                          </p>
                         </td>
                       <tr>
                     </tbody>
@@ -2063,6 +2077,19 @@
                     <td class="text-center" x-text="totalClients2">168</td>
                     <td class="text-center" x-text="totalClients3">883</td>
                   </tr>
+
+                  <td scope="row" class="ps-5 text-muted">Base Clients</td>
+                    <td class="text-center text-muted" x-text="baseClients">44</td>
+                    <td class="text-center text-muted" x-text="baseClients2">168</td>
+                    <td class="text-center text-muted" x-text="baseClients3">883</td>
+                  </tr>
+
+                  <td scope="row" class="ps-5 text-muted">Pro Clients</td>
+                    <td class="text-center text-muted" x-text="proClients">44</td>
+                    <td class="text-center text-muted" x-text="proClients2">168</td>
+                    <td class="text-center text-muted" x-text="proClients3">883</td>
+                  </tr>
+
                   <tr>
                     <td scope="row">Setup Fees</td>
                     <td class="text-center" x-text="'$' + numeral(setupFees(1)).format(0,0)">$88,986</td>
@@ -2113,9 +2140,9 @@
                   </tr>
                   <tr>
                     <td scope="row">Revenue/Client</td>
-                    <td class="text-center">$7,334</td>
-                    <td class="text-center">$11,199</td>
-                    <td class="text-center">$11,643</td>
+                    <td class="text-center" x-text="'$' + numeral(revenueClient(1)).format(0.0)">$7,334</td>
+                    <td class="text-center" x-text="'$' + numeral(revenueClient(2)).format(0.0)">$11,199</td>
+                    <td class="text-center" x-text="'$' + numeral(revenueClient(3)).format(0.0)">$11,643</td>
                   </tr>
                 </tbody>
               </table>
@@ -2373,15 +2400,14 @@
               <h2 class="text-primary" id="16_Different">16 | Differentiating Factors  </h2>
               <hr>
 
-              Today there are numerous platforms operating in the Passion Economy, primarily focused on "creators" selling products or services. All of them differentiated through purpose, tech functionality and economics.
+              Today there are numerous platforms operating in the Passion Economy primarily focused on "creators" selling products or services. All of them differentiated through purpose, tech functionality and economics.
               <br><br>
 
                
-              <h2 class="text-muted">The 3Ps - Positioning, Pricing and People.</h2>
-              <i class="text-muted">In search of the 4th and 5th "P"...</i>
-              <br><br>
+              <h2 class="text-muted">Positioning, Pricing and People.</h2>
+              <br>
 
-              At SiQuis, we believe our positioning, pricing and people will distinguish our products and provide the foundations to build meaningful passion-based businesses for our clients.
+              We believe our positioning, pricing and people will distinguish our products and provide the foundations to build meaningful passion-based businesses for our clients.
               <br><br>
 
               <h2 class="text-success">Positioning:</h2>
@@ -2401,10 +2427,10 @@
               <br><br>
 
               <h2 class="text-success">People:</h2>
-              Our pricing model provides an ever-increasing stream of revenue, enabling us to leverage our existing resources and attract and hire the expertise we need to strengthen our weaknesses and create a world class team.  
+              Our pricing model provides an ever-increasing stream of revenue, enabling us to leverage our existing resources and attract and hire the expertise we need to strengthen our weaknesses and build upon our world class team.  
               <br><br>
               
-              By focusing on positioning, pricing and people, our products will benefit massively, contributing to a circular form of innovation, growth and success for everyone involved. With our products benefiting from our focus on positioning, pricing, and people, our mission and vision of contributing to a passion based world can be reached... Positioning, Pricing, People, Products and Passion.
+              By focusing on positioning, pricing and people, our products will benefit massively, contributing to a circular form of innovation, growth and success for everyone involved. With this focus, our mission of providing technologies to create, grow and support businesses in the thriving Passion Economy will be reached... Positioning, Pricing, People = Products and Passion.
               <br>
 
               <br>
@@ -2483,7 +2509,7 @@
               <h2 class="text-primary" id="17_Market">17 | Market Strategy  </h2>
               <hr>
               
-              Our multi-phased go-to-market strategy is designed to take advantage of real-time operations providing learns on best practices to maximize our client's revenue model as well as SiQuis's revenue streams. 
+              Our multi-phased go-to-market strategy is designed to take advantage of real-time operations providing learns on best practices to maximize our client's revenue model as well as the SiQuis revenue streams. 
               <br><br>
 
               <h2 class="text-muted">The SiQuis Go To Market Strategy</h2>
@@ -2847,7 +2873,7 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
         <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
