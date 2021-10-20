@@ -22,6 +22,22 @@
     #more3 {display: none;}
     #more4 {display: none;}
     #more5 {display: none;}
+    table td {
+      position: relative;
+    }
+    table td input.rate {
+      position: absolute;
+      display: block;
+      top:0;
+      left:0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      border: none;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
     </style>
 
     <!-- Title -->
@@ -1026,7 +1042,7 @@
             <div class="container">
               <div class="col-1"></div>
               <div class="col-11 text-muted">
-                <i>In contrast to the "gig economy", the passion economy is open to anyone  interested in following their passion. It's not necessary to be a creator, an  influencer, a freelancer or even a merchant. It's true, all of these amazing  people can (and do) flourish in the passion economy, but others can too.</i>
+                <i>In contrast to the "gig economy", the passion economy is open to anyone interested in following their passion. It's not necessary to be a creator, an influencer, a freelancer or even a merchant. It's true, all of these amazing people can (and do) flourish in the passion economy, but others can too.</i>
               </div>
             </div>
             <br>
@@ -1085,10 +1101,10 @@
             The concept of classified ads began appearing in England in the 1600s. Handwritten messages were nailed to posts by scribes and became known as “Si Quis”, a term borrowed from ancient Rome where most posted notices began with the words Si Quis — meaning "If anybody knows of…" <span class="text-success"> [citation here]</span>
             <br><br>
 
-            Today the sheer number and variety of classifieds worldwide has grown exponentially into broad, albeit fragmented horizontal markets. Never before has creating and posting a “Si Quis” been so easy and affordable with a reach far beyond the street posts of the 17th century.  
+            Today the sheer number and variety of classifieds worldwide has grown exponentially into broad, albeit fragmented horizontal markets. Never before has creating and posting a “Si Quis” been so easy and affordable with a reach far beyond the street posts of the 17th century.
             <br><br>
 
-            Most importantly however, never before have individuals had the resources to pursue things they are passionate about, which brings us to back to our name… Si Quis Software.  
+            Most importantly however, never before have individuals had the resources to pursue things they are passionate about, which brings us to back to our name… Si Quis Software.
             <br><br>
 
             We've taken liberty to expand upon the definitions of "Si Quis", taking it beyond the concept of classifieds in the 1600's and associating it with the emergence of the Passion Economy of the 21st century. "If anybody knows of something related to my passions…”
@@ -1358,14 +1374,195 @@
             The tables below summarize the projected number of clients and revenues generated for years 1 through 3. Assumptions that affect the projections can be modified to create a diffferent set of projections.
             <br><br>
 
-            <button type="button" class="row btn btn-link text-info text-strong" onclick="changeText5()" id="myBtn5">See Assumptions</button>
+            <!-- <button type="button" class="row btn btn-link text-info text-strong" onclick="changeText5()" id="myBtn5">See Assumptions</button> -->
+            <script>
+              function revenue() {
+                return {
+                  baseClients: 1,
+                  proClients: 0,
+                  baseClients2: 0,
+                  baseClients3: 0,
+                  proClients2: 0,
+                  proClients3: 0,
+                  baseGrowth: 100,
+                  baseGrowth2: 5,
+                  proGrowth: 5,
+                  proGrowth2: 2,
+                  totalClients: 10,
+                  totalClients2: 0,
+                  totalClients3: 0,
+                  newBaseClients2: 0,
+                  newBaseClients3: 0,
+                  newProClients2: 0,
+                  newProClients3: 0,
+                  updateClients(e, type) {
+                    if(type == 'baseClients') {
+                      this.baseClients = parseInt(e.value);
+                    } else {
+                      this.proClients = parseInt(e.value);
+                    }
+                    this.updateTotalClients();
+                  },
+                  updateTotalClients() {
+                    this.totalClients = this.baseClients + this.proClients
+                    this.baseClients2 = parseInt(this.baseClients + (this.baseClients * this.baseGrowth / 100));
+                    this.newBaseClients2 = parseInt(this.baseClients2) - parseInt(this.baseClients);
+                    this.proClients2 = parseInt(this.proClients + (this.proClients * this.proGrowth / 100));
+                    this.newProClients2 = parseInt(this.proClients2) - parseInt(this.proClients);
+                    this.baseClients3 = parseInt(this.baseClients2 + (this.baseClients2 * this.baseGrowth2 / 100));
+                    this.newBaseClients3 = parseInt(this.baseClients3) - parseInt(this.baseClients2);
+                    this.proClients3 = parseInt(this.proClients2 + (this.proClients2 * this.proGrowth2 / 100));
+                    this.newProClients3 = parseInt(this.proClients3) - parseInt(this.proClients2);
+                    this.totalClients2 = this.baseClients2 + this.proClients2;
+                    this.totalClients3 = this.baseClients3 + this.proClients3;
+                  },
+                  setupFees(clientVar) {
+                    switch(clientVar) {
+                      case 1:
+                        return (this.baseClients * 1500) + (this.proClients * 3500);
+                      case 2:
+                        return (this.newBaseClients2 * 1750) + (this.newProClients2 * 4500);
+                      case 3: 
+                        return (this.newBaseClients3 * 2000) + (this.newProClients3 * 5000);
+                    }
+                  },
+                  subscriptionFees(clientVar) {
+                    switch(clientVar) {
+                      case 1:
+                        return (this.baseClients * (100 * 12)) + (this.proClients * (250 * 12));
+                      case 2:
+                        return (this.baseClients2 * (125 * 12)) + (this.proClients2 * (300 * 12));
+                      case 3: 
+                        return (this.baseClients3 * (150 * 12)) + (this.proClients3 * (350 * 12));
+                    }
+                  },
+                  adFees(clientVar) {
+                    switch(clientVar) {
+                      case 1:
+                        return (this.baseClients * (300 * 12)) + (this.proClients * (500 * 12));
+                      case 2:
+                        return (this.baseClients2 * (400 * 12)) + (this.proClients2 * (1000 * 12));
+                      case 3: 
+                        return (this.baseClients3 * (500 * 12)) + (this.proClients3 * (1500 * 12));
+                    }
+                  },
+                  ccFees(clientVar) {
+                    switch(clientVar) {
+                      case 1:
+                        return (this.baseClients * (200 * 12)) + (this.proClients * (500 * 12));
+                      case 2:
+                        return (this.baseClients2 * (300 * 12)) + (this.proClients2 * (750 * 12));
+                      case 3: 
+                        return (this.baseClients3 * (400 * 12)) + (this.proClients3 * (1000 * 12));
+                    }
+                  },
+                  programmingFees(clientVar) {
+                    switch(clientVar) {
+                      case 1:
+                        return (this.baseClients * (500)) + (this.proClients * (1500));
+                      case 2:
+                        return (this.newBaseClients2 * (750)) + (this.newProClients3 * (2000));
+                      case 3: 
+                        return (this.newBaseClients3 * (1000)) + (this.newProClients3 * (2500));
+                    }
+                  },
+                  totalRevenue(clientVar) {
+                    return this.setupFees(clientVar) + this.subscriptionFees(clientVar) + this.adFees(clientVar) + this.ccFees(clientVar) + this.programmingFees(clientVar);
+                  },
+                  increase(clientVar) {
+                    if(clientVar == 2) {
+                      return this.totalRevenue(2) != 0 ? (this.totalRevenue(2) - this.totalRevenue(1)) / this.totalRevenue(1) * 100 : 0;
+                    } else if (clientVar == 3) {
+                      return this.totalRevenue(3) != 0 ? (this.totalRevenue(3) - this.totalRevenue(2)) / this.totalRevenue(2) * 100: 0;
+                    }
+                  }
+                }
+              }
+            </script>
+            <!--<div x-data="{ 
+              clients: {
+                year1: {
+                  base: 10,
+                  base_growth: 10,
+                  pro: 0,
+                  pro_growth: 0
+                },
+                year2: {
+                  base: 0,
+                  base_growth: 5,
+                  pro: 0,
+                  pro_growth: 0
+                },
+                year3: {
+                  base: 0,
+                  base_growth: 0,
+                  pro: 0,
+                  pro_growth: 0
+                }
+              },
 
+              b_gr_1 : 10,
+              b_gr_2: 5,
+              p_gr_1: 5,
+              p_gr_2: 2,
+              base_pricing: {
+                subscription_rate: 100*12,
+                setup_fee: 1500,
+                ad_revenue: 300*12,
+                cc_processing: 200*12,
+                programming_fee: 500,
+                growth_rate: 10
+              },
+              pro_pricing: {
+                subscription_rate: 250*12,
+                setup_fee: 3500,
+                ad_revenue: 500*12,
+                cc_processing: 500*12,
+                programming_fee: 1500,
+                growth_rate: 5
+              },
+              updateClients: function(e) {
+                console.log('TEST');
+                this.clients.year1.base = e.target.value
+                this.clients.year2.base = Number(this.clients.year1.base) + (Number(e.target.value) * Number(this.clients.year1.base_growth)/100)
+                this.clients.year3.base = Number(this.clients.year2.base) + (Number(e.target.value) * Number(this.clients.year2.base_growth)/100)
+              },
+
+              get totalClients() {
+                return Number(this.total_n_clients) + Number(this.total_p_clients)
+              },
+              growthRate: function(clients) {
+                return (clients * this.base_pricing.growth_rate / 100)
+              },
+              get setupFee() {
+                return (this.base_pricing.setup_fee * this.total_n_clients) + (this.pro_pricing.setup_fee * this.total_p_clients)
+                
+              },
+              get subscriptionFee() {
+                return (this.base_pricing.subscription_rate * this.total_n_clients) + (this.pro_pricing.subscription_rate * this.total_p_clients)
+              },
+              get adFee() {
+                return (this.base_pricing.ad_revenue * this.total_n_clients) + (this.pro_pricing.ad_revenue * this.total_p_clients)
+              },
+              get ccFee() {
+                return (this.base_pricing.cc_processing * this.total_n_clients) + (this.pro_pricing.cc_processing * this.total_p_clients)
+              },
+              get programmingFee() {
+                return (this.base_pricing.programming_fee * this.total_n_clients) + (this.pro_pricing.programming_fee * this.total_p_clients)
+              },
+              get total() {
+                return this.setupFee+this.subscriptionFee+this.adFee+this.ccFee+this.programmingFee
+              },  
+              getTotal: function() {
+                return (this.total_n_clients * this.base_pricing.subscription_rate) + (this.total_n_clients * this.base_pricing.setup_fee) + (this.total_n_clients * this.base_pricing.ad_revenue) + (this.total_n_clients * this.base_pricing.cc_processing) + (this.total_n_clients * this.base_pricing.programming_fee) + (this.total_p_clients * this.pro_pricing.subscription_rate) + (this.total_p_clients * this.pro_pricing.setup_fee) + (this.total_p_clients * this.pro_pricing.ad_revenue) + (this.total_p_clients * this.pro_pricing.cc_processing) + (this.total_p_clients * this.pro_pricing.programming_fee)
+              }
+            }">-->
+            <div x-data="revenue()" x-init="updateTotalClients()">
             <div><span id="dots5"></span>
-              <span id="more5" class="text-secondary">
+              <span id="more5-nohide" class="text-secondary">
                 <h2 class="text-muted">Assumptions:</h2>
-
-
                 <div class="table-responsive">
+                  
                   <table class="table table-sm table-hover">
                     <thead>
                       <th scope="col">Description</th>
@@ -1427,12 +1624,12 @@
                       </tr>
                       <tr>
                         <td scope="row" class="border-secondary">Client Growth Rate:</td>
-                        <td class="text-center border-left border-secondary">500%</td>
-                        <td class="text-center border-secondary">300%</td>
-                        <td class="text-center border-secondary">275%</td>
-                        <td class="text-center border-left border-secondary">400%</td>
-                        <td class="text-center border-secondary">250%</td>
-                        <td class="text-center border-secondary">200%</td>
+                        <td class="text-center border-left border-secondary">-</td>
+                        <td class="text-center border-secondary"><input type="number" x-model="baseGrowth" x-on:input="updateTotalClients()" class="rate"></td>
+                        <td class="text-center border-secondary"><input type="number" x-model="baseGrowth2" x-on:input="updateTotalClients()" class="rate" /></td>
+                        <td class="text-center border-left border-secondary">-</td>
+                        <td class="text-center border-secondary"><input type="number" x-model="proGrowth" x-on:input="updateTotalClients()" class="rate" /></td>
+                        <td class="text-center border-secondary"><input type="number" x-model="proGrowth" x-on:input="updateTotalClients()" class="rate" /></td>
                       </tr>
                       <tr>
                         <td scope="row" class="border-secondary">Attrition Rate:</td>
@@ -1442,6 +1639,11 @@
                         <td class="text-center border-left border-secondary">4.0%</td>
                         <td class="text-center border-secondary">3.5%</td>
                         <td class="text-center border-secondary">3.0%</td>
+                      </tr>
+                      <tr>
+                        <td colspan="1"></td>
+                        <td colspan="3"><input type="range" min="0" max="250" step="1" x-on:input="updateClients(event.target, 'baseClients')" x-bind:value="baseClients" class="form-range" />Total Base Clients Year 1: <span x-text="baseClients"></span></td>
+                        <td colspan="3"><input type="range" min="0" max="250" step="1" x-on:input="updateClients(event.target, 'proClients')" x-bind:value="proClients" class="form-range" />Total Pro Clients Year 1: <span x-text="proClients"></span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -1465,45 +1667,45 @@
                 <tbody>
                   <tr>
                     <td scope="row">Total Clients</td>
-                    <td class="text-center">44</td>
-                    <td class="text-center">168</td>
-                    <td class="text-center">883</td>
+                    <td class="text-center" x-text="totalClients">44</td>
+                    <td class="text-center" x-text="totalClients2">168</td>
+                    <td class="text-center" x-text="totalClients3">883</td>
                   </tr>
                   <tr>
                     <td scope="row">Setup Fees</td>
-                    <td class="text-center">$88,986</td>
-                    <td class="text-center">$340,206</td>
-                    <td class="text-center">$1,909,892</td>                
+                    <td class="text-center" x-text="'$' + numeral(setupFees(1)).format(0,0)">$88,986</td>
+                    <td class="text-center" x-text="'$' + numeral(setupFees(2)).format(0,0)">$340,206</td>
+                    <td class="text-center" x-text="'$' + numeral(setupFees(3)).format(0,0)">$1,909,892</td>                
                   </tr>
                   <tr>
                     <td scope="row">Subscription Fees</td>
-                    <td class="text-center">$33,717</td>
-                    <td class="text-center">$207,484</td>
-                    <td class="text-center">$1,030,849</td>
+                    <td class="text-center" x-text="'$' + numeral(subscriptionFees(1)).format(0,0)">$33,717</td>
+                    <td class="text-center" x-text="'$' + numeral(subscriptionFees(2)).format(0,0)">$207,484</td>
+                    <td class="text-center" x-text="'$' + numeral(subscriptionFees(3)).format(0,0)">$1,030,849</td>
                   </tr>
                   <tr>
                     <td scope="row">Ad Fees</td>
-                    <td class="text-center">$84,100</td>
-                    <td class="text-center">$605,100</td>
-                    <td class="text-center">$3,278,500</td>
+                    <td class="text-center" x-text="'$' + numeral(adFees(1)).format(0,0)">$84,100</td>
+                    <td class="text-center" x-text="'$' + numeral(adFees(2)).format(0,0)">$605,100</td>
+                    <td class="text-center" x-text="'$' + numeral(adFees(3)).format(0,0)">$3,278,500</td>
                   </tr>
                   <tr>
                     <td scope="row">CC Fees</td>
-                    <td class="text-center">$67,900</td>
-                    <td class="text-center">$521,700</td>
-                    <td class="text-center">$2,834,000</td>
+                    <td class="text-center" x-text="'$' + numeral(ccFees(1)).format(0,0)">$67,900</td>
+                    <td class="text-center" x-text="'$' + numeral(ccFees(2)).format(0,0)">$521,700</td>
+                    <td class="text-center" x-text="'$' + numeral(ccFees(3)).format(0,0)">$2,834,000</td>
                   </tr>
                   <tr>
                     <td scope="row">Programming</td>
-                    <td class="text-center">$48,000</td>
-                    <td class="text-center">$207,000</td>
-                    <td class="text-center">$1,227,500</td>
+                    <td class="text-center" x-text="'$' + numeral(programmingFees(1)).format(0,0)">$48,000</td>
+                    <td class="text-center" x-text="'$' + numeral(programmingFees(2)).format(0,0)">$207,000</td>
+                    <td class="text-center" x-text="'$' + numeral(programmingFees(3)).format(0,0)"$1,227,500</td>
                   </tr>
                   <tr>
                     <td scope="row"><b>Total For Year</b></td>
-                    <td class="text-center"><b>$322,703</b></td>
-                    <td class="text-center"><b>$1,881,490</b></td>
-                    <td class="text-center"><b>$10,280,741</b></td>
+                    <td class="text-center" x-text="'$' + numeral(totalRevenue(1)).format(0,0)"><b>$322,703</b></td>
+                    <td class="text-center" x-text="'$' + numeral(totalRevenue(2)).format(0,0)"><b>$1,881,490</b></td>
+                    <td class="text-center" x-text="'$' + numeral(totalRevenue(3)).format(0,0)"><b>$10,280,741</b></td>
                   </tr>
                   <tr>
                     <td scope="row"> </td>
@@ -1514,8 +1716,8 @@
                   <tr>
                     <td scope="row">Growth Rate</td>
                     <td class="text-center">-</td>
-                    <td class="text-center">483%</td>
-                    <td class="text-center">446%</td>
+                    <td class="text-center" x-text="numeral(increase(2)).divide(100).format('0.00%')">483%</td>
+                    <td class="text-center" x-text="numeral(increase(3)).divide(100).format('0.00%')">446%</td>
                   </tr>
                   <tr>
                     <td scope="row">Revenue/Client</td>
@@ -1526,7 +1728,7 @@
                 </tbody>
               </table>
             </div>
-
+          </div>
             <br><br>
 
             <hr>
@@ -2017,6 +2219,8 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
         <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
