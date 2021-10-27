@@ -35,6 +35,27 @@
 
      gtag('config', 'G-YWDPGYYQKC');
     </script>
+
+    <script>
+    function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+    if (!pass1) 
+    history.go(-1);
+    if (pass1 == "October2021") {
+    window.open('./SiQuis-BusPlan_HOME.html');
+    break;
+    } 
+    testV+=1;
+    var pass1 = 
+    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3) 
+    history.go(-1);
+    return " ";
+    } 
+    </script>
     
     <!-- Title -->
     <title>SiQuisSoftware</title> 
@@ -217,8 +238,6 @@
         </div>
       </div>
     </div>
-
-   
 
     <!-- Signup: Horizontal Drop-In -->
     <div class="modal fade" id="modalSignupDIHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupDIHorizontalTitle" aria-hidden="true">
@@ -843,13 +862,14 @@
             </li>
 
             <li class="nav-item">
-              <!-- Button -->
-              <a class="navbar-btn btn btn-xs text-black lift ms-10 mt-1" style="background-color:orange" data-bs-toggle="modal" href="#modalSigninHorizontal">
-                Login 
-              </a>
+              <!-- Button
+              <a class="navbar-btn btn btn-xs text-black lift ms-10 mt-1" style="background-color:orange">
+                Member Access 
+              </a> -->
+                <input type="button" class="navbar-btn btn btn-xs text-black lift ms-10 mt-1" style="background-color:orange"value="Member Access" onClick="passWord()">
             </li>
 
-            <!-- Avatar -->
+            <!-- Avatar 
             <li class="nav-item dropstart">
               <a class="text-white nav-link lift" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
                 <img class="avatar-img rounded-circle bg-black" style="width:30px" src="https://i.postimg.cc/J0Gk2M6X/User-White.png" alt="...">
@@ -860,18 +880,18 @@
                     <div class="dropdown-body">
                       <div class="row gx-0">
                         <div class="col-sm-12 col-md-6">
-                          <!-- Heading -->
+ 
                           <h1 class="text-info">
                             <b>Account Information</b>
                           </h1>
                         </div>
 
                         <div class="col-sm-12 col-md-6">
-                          <!-- Heading -->
+ 
                           <h4 class="dropdown-header" style="color:orange">
                             <b>Acount</b>
                           </h4>
-                          <!-- List -->
+ 
                           <a class="dropdown-item" href="./SiQuis-Account-1.html">
                             General
                           </a>
@@ -881,18 +901,18 @@
                           <a class="dropdown-item" data-bs-toggle="modal" href="#modalSigninHorizontal">
                             Login
                           </a>   
-                          <!-- List -->
+ 
                           <a class="dropdown-item" data-bs-toggle="modal" href="#modalSignupHorizontal">
                             Signup
                           </a>
                           <a class="dropdown-item mb-5" data-bs-toggle="modal" href="#modalPasswordReset">
                             Reset Password
                           </a>
-                          <!-- Heading -->
+                      
                           <h4 class="dropdown-header" style="color:orange">
                             <b>Contact Us</b>
                           </h4>
-                          <!-- List -->
+                      
                           <a href="mailto:support@siquisoft.com" class="text-reset">Email Us</a>
 
                         </div>
@@ -901,9 +921,8 @@
                   </div>
                 </div> 
               </div>
-            </li>
+            </li>  -->
           </ul>
-
         </div>
       </div>
     </nav>
@@ -962,10 +981,10 @@
           </div>
           <div class="col-auto">
 
-            <!-- Button -->
+            <!-- Button 
             <a class="btn btn-xs btn-gray-300-20 lift" href="./index.html">
               Log Out
-            </a>
+            </a> -->
 
           </div>
         </div> <!-- / .row -->
@@ -1243,12 +1262,12 @@
             </h3>
             <!-- Heading -->
             <h3 class="display-3 fw-bold text-white">
-              a renewable, <br>sustainable future.
+              a renewable, sustainable,<br>passion-based future.
             </h3>
             <!-- Text -->
             <p class="fs-lg text-gray-500 mb-6 mb-md-8">
-              The first step is easy, so let your passions take the rest in stride.<br>
-              What are you waiting for?           
+              The passion economy groundswell has begun.<br>
+              Si Quis Software can help you drop in.          
             </p>
             <!-- Button -->
             <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
