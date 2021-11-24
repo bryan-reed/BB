@@ -39,7 +39,7 @@
     <script>
     function passWord() {
     var testV = 1;
-    var pass1 = prompt('Please Enter Your Password',' ');
+    var pass1 = prompt('Please Enter Your Password','');
     while (testV < 3) {
     if (!pass1) 
     history.go(-1);
@@ -863,10 +863,10 @@
 
             <li class="nav-item">
               <!-- Button
-              <a class="navbar-btn btn btn-xs text-black lift ms-10 mt-1" style="background-color:orange">
+              <a class="navbar-btn btn btn-xs text-black lift ms-sm-0 mt-sm-3 ms-lg-10 mt-lg-1" style="background-color:orange">
                 Member Access 
               </a> -->
-                <input type="button" class="navbar-btn btn btn-xs text-black lift ms-10 mt-1" style="background-color:orange"value="Member Access" onClick="passWord()">
+                <input type="button" class="navbar-btn btn btn-xs text-black lift ms-sm-0 mt-sm-3 ms-lg-10 mt-lg-1" style="background-color:orange"value="Member Access" onClick="passWord()">
             </li>
 
             <!-- Avatar 
