@@ -26,6 +26,7 @@
     #more7 {display: none;}
     #more8 {display: none;}
     #more9 {display: none;}
+    #more10 {display: none;}
     table td {
       position: relative;
     }
@@ -2401,11 +2402,11 @@
 
           <h3 class="display-4 text-black mt-5" id="TOP_LEAGL"><b>LEGAL INFORMATION</b></h3>
 
-          <p>Read about our confidentially statement, investment summary, transaction, capitalization table and other important information regarding this plan and information provided. <a class="row d-inline text-info ms-2" onclick="changeText6()" id="myBtn6">Read Legal Information...</a>
+          <p>Read about our confidentially statement, investment summary, transaction, capitalization table and other important information regarding this plan and information provided. <a class="row d-inline text-info ms-2" onclick="changeText10()" id="myBtn10">Read Legal Information...</a>
           </p>
         
-          <div><span id="dots8"></span>
-            <span id="more8" class="text-secondary">
+          <div><span id="dots10"></span>
+            <span id="more10" class="text-secondary">
               <div class="container">
 
                 <hr>
@@ -3052,7 +3053,7 @@
       }
       </script>
 
-          <script>
+      <script>
       function changeText9() {
         var dots9 = document.getElementById("dots9");
         var moreText9 = document.getElementById("more9");
@@ -3066,6 +3067,24 @@
           dots9.style.display = "none";
           btnText9.innerHTML = "Read less..."; 
           moreText9.style.display = "inline";
+        }
+      }
+      </script>
+
+      <script>
+      function changeText10() {
+        var dots10 = document.getElementById("dots10");
+        var moreText10 = document.getElementById("more10");
+        var btnText10 = document.getElementById("myBtn10");
+
+        if (dots10.style.display === "none") {
+          dots10.style.display = "inline";
+          btnText10.innerHTML = "Read Legal Information..."; 
+          moreText10.style.display = "none";
+        } else {
+          dots10.style.display = "none";
+          btnText10.innerHTML = "Read less..."; 
+          moreText10.style.display = "inline";
         }
       }
       </script>
