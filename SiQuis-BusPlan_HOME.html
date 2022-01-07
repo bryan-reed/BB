@@ -27,6 +27,7 @@
     #more8 {display: none;}
     #more9 {display: none;}
     #more10 {display: none;}
+    #more11 {display: none;}
     table td {
       position: relative;
     }
@@ -2449,7 +2450,7 @@
 
                 <p class="fs-6">
                   TRANSACTION<br>
-                  Si Quis Software, LLC, dba Siquisoft.com ("Siquisoft" or the "Company") is seeking to raise $2,500,000 USD in the form of (a) convertible note of $500,000 with the following terms: 8% interest, 1 year term, 20% discount at the next qualified investment or triggering event. The “first money” in minimum tranche size is $250,000 and will receive an additional 5% discount. Second (and beyond) money in minimum tranche size is $25,000 or the remainder of availability and (b) Series A round of financing of $2,000,000. 
+                  Si Quis Software, LLC, dba Siquisoft.com ("Siquisoft" or the "Company") is seeking to raise $2,500,000 USD in the form of (a) convertible note of $500,000 with the following terms: 8% interest, 2 year term, 20% discount at the next qualified investment or triggering event. The “first money” in minimum tranche size is $250,000 and will receive an additional 5% discount. Second (and beyond) money in minimum tranche size is $25,000 or the remainder of availability and (b) Series A round of financing of $2,000,000. 
                   <br><br>
 
                   Alternatively we would consider (a) "Friends & Family round of $500,000 USD representing roughly 14.29% equity stake in Si Quis Software and (b) Series A round of financing of $2,000,000 USD.
@@ -2462,18 +2463,7 @@
                 <h4 class="text-primary" id="16_OtherInfo">16 | Other Information </h4>
                 <hr>
 
-                <p class="fs-6">
-                  CAPITALIZATION TABLE
-                  <br><br>
-                  Si Quis Software, LLC - Pre-Money
-                  <br>
-                  Member Name  /   Percent<br>
-                  Brent Bostwick    45%<br>
-                  Cynthia Bostwick  45%<br>
-                  Bryan Reed        10%<br>
-                  Option Pool       0%<br>
-                  <br>
-
+                 <p class="fs-6">
                   ATTORNEY
                   <br>
                   Matthew P. Smith<br>
@@ -2511,7 +2501,17 @@
                   The board of directors will have five members: (i) three will be appointed by a majority of the Company's common stock, and (ii) two will be appointed by a majority of the Common Stock holders.
                   <br><br>
 
-                  Appendix B: Company Risk Factors<br>
+                  CAPITALIZATION TABLE
+                  <br><br>
+                  Si Quis Software, LLC - Pre-Money
+                  <br>
+                  Member Name  /   Percent<br>
+                  Brent Bostwick    60%<br>
+                  Bryan Reed        40%<br>
+                  Option Pool       0%<br>
+                  <br>
+
+                  COMPANY RISK FACTORS<br>
                   The following Risk Factors have been prepared by the Company and will be circulated to all prospective investors in the Convertible Note offering. Si Quis Software, LLC has not had an independent third party approved or disapproved of these Risk Factors and has not independently determined whether such Risk Factors are accurate or complete.
                   <br><br>
 
@@ -2551,6 +2551,13 @@
 
           <div class="container" id="FootNotes_1">
             <div class="row">
+              <a class="row d-inline text-info ms-2" onclick="changeText11()" id="myBtn11"><br>Display Footnotes...</a>
+          </p>
+        
+          <div><span id="dots11"></span>
+            <span id="more10" class="text-secondary">
+              <div class="container">
+
               <table class="table table-responsive table-sm table-hover">
                 <thead>
                   <tr>
@@ -3086,6 +3093,24 @@
           dots10.style.display = "none";
           btnText10.innerHTML = "Read less..."; 
           moreText10.style.display = "inline";
+        }
+      }
+      </script>
+
+      <script>
+      function changeText11() {
+        var dots11 = document.getElementById("dots11");
+        var moreText11 = document.getElementById("more11");
+        var btnText11 = document.getElementById("myBtn11");
+
+        if (dots11.style.display === "none") {
+          dots11.style.display = "inline";
+          btnText11.innerHTML = "Display Footnotes..."; 
+          moreText11.style.display = "none";
+        } else {
+          dots11.style.display = "none";
+          btnText11.innerHTML = "Read less..."; 
+          moreText11.style.display = "inline";
         }
       }
       </script>
