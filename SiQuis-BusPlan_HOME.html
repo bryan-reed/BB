@@ -1377,7 +1377,8 @@
             </div>
           </div>
 
-          In addition to our client’s problems, their customers are looking for solutions to their problems as well.
+          <b>The Si Quis platform solves for two problem sets simultaneously.</b><br>
+            In addition to the problems our clients face, their customers are looking for solutions to their problems as well.
           <br><br>
 
           The US is approaching 1.8 billion websites and growing at double digit rates and on average, 4.4 million blog posts occur every day in the US. Finding credible, relevant and timely information about individual interest is becoming complicated and time consuming. Although finding products (new and used) and services is relatively easy to do on-line, buying and selling remains primarily transactional and does little to foster the interactions that build community and trust around brands, products and services. Moreover, people are craving privacy, safety, and a respite from the throngs of people on social platforms. All of this and more represents an emerging dynamic that people are facing and looking to change.<a class="text-success link lift ms-1" data-bs-toggle="modal" href="#modalFootnotes"><small>[3]</small></a>
@@ -1841,97 +1842,150 @@
 
           Our platform is positioned to address segments of the market that are under served, opening an untapped subset of people looking to join the Passion Economy. In addition, our platform is equally positioned to amplify existing passion-based business by providing functionality not present in the competitor landscape and provide avenues to generate passive income.
           <br><br>
-          We've structured our revenue model to be approachable and flexible, allowing clients to invest in and grow their businesses, yet requiring "skin-in-the-game", in the form of setup fees, to launch their sites and remain engaged. We kept the model simple as well, making it a transparent and fair value proposition. 
+          We've structured our revenue model to be approachable and flexible with multiple entry points and price levels to accommodate "new-to-market" or "well-established" businesses. This allows clients to invest in what they need now to grow their business by layer in feature sets as needed as business grows. We kept the model simple as well, making it a transparent and fair value proposition. 
           <br><br>
-          Our revenue model provides an ever-increasing and recurring stream of income, enabling us to leverage our existing resources and attract and hire the expertise we need to strengthen our team and grow shareholder value.
+          For Si Quis, our revenue model provides an ever-increasing and recurring stream of income, enabling us to leverage our existing resources and attract and hire the expertise we need to strengthen our team, create value for our clients and grow shareholder value.
           <br><br>
-          The tables below summarize the projected number of clients and revenue/expense generated for years 1 through 4. Assumptions that affect the projections can be modified to create a different set of projections, although the default represents our "envisioned" path.
+          The tables below summarize the projected number of clients and revenue/expense generated for years 1 through 5 post financing. Assumptions that affect the projections can be modified to create a different set of projections, although the default represents our "envisioned" path.
           <br><br>
 
-          <h3 >Assumptions:</h3>
+          <h2 >Assumptions:</h2>
+
+          <h3 >End of Year Total Clients:</h3>
 
           <div x-data="revenue()" x-init="updateTotalClients()">
             <div class="table-responsive">
               <table class="table table-sm">
                 <thead>
                   <th scope="col" width="175">Description</th>
-                  <th colspan="3" class="text-center">Base Package</th>
-                  <th colspan="3" class="text-center">Pro Package</th>
+                  <th scope="col" class="text-center" width="150">Range</th>
+                  <th scope="col" class="text-center">Year 1</th>
+                  <th scope="col" class="text-center">Year 2</th>
+                  <th scope="col" class="text-center">Year 3</th>
+                  <th scope="col" class="text-center">Year 4</th>
+                  <th scope="col" class="text-center">Year 5</th>
                 </thead>
                 <tbody>
                   <tr>
-                    <td scope="col" class="border-top border-secondary"></td>
-                    <td class="text-center border-top border-left border-secondary">Year 2</td>
-                    <td class="text-center border-top border-secondary">Year 3</td>
-                    <td class="text-center border-top border-secondary">Year 4</td>
-                    <td class="text-center border-top border-left border-secondary">Year 2</td>
-                    <td class="text-center border-top border-secondary">Year 3</td>
-                    <td class="text-center border-top border-secondary">Year 4</td>
+                    <td scope="col" class="border-top border-secondary">
+                      <button onClick="window.location.reload();" class="btn btn-xs text-black" style="background-color:orange">Reset to Defaults</button>
+                    </td>
+                    <td class="text-center border-top border-left border-secondary"></td>
+                    <td class="text-center border-top border-left border-secondary"></td>
+                    <td class="text-center border-top border-left border-secondary"></td>
+                    <td class="text-center border-top border-left border-secondary"></td>
+                    <td class="text-center border-top border-left border-secondary"></td>
+                    <td class="text-center border-top border-left border-secondary"></td>
+                  </tr>
+
+                  </tr>
+                    <td scope="row">Starter Plan:</td>
+                    <td class="border-left border-secondary">
+                      <input type="range" min="30" max="100" step="5" x-on:input="updateClients(event.target, 'startClients1')" x-bind:value="startClients1" class="form-range pt-1 px-5" />
+                    <td class="text-center border-left border-secondary" x-text="startClients1">100</td>
+                    <td class="text-center border-left border-secondary" x-text="startClients2">200</td>
+                    <td class="text-center border-left border-secondary" x-text="startClients3">300</td>
+                    <td class="text-center border-left border-secondary" x-text="startClients4">400</td>
+                    <td class="text-center border-left border-secondary" x-text="startClients5">500</td>
                   </tr>
                   <tr>
-                    <td colspan="1" class="pt-3">
-                      <button onClick="window.location.reload();" class="btn btn-xs text-black" style="background-color:orange">Reset to Defaults</button></td>
-                    <td colspan="3" class="border-left border-secondary">
-                      <input type="range" min="0" max="250" step="25" x-on:input="updateClients(event.target, 'baseClients')" x-bind:value="baseClients" class="form-range pt-5 px-5" />
-                    <td colspan="3" class="border-left border-secondary">
-                      <input type="range" min="0" max="250" step="25" x-on:input="updateClients(event.target, 'proClients')" x-bind:value="proClients" class="form-range pt-5 px-5" />
+                    <td scope="row">Growth Plan:</td>
+                    <td class="border-left border-secondary">
+                      <input type="range" min="15" max="50" step="5" x-on:input="updateClients(event.target, 'growClients1')" x-bind:value="growClients1" class="form-range pt-1 px-5" />
+                    <td class="text-center border-left border-secondary" x-text="growClients1">44</td>
+                    <td class="text-center border-left border-secondary" x-text="growClients2">168</td>
+                    <td class="text-center border-left border-secondary" x-text="growClients3">883</td>
+                    <td class="text-center border-left border-secondary" x-text="growClients4">44</td>
+                    <td class="text-center border-left border-secondary" x-text="growClients5">168</td>
+                  </tr>
+                  </tr>
+                    <td scope="row">Professional Plan:</td>
+                    <td class="border-left border-secondary">
+                      <input type="range" min="5" max="25" step="1" x-on:input="updateClients(event.target, 'proClients1')" x-bind:value="proClients1" class="form-range pt-1 px-5" />
+                    <td class="text-center border-left border-secondary" x-text="proClients1">44</td>
+                    <td class="text-center border-left border-secondary" x-text="proClients2">168</td>
+                    <td class="text-center border-left border-secondary" x-text="proClients3">883</td>
+                    <td class="text-center border-left border-secondary" x-text="proClients4">44</td>
+                    <td class="text-center border-left border-secondary" x-text="proClients5">168</td>
                   </tr>
                   <tr>
-                    <td scope="row">Number of Clients:</td>
-                    <td class="text-center border-left border-secondary" x-text="baseClients">44</td>
-                    <td class="text-center" x-text="baseClients2">168</td>
-                    <td class="text-center" x-text="baseClients3">883</td>
-                    <td class="text-center border-left border-secondary" x-text="proClients">44</td>
-                    <td class="text-center" x-text="proClients2">168</td>
-                    <td class="text-center" x-text="proClients3">883</td>
+                    <td scope="row" class="border-bottom border-secondary">Enterprise Plan:</td>
+                    <td class="border-left border-secondary">
+                      <input type="range" min="1" max="10" step="1" x-on:input="updateClients(event.target, 'entClients1')" x-bind:value="entClients1" class="form-range pt-1 px-5" />
+                    <td class="text-center border-left border-secondary" x-text="entClients1">44</td>
+                    <td class="text-center border-left border-secondary" x-text="entClients2">168</td>
+                    <td class="text-center border-left border-secondary" x-text="entClients3">883</td>
+                    <td class="text-center border-left border-secondary" x-text="entClients4">44</td>
+                    <td class="text-center border-left border-secondary" x-text="entClients5">168</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-secondary"><b>Total Clients:</b></td>
+                    <td class="text-center border-top border-left border-secondary"></td>
+                    <td class="text-center border-top border-left border-secondary" x-text="totalClients1">44</td>
+                    <td class="text-center border-top border-left border-secondary" x-text="totalClients2">168</td>
+                    <td class="text-center border-top border-left border-secondary" x-text="totalClients3">883</td>
+                    <td class="text-center border-top border-left border-secondary" x-text="totalClients4">44</td>
+                    <td class="text-center border-top border-left border-secondary" x-text="totalClients5">168</td>
                   </tr>
                   <tr>
                     <td scope="col" class="border-bottom border-secondary">Client Growth Rate:</td>
+                    <td class="text-center border-left border-bottom border-secondary"></td>
                     <td class="text-center border-left border-bottom border-secondary">-</td>
-                    <td class="text-center border-bottom border-secondary"><input type="number" x-model="baseGrowth" x-on:input="updateTotalClients()" class="rate"></td>
-                    <td class="text-center border-bottom border-secondary"><input type="number" x-model="baseGrowth2" x-on:input="updateTotalClients()" class="rate" /></td>
-                    <td class="text-center border-left border-bottom border-secondary">-</td>
-                    <td class="text-center border-bottom border-secondary"><input type="number" x-model="proGrowth" x-on:input="updateTotalClients()" class="rate" /></td>
-                    <td class="text-center border-bottom border-secondary"><input type="number" x-model="proGrowth2" x-on:input="updateTotalClients()" class="rate" /></td>
+                    <td class="text-center border-left border-bottom border-secondary"><input type="number" x-model="baseGrowth2" x-on:input="updateTotalClients()" class="rate"></td>
+                    <td class="text-center border-left border-bottom border-secondary"><input type="number" x-model="baseGrowth3" x-on:input="updateTotalClients()" class="rate" /></td>
+                    <td class="text-center border-left border-bottom border-secondary"><input type="number" x-model="baseGrowth4" x-on:input="updateTotalClients()" class="rate" /></td>
+                    <td class="text-center border-left border-bottom border-secondary"><input type="number" x-model="baseGrowth5" x-on:input="updateTotalClients()" class="rate" /></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <br>
+
             <h3 class="">Projected Company Revenue/Expense:</h3>
             <div class="table-responsive">
               <table class="table table-responsive table-sm">
                 <thead>
                   <tr>
                     <th scope="col" width="175" >Description</th>
+                    <th class="text-center">Year 1</th>
                     <th class="text-center">Year 2</th>
                     <th class="text-center">Year 3</th>
                     <th class="text-center">Year 4</th>
+                    <th class="text-center">Year 5</th>
                   </tr>
                 </thead>
                   <tr>
                     <td scope="row" class="border-top mt-2">Total Clients:</td>
-                    <td class="text-center border-top border-left border-secondary pt-2" x-text="totalClients">44</td>
+                    <td class="text-center border-top border-left border-secondary pt-2" x-text="totalClients1">44</td>
                     <td class="text-center border-top border-left border-secondary pt-2" x-text="totalClients2">168</td>
                     <td class="text-center border-top border-left border-secondary pt-2" x-text="totalClients3">883</td>
+                    <td class="text-center border-top border-left border-secondary pt-2" x-text="totalClients4">168</td>
+                    <td class="text-center border-top border-left border-secondary pt-2" x-text="totalClients5">883</td>
                   </tr>
                   <tr>
                     <td scope="row" class="border-secondary text-success">Total Revenues:</td>
-                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(1)).format(0,0)">$322,703</td>
-                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(2)).format(0,0)">$1,881,490</td>
-                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(3)).format(0,0)">$10,280,741</td>
+                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(1)).format(0,0)">$100</td>
+                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(2)).format(0,0)">$100</td>
+                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(3)).format(0,0)">$100</td>
+                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(4)).format(0,0)">$100</td>
+                    <td class="text-center border-left border-secondary text-success" x-text="'$' + numeral(totalRevenue(5)).format(0,0)">$100</td>
+
                   </tr>
                   <tr>
                     <td scope="row" class="border-bottom border-secondary text-danger">Total Expenses:</td>
                     <td class="text-center border-left border-secondary text-danger" x-text="'$' + numeral(totalExpense(1)).format(0,0)">$100,000</td>
                     <td class="text-center border-left border-bottom border-secondary text-danger" x-text="'$' + numeral(totalExpense(2)).format(0,0)">$200,000</td>
                     <td class="text-center border-left border-bottom border-secondary text-danger" x-text="'$' + numeral(totalExpense(3)).format(0,0)">$300,000</td>
+                    <td class="text-center border-left border-bottom border-secondary text-danger" x-text="'$' + numeral(totalExpense(4)).format(0,0)">$200,000</td>
+                    <td class="text-center border-left border-bottom border-secondary text-danger" x-text="'$' + numeral(totalExpense(5)).format(0,0)">$300,000</td>
                   </tr>
                   <tr>
                     <td scope="row" class="border-top border-secondary">Profit/Loss (Ops)</td>
                     <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalProfit(1)).format(0,0)">$500,000</td>
                     <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalProfit(2)).format(0,0)">$200,000</td>
                     <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalProfit(3)).format(0,0)">$300,000</td>
+                    <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalProfit(4)).format(0,0)">$200,000</td>
+                    <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalProfit(5)).format(0,0)">$300,000</td>
                   </tr>
                   <tr>
                     <td class="colspan-4 pt-4 border-top border-secondary"></td>
@@ -1944,21 +1998,29 @@
                       <input type="range" min="0" max="5000000" step="500000" x-on:input="updateInvestment(event.target, 'totalInv2')" x-bind:value="totalInv2" class="form-range pt-1 px-5" /></td>
                     <td class="text-center border-top border-left border-bottom border-secondary">
                       <input type="range" min="0" max="20000000" step="1000000" x-on:input="updateInvestment(event.target, 'totalInv3')" x-bind:value="totalInv3" class="form-range pt-1 px-5" /></td>
+                    <td class="text-center border-top border-left border-bottom border-secondary">
+                      <input type="range" min="0" max="20000000" step="1000000" x-on:input="updateInvestment(event.target, 'totalInv4')" x-bind:value="totalInv4" class="form-range pt-1 px-5" /></td>
+                    <td class="text-center border-top border-left border-bottom border-secondary">
+                      <input type="range" min="0" max="20000000" step="1000000" x-on:input="updateInvestment(event.target, 'totalInv5')" x-bind:value="totalInv5" class="form-range pt-1 px-5" /></td>
                   </tr>
                   <tr>
                     <td scope="row" class="border-secondary">Investment:</td>
-                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(totalInv1).format(0,0)">$250,000</td>
-                    <td class="text-center border-left border-bottom border-secondary" x-text="'$' + numeral(totalInv2).format(0,0)">$2,000,000</td>
+                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(totalInv1).format(0,0)">$99</td>
+                    <td class="text-center border-left border-bottom border-secondary" x-text="'$' + numeral(totalInv2).format(0,0)">$99</td>
                     <td class="text-center border-left border-bottom border-secondary" x-text="'$' + numeral(totalInv3).format(0,0)">$0</td>
+                    <td class="text-center border-left border-bottom border-secondary" x-text="'$' + numeral(totalInv4).format(0,0)">$0</td>
+                    <td class="text-center border-left border-bottom border-secondary" x-text="'$' + numeral(totalInv5).format(0,0)">$0</td>
                   </tr>
                   <tr>
                     <td class="colspan-4 pt-4 border-top border-secondary"></td>
                   </tr>
                   <tr>
                     <td scope="row" class="border-top border-secondary">Cash End-of-Year:</td>
-                    <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(yearEOY(1)).format(0,0)">$250,000</td>
-                    <td class="text-center border-top border-left border-bottom border-secondary" x-text="'$' + numeral(yearEOY(2)).format(0,0)">$2,000,000</td>
+                    <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(yearEOY(1)).format(0,0)">$0</td>
+                    <td class="text-center border-top border-left border-bottom border-secondary" x-text="'$' + numeral(yearEOY(2)).format(0,0)">$0</td>
                     <td class="text-center border-top border-left border-bottom border-secondary" x-text="'$' + numeral(yearEOY(3)).format(0,0)">$0</td>
+                    <td class="text-center border-top border-left border-bottom border-secondary" x-text="'$' + numeral(yearEOY(4)).format(0,0)">$0</td>
+                    <td class="text-center border-top border-left border-bottom border-secondary" x-text="'$' + numeral(yearEOY(5)).format(0,0)">$0</td>
                   </tr>
                   </tbody>
               </table>
@@ -1970,179 +2032,309 @@
                 <thead>
                   <tr>
                     <th scope="col" width="175" >Description</th>
+                    <th class="text-center">Year 1</th>
                     <th class="text-center">Year 2</th>
                     <th class="text-center">Year 3</th>
                     <th class="text-center">Year 4</th>
+                    <th class="text-center">Year 5</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td scope="row" class="border-top border-secondary">Growth Rate:</td>
+                    <td scope="row" class="border-top border-secondary">$$ Growth Rate:</td>
                     <td class="text-center border-top border-left border-secondary pt-3">-</td>
-                    <td class="text-center border-top border-left border-secondary pt-3" x-text="numeral(increase(2)).divide(100).format('0.00%')">483%</td>
-                    <td class="text-center border-top border-left border-secondary pt-3" x-text="numeral(increase(3)).divide(100).format('0.00%')">446%</td>
+                    <td class="text-center border-top border-left border-secondary pt-3" x-text="numeral(increase(2)).divide(100).format('0.00%')">400%</td>
+                    <td class="text-center border-top border-left border-secondary pt-3" x-text="numeral(increase(3)).divide(100).format('0.00%')">300%</td>
+                    <td class="text-center border-top border-left border-secondary pt-3" x-text="numeral(increase(4)).divide(100).format('0.00%')">200%</td>
+                    <td class="text-center border-top border-left border-secondary pt-3" x-text="numeral(increase(5)).divide(100).format('0.00%')">100%</td>
                   </tr>
                   <tr>
                     <td scope="row" class="border-secondary">Revenue/Client/Yr:</td>
-                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient2(1)).format(0.0)">$7,334</td>
-                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient2(2)).format(0.0)">$11,199</td>
-                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient2(3)).format(0.0)">$11,643</td>
+                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient(1)).format(0.0)">$7,000</td>
+                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient(2)).format(0.0)">$8,000</td>
+                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient(3)).format(0.0)">$9,000</td>
+                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient(4)).format(0.0)">$10,000</td>
+                    <td class="text-center border-left border-secondary" x-text="'$' + numeral(revenueClient(5)).format(0.0)">$11,000</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <a class="row btn btn-link text-info text-strong" href="#A_details" data-scroll onclick="changeText7()" id="myBtn7">View details...</a>
+            <a class="row btn btn-link text-info text-strong" href="#A_details" data-scroll onclick="changeText7()" id="myBtn7">View assumption details...</a>
             <br><br>
 
             <div id="A_details"><span id="dots7"></span><span id="more7" class="text-secondary">
-              <h2 class="text-muted">Assumptions:</h2>
+              <h2 class="text-muted">Assumptions - Detail:</h2>
               <div class="table-responsive">
-                <table class="table table-sm">
+                <table class="table table-responsive table-sm">
                   <thead>
-                    <th scope="col" width="175">Description</th>
-                    <th colspan="3" width="175" class="text-center">Base Package</th>
-                    <th colspan="3" width="175" class="text-center">Pro Package</th>
+                    <th scope="col" width="175" >Description</th>
+                    <th class="text-center">Year 1</th>
+                    <th class="text-center">Year 2</th>
+                    <th class="text-center">Year 3</th>
+                    <th class="text-center">Year 4</th>
+                    <th class="text-center">Year 5</th>
                   </thead>
                   <tbody>
                     <tr>
-                      <td scope="row" class="border-top border-secondary"></td>
-                      <td class="text-center border-top border-left border-secondary">Year 2</td>
-                      <td class="text-center border-top border-secondary">Year 3</td>
-                      <td class="text-center border-top border-secondary">Year 4</td>
-                      <td class="text-center border-top border-left border-secondary">Year 2</td>
-                      <td class="text-center border-top border-secondary">Year 3</td>
-                      <td class="text-center border-top border-secondary">Year 4</td>
+                      <td colspan="6" class="text-left border-top border-secondary"><b>Starter Plan:</b></td>
                     </tr>
                     <tr>
-                      <td scope="row" class="border-secondary">Subscriptions <i><small>(Mth)</small></i>: </td>
-                      <td class="text-center border-left border-secondary">$250</td>
-                      <td class="text-center border-secondary">$275</td>
-                      <td class="text-center border-secondary">$300</td>
-                      <td class="text-center border-left border-secondary">$500</td>
-                      <td class="text-center border-secondary">$750</td>
-                      <td class="text-center border-secondary">$1,000</td>
+                      <td scope="row" class="border-top border-secondary">Subscriptions <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + startSubRate1"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + startSubRate2"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + startSubRate3"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + startSubRate4"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + startSubRate5"></td>
                     </tr>
                     <tr>
-                      <td scope="row" class="border-secondary">Setup Fee: <i><small>(1x)</small></i>: </td>
-                      <td class="text-center border-left border-secondary">$1,500</td>
-                      <td class="text-center border-secondary">$1,750</td>
-                      <td class="text-center border-secondary">$2,000</td>
-                      <td class="text-center border-left border-secondary">$3,500</td>
-                      <td class="text-center border-secondary">$4,500</td>
-                      <td class="text-center border-secondary">$5,000</td>
+                      <td scope="row" class="border-secondary">Setup Fees <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startSetupRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startSetupRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startSetupRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startSetupRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startSetupRate5"></td>
                     </tr>
                     <tr>
-                      <td scope="row" class="border-secondary">Ad Revenue <i><small>(Mth)</small></i>: </td>
-                      <td class="text-center border-left border-secondary">$150</td>
-                      <td class="text-center border-secondary">$200</td>
-                      <td class="text-center border-secondary">$250</td>
-                      <td class="text-center border-left border-secondary">$200</td>
-                      <td class="text-center border-secondary">$300</td>
-                      <td class="text-center border-secondary">$400</td>
+                      <td scope="row" class="border-secondary">CC Fees <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startccRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startccRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startccRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startccRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startccRate5"></td>
                     </tr>
                     <tr>
-                      <td scope="row" class="border-secondary">CC Fees %<i><small>(Mth)</small></i>: </td>
-                      <td class="text-center border-left border-secondary">$50</td>
-                      <td class="text-center border-secondary">$75</td>
-                      <td class="text-center border-secondary">$100</td>
-                      <td class="text-center border-left border-secondary">$100</td>
-                      <td class="text-center border-secondary">$125</td>
-                      <td class="text-center border-secondary">$150</td>
+                      <td scope="row" class="border-secondary">Programming <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startPrgmRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startPrgmRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startPrgmRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startPrgmRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + startPrgmRate5"></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="6" class="text-left border-top border-secondary"><b>Growth Plan:</b></td>
                     </tr>
                     <tr>
-                      <td scope="row" class="border-secondary">Prgm Fees <i><small>(1x)</small></i>: </td>
-                      <td class="text-center border-left border-secondary">$500</td>
-                      <td class="text-center border-secondary">$750</td>
-                      <td class="text-center border-secondary">$1,000</td>
-                      <td class="text-center border-left border-secondary">$1,500</td>
-                      <td class="text-center border-secondary">$2,000</td>
-                      <td class="text-center border-secondary">$2,500</td>
+                      <td scope="row" class="border-top border-secondary">Subscriptions <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + growSubRate1"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + growSubRate2"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + growSubRate3"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + growSubRate4"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + growSubRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">Setup Fees <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growSetupRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growSetupRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growSetupRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growSetupRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growSetupRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">CC Fees <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growccRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growccRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growccRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growccRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growccRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">Programming <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growPrgmRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growPrgmRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growPrgmRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growPrgmRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + growPrgmRate5"></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="6" class="text-left border-top border-secondary"><b>Professional Plan:</b></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-top border-secondary">Subscriptions <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + proSubRate1"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + proSubRate2"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + proSubRate3"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + proSubRate4"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + proSubRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">Setup Fees <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proSetupRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proSetupRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proSetupRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proSetupRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proSetupRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">CC Fees <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proccRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proccRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proccRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proccRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proccRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">Programming <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proPrgmRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proPrgmRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proPrgmRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proPrgmRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + proPrgmRate5"></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="6" class="text-left border-top border-secondary"><b>Enterprise Plan:</b></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-top border-secondary">Subscriptions <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + entSubRate1"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + entSubRate2"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + entSubRate3"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + entSubRate4"></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + entSubRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">Setup Fees <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entSetupRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entSetupRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entSetupRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entSetupRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entSetupRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">CC Fees <i><small>(Mth)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entccRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entccRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entccRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entccRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entccRate5"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="border-secondary">Programming <i><small>(1x)</small></i>: </td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entPrgmRate1"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entPrgmRate2"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entPrgmRate3"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entPrgmRate4"></td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + entPrgmRate5"></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
           
-              <h3 class="text-muted mt-1">Projected Company Revenue Streams:</h3>
+              <h3 class="text-muted my-4">Projected Clients By Plan Type:</h3>
 
               <div class="">
                 <table class="table table-responsive table-sm">
                   <thead>
                     <tr>
-                      <th <th scope="col" width="175">Description</th>
-                      <th scope="col" width="175" class="text-center">Year 2</th>
-                      <th scope="col" width="175" class="text-center">Year 3</th>
-                      <th scope="col" width="175" class="text-center">Year 4</th>
+                      <th scope="col" width="175" >Description</th>
+                      <th class="text-center">Year 1</th>
+                      <th class="text-center">Year 2</th>
+                      <th class="text-center">Year 3</th>
+                      <th class="text-center">Year 4</th>
+                      <th class="text-center">Year 5</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td scope="row" class="border-top border-primary">Total Clients</td>
-                      <td class="text-center border-top border-left border-secondary" x-text="totalClients">44</td>
+                      <td scope="row" class="border-top border-secondary">Total Clients</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="totalClients1">44</td>
                       <td class="text-center border-top border-left border-secondary" x-text="totalClients2">168</td>
                       <td class="text-center border-top border-left border-secondary" x-text="totalClients3">883</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="totalClients4">883</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="totalClients5">883</td>
                     </tr>
                     <tr>
-                      <td scope="row" class="ps-5 text-muted">Base Clients</td>
-                      <td class="text-center text-muted border-left border-secondary" x-text="baseClients">44</td>
-                      <td class="text-center text-muted border-left border-secondary" x-text="baseClients2">168</td>
-                      <td class="text-center text-muted border-left border-secondary" x-text="baseClients3">883</td>
+                      <td scope="row" class="ps-5 text-muted">Starter Clients</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="startClients1">44</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="startClients2">168</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="startClients3">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="startClients4">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="startClients5">883</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5 text-muted border-secondary">Growth Clients</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="growClients1">44</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="growClients2">168</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="growClients3">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="growClients4">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="growClients5">883</td>
                     </tr>
                     <tr>
                       <td scope="row" class="ps-5 text-muted border-secondary">Pro Clients</td>
-                      <td class="text-center text-muted border-left border-secondary" x-text="proClients">44</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="proClients1">44</td>
                       <td class="text-center text-muted border-left border-secondary" x-text="proClients2">168</td>
                       <td class="text-center text-muted border-left border-secondary" x-text="proClients3">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="proClients4">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="proClients5">883</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="ps-5 text-muted border-secondary">Enterprise Clients</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="entClients1">44</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="entClients2">168</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="entClients3">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="entClients4">883</td>
+                      <td class="text-center text-muted border-left border-secondary" x-text="entClients5">883</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
+              <h3 class="text-muted my-4">Projected Company Revenue Streams By Segment:</h3>
+
               <div class="">
                 <table class="table table-responsive table-sm">
                   <thead>
                     <tr>
-                      <th <th scope="col" width="175">Description</th>
-                      <th scope="col" width="175" class="text-center">Year 2</th>
-                      <th scope="col" width="175" class="text-center">Year 3</th>
-                      <th scope="col" width="175" class="text-center">Year 4</th>
+                      <th scope="col" width="175" >Description</th>
+                      <th class="text-center">Year 1</th>
+                      <th class="text-center">Year 2</th>
+                      <th class="text-center">Year 3</th>
+                      <th class="text-center">Year 4</th>
+                      <th class="text-center">Year 5</th>
                     </tr>
                   </thead>
                     <tr>
-                      <td scope="row" class="border-top border-secondary pt-3">Setup Fees</td>
-                      <td class="text-center border-top border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(1)).format(0,0)">$88,986</td>
-                      <td class="text-center border-top border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(2)).format(0,0)">$340,206</td>
-                      <td class="text-center border-top border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(3)).format(0,0)">$1,909,892</td>                
-                    </tr>
-                    <tr>
-                      <td scope="row">Subscription Fees</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(subscriptionFees(1)).format(0,0)">$33,717</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(subscriptionFees(2)).format(0,0)">$207,484</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(subscriptionFees(3)).format(0,0)">$1,030,849</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Ad Fees</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(adFees(1)).format(0,0)">$84,100</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(adFees(2)).format(0,0)">$605,100</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(adFees(3)).format(0,0)">$3,278,500</td>
+                      <td scope="row" class="border-top border-secondary">Subscription Fees</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(subFees(1)).format(0,0)">$33,717</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(subFees(2)).format(0,0)">$207,484</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(subFees(3)).format(0,0)">$1,030,849</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(subFees(4)).format(0,0)">$1,030,849</td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(subFees(5)).format(0,0)">$1,030,849</td>
                     </tr>
                     <tr>
                       <td scope="row">CC Fees</td>
                       <td class="text-center border-left border-secondary" x-text="'$' + numeral(ccFees(1)).format(0,0)">$67,900</td>
                       <td class="text-center border-left border-secondary" x-text="'$' + numeral(ccFees(2)).format(0,0)">$521,700</td>
                       <td class="text-center border-left border-secondary" x-text="'$' + numeral(ccFees(3)).format(0,0)">$2,834,000</td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(ccFees(4)).format(0,0)">$2,834,000</td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(ccFees(5)).format(0,0)">$2,834,000</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Setup Fees</td>
+                      <td class="text-center border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(1)).format(0,0)">$88,986</td>
+                      <td class="text-center border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(2)).format(0,0)">$340,206</td>
+                      <td class="text-center border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(3)).format(0,0)">$1,909,892</td>
+                      <td class="text-center border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(4)).format(0,0)">$1,909,892</td>
+                      <td class="text-center border-left border-secondary pt-3" x-text="'$' + numeral(setupFees(5)).format(0,0)">$1,909,892</td>                
                     </tr>
                     <tr>
                       <td scope="row">Programming</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(programmingFees(1)).format(0,0)">$48,000</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(programmingFees(2)).format(0,0)">$207,000</td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(programmingFees(3)).format(0,0)"$1,227,500</td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(prgmFees(1)).format(0,0)">$48,000</td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(prgmFees(2)).format(0,0)">$207,000</td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(prgmFees(3)).format(0,0)">$1,227,500</td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(prgmFees(4)).format(0,0)">$1,227,500</td>
+                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(prgmFees(5)).format(0,0)">$1,227,500</td>
                     </tr>
                     <tr>
-                      <td scope="row" class="border-secondary"><b>Total For Year</b></td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(totalRevenue(1)).format(0,0)"><b>$322,703</b></td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(totalRevenue(2)).format(0,0)"><b>$1,881,490</b></td>
-                      <td class="text-center border-left border-secondary" x-text="'$' + numeral(totalRevenue(3)).format(0,0)"><b>$10,280,741</b></td>
+                      <td scope="row" class="border-top border-secondary"><b>Total For Year</b></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalRevenue(1)).format(0,0)"><b>$322,703</b></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalRevenue(2)).format(0,0)"><b>$1,881,490</b></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalRevenue(3)).format(0,0)"><b>$10,280,741</b></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalRevenue(4)).format(0,0)"><b>$10,280,741</b></td>
+                      <td class="text-center border-top border-left border-secondary" x-text="'$' + numeral(totalRevenue(5)).format(0,0)"><b>$10,280,741</b></td>
                     </tr>
                   </tbody>
                 </table>
@@ -3134,177 +3326,318 @@
       <script>
       function revenue() {
         return {
-          baseClients: 50,
-          baseClients2: 0,
-          baseClients3: 0,
-          proClients: 50,
-          proClients2: 0,
-          proClients3: 0,
-          baseGrowth: 200,
-          baseGrowth2: 150,
-          proGrowth: 250,
-          proGrowth2: 200,
-          totalClients: 50,
+          startClients1: 50,
+          startClients2: 125,
+          startClients3: 375,
+          startClients4: 938,
+          startClients5: 1875,
+          growClients1: 25,
+          growClients2: 63,
+          growClients3: 188,
+          growClients4: 469,
+          growClients5: 938,
+          proClients1: 6,
+          proClients2: 18,
+          proClients3: 63,
+          proClients4: 221,
+          proClients5: 551,
+          entClients1: 1,
+          entClients2: 4,
+          entClients3: 20,
+          entClients4: 70,
+          entClients5: 175,
+
+          startSubRate1: 100,
+          startSubRate2: 100,
+          startSubRate3: 150,
+          startSubRate4: 150,
+          startSubRate5: 150,
+          growSubRate1: 250,
+          growSubRate2: 250,
+          growSubRate3: 300,
+          growSubRate4: 300,
+          growSubRate5: 500,
+          proSubRate1: 350,
+          proSubRate2: 500,
+          proSubRate3: 600,
+          proSubRate4: 600,
+          proSubRate5: 1000,
+          entSubRate1: 1000,
+          entSubRate2: 2000,
+          entSubRate3: 3000,
+          entSubRate4: 4000,
+          entSubRate5: 5000,
+
+          startSetupRate1: 0,
+          startSetupRate2: 100,
+          startSetupRate3: 150,
+          startSetupRate4: 150,
+          startSetupRate5: 150,
+          growSetupRate1: 250,
+          growSetupRate2: 250,
+          growSetupRate3: 300,
+          growSetupRate4: 300,
+          growSetupRate5: 500,
+          proSetupRate1: 350,
+          proSetupRate2: 500,
+          proSetupRate3: 600,
+          proSetupRate4: 600,
+          proSetupRate5: 1000,
+          entSetupRate1: 1000,
+          entSetupRate2: 2000,
+          entSetupRate3: 3000,
+          entSetupRate4: 4000,
+          entSetupRate5: 5000,
+
+          startccRate1: 10,
+          startccRate2: 10,
+          startccRate3: 10,
+          startccRate4: 10,
+          startccRate5: 10,
+          growccRate1: 25,
+          growccRate2: 30,
+          growccRate3: 35,
+          growccRate4: 40,
+          growccRate5: 45,
+          proccRate1: 50,
+          proccRate2: 55,
+          proccRate3: 60,
+          proccRate4: 65,
+          proccRate5: 70,
+          entccRate1: 100,
+          entccRate2: 125,
+          entccRate3: 150,
+          entccRate4: 175,
+          entccRate5: 200,
+
+          startPrgmRate1: 100,
+          startPrgmRate2: 100,
+          startPrgmRate3: 150,
+          startPrgmRate4: 150,
+          startPrgmRate5: 150,
+          growPrgmRate1: 250,
+          growPrgmRate2: 250,
+          growPrgmRate3: 300,
+          growPrgmRate4: 300,
+          growPrgmRate5: 500,
+          proPrgmRate1: 350,
+          proPrgmRate2: 500,
+          proPrgmRate3: 600,
+          proPrgmRate4: 600,
+          proPrgmRate5: 1000,
+          entPrgmRate1: 1000,
+          entPrgmRate2: 2000,
+          entPrgmRate3: 3000,
+          entPrgmRate4: 4000,
+          entPrgmRate5: 5000,
+
+          baseGrowth2: 200,
+          baseGrowth3: 250,
+          baseGrowth4: 200,
+          baseGrowth5: 150,
+          totalClients1: 0,
           totalClients2: 0,
           totalClients3: 0,
-          newBaseClients2: 0,
-          newBaseClients3: 0,
-          newProClients2: 0,
-          newProClients3: 0,
+          totalClients4: 0,
+          totalClients5: 0,
+
           totalInv1: 500000,
           totalInv2: 2000000,
           totalInv3: 0,
+          totalInv4: 0,
+          totalInv5: 0,
+
+          yearEOY1: 0,
+          yearEOY2: 0,
+          yearEOY3: 0,
+          yearEOY4: 0,
+          yearEOY5: 0,
+
+          baseSales1: 122760,
+          baseSales2: 446545,
+          baseSales3: 2036928,
+          baseSales4: 6401634,
+          baseSales5: 21661435,
+          baseExpense1: 424393,
+          baseExpense2: 1204729,
+          baseExpense3: 2180551,
+          baseExpense4: 4497150,
+          baseExpense5: 12982487,
+          expenseChange1: 50,
+          expenseChange2: 45,
+          expenseChange3: 40,
+          expenseChange4: 35,
+          expenseChange5: 30,
+
+
           updateClients(e, type) {
-            if(type == 'baseClients') {
-              this.baseClients = parseInt(e.value);
-            } else {
-              this.proClients = parseInt(e.value);
+            if(type == 'startClients1') {
+              this.startClients1 = parseInt(e.value);
+            } else if(type == 'growClients1') { 
+              this.growClients1 = parseInt(e.value);
+            } else if(type == 'proClients1') {
+              this.proClients1 = parseInt(e.value);
+            } else if(type == 'entClients1') {
+              this.entClients1 = parseInt(e.value);
             }
             this.updateTotalClients();
           },
           updateTotalClients() {
-            this.totalClients = this.baseClients + this.proClients
-            this.baseClients2 = parseInt(this.baseClients + (this.baseClients * this.baseGrowth / 100));
-            this.newBaseClients2 = parseInt(this.baseClients2) - parseInt(this.baseClients);
-            this.proClients2 = parseInt(this.proClients + (this.proClients * this.proGrowth / 100));
-            this.newProClients2 = parseInt(this.proClients2) - parseInt(this.proClients);
-            this.baseClients3 = parseInt(this.baseClients2 + (this.baseClients2 * this.baseGrowth2 / 100));
-            this.newBaseClients3 = parseInt(this.baseClients3) - parseInt(this.baseClients2);
-            this.proClients3 = parseInt(this.proClients2 + (this.proClients2 * this.proGrowth2 / 100));
-            this.newProClients3 = parseInt(this.proClients3) - parseInt(this.proClients2);
-            this.totalClients2 = this.baseClients2 + this.proClients2;
-            this.totalClients3 = this.baseClients3 + this.proClients3;
+            this.startClients2 = parseInt(this.startClients1 + (this.startClients1 * this.baseGrowth2 / 100));
+            this.startClients3 = parseInt(this.startClients2 + (this.startClients2 * this.baseGrowth3 / 100));
+            this.startClients4 = parseInt(this.startClients3 + (this.startClients3 * this.baseGrowth4 / 100));
+            this.startClients5 = parseInt(this.startClients4 + (this.startClients4 * this.baseGrowth5 / 100));
+            this.growClients2 = parseInt(this.growClients1 + (this.growClients1 * this.baseGrowth2 / 100));
+            this.growClients3 = parseInt(this.growClients2 + (this.growClients2 * this.baseGrowth3 / 100));
+            this.growClients4 = parseInt(this.growClients3 + (this.growClients3 * this.baseGrowth4 / 100));
+            this.growClients5 = parseInt(this.growClients4 + (this.growClients4 * this.baseGrowth5 / 100));
+            this.proClients2 = parseInt(this.proClients1 + (this.proClients1 * this.baseGrowth2 / 100));
+            this.proClients3 = parseInt(this.proClients2 + (this.proClients2 * this.baseGrowth3 / 100));
+            this.proClients4 = parseInt(this.proClients3 + (this.proClients3 * this.baseGrowth4 / 100));
+            this.proClients5 = parseInt(this.proClients4 + (this.proClients4 * this.baseGrowth5 / 100));
+            this.entClients2 = parseInt(this.entClients1 + (this.entClients1 * this.baseGrowth2 / 100));
+            this.entClients3 = parseInt(this.entClients2 + (this.entClients2 * this.baseGrowth3 / 100));
+            this.entClients4 = parseInt(this.entClients3 + (this.entClients3 * this.baseGrowth4 / 100));
+            this.entClients5 = parseInt(this.entClients4 + (this.entClients4 * this.baseGrowth5 / 100));
+            this.totalClients1 = this.startClients1 + this.growClients1 + this.proClients1 + this.entClients1;
+            this.totalClients2 = this.startClients2 + this.growClients2 + this.proClients2 + this.entClients2;
+            this.totalClients3 = this.startClients3 + this.growClients3 + this.proClients3 + this.entClients3;
+            this.totalClients4 = this.startClients4 + this.growClients4 + this.proClients4 + this.entClients4;
+            this.totalClients5 = this.startClients5 + this.growClients5 + this.proClients5 + this.entClients5;
           },
-           updateInvestment(e, type) {
+
+          updateInvestment(e, type) {
             if(type == 'totalInv1') {
               this.totalInv1 = parseInt(e.value);
             } else if(type == 'totalInv2'){
               this.totalInv2 = parseInt(e.value);
-            } else {
+            } else if(type == 'totalInv3'){
               this.totalInv3 = parseInt(e.value);
+            } else if(type == 'totalInv4'){
+              this.totalInv4 = parseInt(e.value);
+            } else if(type == 'totalInv5'){
+              this.totalInv5 = parseInt(e.value);
             }
             this.updateTotalClients();
           },
+
+          subFees(clientVar) {
+            switch(clientVar) {
+              case 1:
+                return (this.startClients1 * this.startSubRate1 * 12 * 52 / 100) + (this.growClients1 * this.growSubRate1 * 12 * 52 / 100) + (this.proClients1 * this.proSubRate1 * 12 * 52 / 100) + (this.entClients1 * this.entSubRate1 * 12 * 52 / 100);
+              case 2:
+                return (this.startClients2 * this.startSubRate2 * 12 * 54 / 100) + (this.growClients2 * this.growSubRate2 * 12 * 54 / 100) + (this.proClients2 * this.proSubRate2 * 12 * 54 / 100) + (this.entClients2 * this.entSubRate2 * 12 * 54 / 100);
+              case 3: 
+                return (this.startClients3 * this.startSubRate3 * 12 * 54 / 100) + (this.growClients3 * this.growSubRate3 * 12 * 54 / 100) + (this.proClients3 * this.proSubRate3 * 12 * 54 / 100) + (this.entClients3 * this.entSubRate3 * 12 * 54 / 100);
+              case 4: 
+                return (this.startClients4 * this.startSubRate4 * 12 * 54 / 100) + (this.growClients4 * this.growSubRate4 * 12 * 54 / 100) + (this.proClients4 * this.proSubRate4 * 12 * 54 / 100) + (this.entClients4 * this.entSubRate4 * 12 * 54 / 100);
+              case 5: 
+                return (this.startClients5 * this.startSubRate5 * 12 * 54 / 100) + (this.growClients5 * this.growSubRate5 * 12 * 54 / 100) + (this.proClients5 * this.proSubRate5 * 12 * 54 / 100) + (this.entClients5 * this.entSubRate5 * 12 * 54 / 100);
+            }
+          },
+
           setupFees(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.baseClients * 1500) + (this.proClients * 3500);
+                return (this.startClients1 * this.startSetupRate1) + (this.growClients1 * this.growSetupRate1) + (this.proClients1 * this.proSetupRate1) + (this.entClients1 * this.entSetupRate1);
               case 2:
-                return (this.newBaseClients2 * 1750) + (this.newProClients2 * 4500);
+                return (this.startClients2 * this.startSetupRate2) + (this.growClients2 * this.growSetupRate2) + (this.proClients2 * this.proSetupRate2) + (this.entClients2 * this.entSetupRate2);
               case 3: 
-                return (this.newBaseClients3 * 2000) + (this.newProClients3 * 5000);
+                return (this.startClients3 * this.startSetupRate3) + (this.growClients3 * this.growSetupRate3) + (this.proClients3 * this.proSetupRate3) + (this.entClients3 * this.entSetupRate3);
+              case 4: 
+                return (this.startClients4 * this.startSetupRate4) + (this.growClients4 * this.growSetupRate4) + (this.proClients4 * this.proSetupRate4) + (this.entClients4 * this.entSetupRate4);
+              case 5: 
+                return (this.startClients5 * this.startSetupRate5) + (this.growClients5 * this.growSetupRate5) + (this.proClients5 * this.proSetupRate5) + (this.entClients5 * this.entSetupRate5);
             }
           },
-          subscriptionFees(clientVar) {
-            switch(clientVar) {
-              case 1:
-                return (this.baseClients * (250 * 12)) + (this.proClients * (500 * 12));
-              case 2:
-                return (this.baseClients2 * (275 * 12)) + (this.proClients2 * (750 * 12));
-              case 3: 
-                return (this.baseClients3 * (300 * 12)) + (this.proClients3 * (1000 * 12));
-            }
-          },
-          subscriptionFeesBase(clientVar) {
-            switch(clientVar) {
-              case 1:
-                return (this.baseClients * (250 * 12));
-              case 2:
-                return (this.baseClients2 * (275 * 12));
-              case 3: 
-                return (this.baseClients3 * (300 * 12));
-            }
-          },
-          subscriptionFeesPro(clientVar) {
-            switch(clientVar) {
-              case 1:
-                return (this.proClients * (500 * 12));
-              case 2:
-                return (this.proClients2 * (750 * 12));
-              case 3: 
-                return (this.baseClients3 * (1000 * 12)) + (this.proClients3 * (350 * 12));
-            }
-          },
-          adFees(clientVar) {
-            switch(clientVar) {
-              case 1:
-                return (this.baseClients * (150 * 12)) + (this.proClients * (200 * 12));
-              case 2:
-                return (this.baseClients2 * (200 * 12)) + (this.proClients2 * (300 * 12));
-              case 3: 
-                return (this.baseClients3 * (250 * 12)) + (this.proClients3 * (400 * 12));
-            }
-          },
+
           ccFees(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.baseClients * (50 * 12)) + (this.proClients * (100 * 12));
+                return (this.startClients1 * (this.startccRate1 * 12) * 52 / 100) + (this.growClients1 * (this.growccRate1 * 12) * 52 / 100) + (this.proClients1 * (this.proccRate1 * 12) * 52 / 100) + (this.entClients1 * (this.entccRate1 * 12) * 52 / 100);
               case 2:
-                return (this.baseClients2 * (75 * 12)) + (this.proClients2 * (125 * 12));
-              case 3: 
-                return (this.baseClients3 * (100 * 12)) + (this.proClients3 * (150 * 12));
-            }
-          },
-          programmingFees(clientVar) {
+                return (this.startClients2 * (this.startccRate2 * 12) * 54 / 100) + (this.growClients2 * (this.growccRate2 * 12) * 54 / 100) + (this.proClients2 * (this.proccRate2 * 12) * 54 / 100) + (this.entClients2 * (this.entccRate2 * 12) * 54 / 100);
+              case 3:
+                return (this.startClients3 * (this.startccRate3 * 12) * 54 / 100) + (this.growClients3 * (this.growccRate3 * 12) * 54 / 100) + (this.proClients3 * (this.proccRate3 * 12) * 54 / 100) + (this.entClients3 * (this.entccRate3 * 12) * 54 / 100);
+              case 4:
+                return (this.startClients4 * (this.startccRate4 * 12) * 54 / 100) + (this.growClients4 * (this.growccRate4 * 12) * 54 / 100) + (this.proClients4 * (this.proccRate4 * 12) * 54 / 100) + (this.entClients4 * (this.entccRate4 * 12) * 54 / 100);
+              case 5:
+                return (this.startClients5 * (this.startccRate5 * 12) * 54 / 100) + (this.growClients5 * (this.growccRate5 * 12) * 54 / 100) + (this.proClients5 * (this.proccRate5 * 12) * 54 / 100) + (this.entClients5 * (this.entccRate5 * 12) * 54 / 100);
+              }
+            },
+
+          prgmFees(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.baseClients * (750)) + (this.proClients * (2500));
+                return (this.startClients1 * this.startPrgmRate1) + (this.growClients1 * this.growPrgmRate1) + (this.proClients1 * this.proPrgmRate1) + (this.entClients1 * this.entPrgmRate1);
               case 2:
-                return (this.newBaseClients2 * (1500)) + (this.newProClients3 * (4000));
-              case 3: 
-                return (this.newBaseClients3 * (2000)) + (this.newProClients3 * (6000));
+                return (this.startClients2 * this.startPrgmRate2) + (this.growClients2 * this.growPrgmRate2) + (this.proClients2 * this.proPrgmRate2) + (this.entClients2 * this.entPrgmRate2);
+              case 3:
+                return (this.startClients3 * this.startPrgmRate3) + (this.growClients3 * this.growPrgmRate3) + (this.proClients3 * this.proPrgmRate3) + (this.entClients3 * this.entPrgmRate3);
+              case 4:
+                return (this.startClients4 * this.startPrgmRate4) + (this.growClients4 * this.growPrgmRate4) + (this.proClients4 * this.proPrgmRate4) + (this.entClients4 * this.entPrgmRate4);
+              case 5:
+                return (this.startClients5 * this.startPrgmRate5) + (this.growClients5 * this.growPrgmRate5) + (this.proClients5 * this.proPrgmRate5) + (this.entClients5 * this.entPrgmRate5);
             }
           },
+          
           totalRevenue(clientVar) {
-            return this.setupFees(clientVar) + this.subscriptionFees(clientVar) + this.adFees(clientVar) + this.ccFees(clientVar) + this.programmingFees(clientVar);
+            switch(clientVar) {
+              case 1:
+                return (this.setupFees(1) + this.subFees(1) + this.ccFees(1) + this.prgmFees(1));
+              case 2:
+                return (this.setupFees(2) + this.subFees(2) + this.ccFees(2) + this.prgmFees(2));
+              case 3:
+                return (this.setupFees(3) + this.subFees(3) + this.ccFees(3) + this.prgmFees(3));
+              case 4:
+                return (this.setupFees(4) + this.subFees(4) + this.ccFees(4) + this.prgmFees(4));
+              case 5:
+                return (this.setupFees(5) + this.subFees(5) + this.ccFees(5) + this.prgmFees(5));
+            }
           },
+
           increase(clientVar) {
             if(clientVar == 2) {
-              return this.totalRevenue(2) != 0 ? (this.totalRevenue(2) - this.totalRevenue(1)) / this.totalRevenue(1) * 100 : 0;
+              return (this.totalRevenue(2) != 0 ? (this.totalRevenue(2) - this.totalRevenue(1)) / this.totalRevenue(1) * 100: 0);
             } else if (clientVar == 3) {
-              return this.totalRevenue(3) != 0 ? (this.totalRevenue(3) - this.totalRevenue(2)) / this.totalRevenue(2) * 100: 0;
+              return (this.totalRevenue(3) != 0 ? (this.totalRevenue(3) - this.totalRevenue(2)) / this.totalRevenue(2) * 100: 0);
+            } else if (clientVar == 4) {
+              return (this.totalRevenue(4) != 0 ? (this.totalRevenue(4) - this.totalRevenue(3)) / this.totalRevenue(3) * 100: 0);
+            } else if (clientVar == 5) {
+              return (this.totalRevenue(5) != 0 ? (this.totalRevenue(5) - this.totalRevenue(4)) / this.totalRevenue(4) * 100: 0);
             }
           },
+
           revenueClient(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.totalRevenue(1) / this.totalClients);
+                return (this.totalRevenue(1) / this.totalClients1);
               case 2:
                 return (this.totalRevenue(2) / this.totalClients2);
               case 3: 
                 return (this.totalRevenue(3) / this.totalClients3);
+              case 4: 
+                return (this.totalRevenue(4) / this.totalClients4);
+              case 5: 
+                return (this.totalRevenue(5) / this.totalClients5);
             }
           },
-          totalBaseExpense(clientVar) {
-            switch(clientVar) {
-              case 1:
-                return (this.totalRevenue(1) * (.7));
-              case 2:
-                return (this.totalRevenue(2) * (.65));
-              case 3: 
-                return (this.totalRevenue(3) * (.5));
-            }
-          },
-          totalProExpense(clientVar) {
-            switch(clientVar) {
-              case 1:
-                return (this.totalRevenue(1) * (.6));
-              case 2:
-                return (this.totalRevenue(2) * (.45));
-              case 3: 
-                return (this.totalRevenue(3) * (.3));
-            }
-          },
+
           totalExpense(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.totalBaseExpense(1) + this.totalProExpense(1));
+                return (((this.totalRevenue(1) - this.baseSales1) / 100 * this.expenseChange1) + this.baseExpense1);
               case 2:
-                return (this.totalBaseExpense(2) + this.totalProExpense(2));
+                return (((this.totalRevenue(2) - this.baseSales2) / 100 * this.expenseChange2) + this.baseExpense2);
               case 3: 
-                return (this.totalBaseExpense(3) + this.totalProExpense(3));
+                return (((this.totalRevenue(3) - this.baseSales3) / 100 * this.expenseChange3) + this.baseExpense3);
+              case 4: 
+                return (((this.totalRevenue(4) - this.baseSales4) / 100 * this.expenseChange4) + this.baseExpense4);
+              case 5: 
+                return (((this.totalRevenue(5) - this.baseSales5) / 100 * this.expenseChange5) + this.baseExpense5);
             }
           },
+
           totalProfit(clientVar) {
             switch(clientVar) {
               case 1:
@@ -3313,21 +3646,31 @@
                 return (this.totalRevenue(2) - this.totalExpense(2));
               case 3: 
                 return (this.totalRevenue(3) - this.totalExpense(3));
+              case 4: 
+                return (this.totalRevenue(4) - this.totalExpense(4));
+              case 5: 
+                return (this.totalRevenue(5) - this.totalExpense(5));
             }
           },
+
           yearEOY(clientVar) {
             switch(clientVar) {
               case 1:
                 return (this.totalProfit(1) + this.totalInv1);
               case 2:
-                return (this.totalProfit(2) + this.totalInv2 + this.yearEOY(1));
+                return (this.totalProfit(2) + this.totalInv2 + this.yearEOY1);
               case 3: 
-                return (this.totalProfit(3) + this.totalInv3 + this.yearEOY(2));
+                return (this.totalProfit(3) + this.totalInv3 + this.yearEOY2);
+                case 4: 
+                return (this.totalProfit(4) + this.totalInv4 + this.yearEOY3);
+              case 5: 
+                return (this.totalProfit(5) + this.totalInv5 + this.yearEOY4);
             }
           }
         }
       }
     </script>
+
 
   </body>
 </html>
