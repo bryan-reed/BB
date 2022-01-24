@@ -3264,7 +3264,7 @@
           entClients4: 70,
           entClients5: 175,
 
-          startSubRate1: 100,
+          startSubRate1: 105,
           startSubRate2: 100,
           startSubRate3: 150,
           startSubRate4: 150,
@@ -3282,29 +3282,29 @@
           entSubRate1: 1000,
           entSubRate2: 2000,
           entSubRate3: 3000,
-          entSubRate4: 4000,
-          entSubRate5: 5000,
+          entSubRate4: 3700,
+          entSubRate5: 4500,
 
           startSetupRate1: 0,
           startSetupRate2: 100,
           startSetupRate3: 150,
           startSetupRate4: 150,
           startSetupRate5: 150,
-          growSetupRate1: 250,
-          growSetupRate2: 250,
-          growSetupRate3: 300,
-          growSetupRate4: 300,
-          growSetupRate5: 500,
+          growSetupRate1: 125,
+          growSetupRate2: 100,
+          growSetupRate3: 150,
+          growSetupRate4: 200,
+          growSetupRate5: 250,
           proSetupRate1: 350,
-          proSetupRate2: 500,
-          proSetupRate3: 600,
-          proSetupRate4: 600,
-          proSetupRate5: 1000,
-          entSetupRate1: 1000,
-          entSetupRate2: 2000,
-          entSetupRate3: 3000,
-          entSetupRate4: 4000,
-          entSetupRate5: 5000,
+          proSetupRate2: 250,
+          proSetupRate3: 300,
+          proSetupRate4: 400,
+          proSetupRate5: 450,
+          entSetupRate1: 550,
+          entSetupRate2: 750,
+          entSetupRate3: 1000,
+          entSetupRate4: 2000,
+          entSetupRate5: 3000,
 
           startccRate1: 10,
           startccRate2: 10,
@@ -3313,40 +3313,40 @@
           startccRate5: 10,
           growccRate1: 25,
           growccRate2: 30,
-          growccRate3: 35,
-          growccRate4: 40,
-          growccRate5: 45,
+          growccRate3: 30,
+          growccRate4: 35,
+          growccRate5: 40,
           proccRate1: 50,
           proccRate2: 55,
-          proccRate3: 60,
-          proccRate4: 65,
-          proccRate5: 70,
+          proccRate3: 50,
+          proccRate4: 55,
+          proccRate5: 60,
           entccRate1: 100,
           entccRate2: 125,
           entccRate3: 150,
-          entccRate4: 175,
-          entccRate5: 200,
+          entccRate4: 125,
+          entccRate5: 150,
 
-          startPrgmRate1: 100,
-          startPrgmRate2: 100,
+          startPrgmRate1: 175,
+          startPrgmRate2: 90,
           startPrgmRate3: 150,
-          startPrgmRate4: 150,
-          startPrgmRate5: 150,
-          growPrgmRate1: 250,
-          growPrgmRate2: 250,
-          growPrgmRate3: 300,
-          growPrgmRate4: 300,
-          growPrgmRate5: 500,
-          proPrgmRate1: 350,
-          proPrgmRate2: 500,
-          proPrgmRate3: 600,
-          proPrgmRate4: 600,
-          proPrgmRate5: 1000,
-          entPrgmRate1: 1000,
-          entPrgmRate2: 2000,
-          entPrgmRate3: 3000,
-          entPrgmRate4: 4000,
-          entPrgmRate5: 5000,
+          startPrgmRate4: 125,
+          startPrgmRate5: 100,
+          growPrgmRate1: 190,
+          growPrgmRate2: 200,
+          growPrgmRate3: 225,
+          growPrgmRate4: 250,
+          growPrgmRate5: 400,
+          proPrgmRate1: 300,
+          proPrgmRate2: 300,
+          proPrgmRate3: 500,
+          proPrgmRate4: 400,
+          proPrgmRate5: 700,
+          entPrgmRate1: 800,
+          entPrgmRate2: 1000,
+          entPrgmRate3: 2800,
+          entPrgmRate4: 3000,
+          entPrgmRate5: 4000,
 
           baseGrowth2: 200,
           baseGrowth3: 250,
@@ -3399,8 +3399,8 @@
           baseMarket1: 12000,
           baseMarket2: 60000,
           baseMarket3: 250000,
-          baseMarket4: 400000,
-          baseMarket5: 2500000,
+          baseMarket4: 1000000,
+          baseMarket5: 2000000,
           baseGeneral1: 9100,
           baseGeneral2: 53000,
           baseGeneral3: 149200,
@@ -3578,60 +3578,60 @@
           totalPR(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.totalExpense(1) * .834);
+                return (this.totalExpense(1) * .8325);
               case 2:
-                return (this.totalExpense(2) * .8165);
+                return (this.totalExpense(2) * .8065);
               case 3: 
-                return (this.totalExpense(3) * .8017);
+                return (this.totalExpense(3) * .7757);
               case 4: 
-                return (this.totalExpense(4) * .8667);
+                return (this.totalExpense(4) * .7444);
               case 5: 
-                return (this.totalExpense(5) * .7749);
+                return (this.totalExpense(5) * .7687);
             }
           },
 
           totalCL(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.totalExpense(1) * .1167);
+                return (this.totalExpense(1) * .1178);
               case 2:
-                return (this.totalExpense(2) * .0945);
+                return (this.totalExpense(2) * .0996);
               case 3: 
-                return (this.totalExpense(3) * .0365);
+                return (this.totalExpense(3) * .0413);
               case 4: 
-                return (this.totalExpense(4) * .0142);
+                return (this.totalExpense(4) * .0147);
               case 5: 
-                return (this.totalExpense(5) * .0033);
+                return (this.totalExpense(5) * .0040);
             }
           },
 
           totalMarket(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.totalExpense(1) * .028);
+                return (this.totalExpense(1) * .0283);
               case 2:
-                return (this.totalExpense(2) * .0473);
+                return (this.totalExpense(2) * .0498);
               case 3: 
-                return (this.totalExpense(3) * .1013);
+                return (this.totalExpense(3) * .1146);
               case 4: 
-                return (this.totalExpense(4) * .0759);
+                return (this.totalExpense(4) * .1962);
               case 5: 
-                return (this.totalExpense(5) * .1662);
+                return (this.totalExpense(5) * .1602);
             }
           },
 
           totalGeneral(clientVar) {
             switch(clientVar) {
               case 1:
-                return (this.totalExpense(1) * .0212);
+                return (this.totalExpense(1) * .0214);
               case 2:
-                return (this.totalExpense(2) * .0417);
+                return (this.totalExpense(2) * .0440);
               case 3: 
-                return (this.totalExpense(3) * .0605);
+                return (this.totalExpense(3) * .0684);
               case 4: 
-                return (this.totalExpense(4) * .0432);
+                return (this.totalExpense(4) * .0447);
               case 5: 
-                return (this.totalExpense(5) * .0556);
+                return (this.totalExpense(5) * .0670);
             }
           },
 
