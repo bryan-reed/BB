@@ -37,21 +37,21 @@
     </script>
 
     <script>
-    function passWord() {
+    function colorBrite() {
     var testV = 1;
-    var pass1 = prompt('Please Enter Your Password','');
+    var colorB1 = prompt('Please Enter Code','');
     while (testV < 3) {
-    if (!pass1) 
+    if (!colorB1) 
     history.go(-1);
-    if (pass1.toLowerCase() == "november2021") {
+    if (colorB1.toLowerCase() == "january2022") {
     window.open('./SiQuis-BusPlan_HOME.html');
     break;
     } 
     testV += 1;
-    var pass1 = 
-    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+    var colorB1 = 
+    prompt('Access Denied - Code Incorrect, Please Try Again.','Code');
     }
-    if (pass1.toLowerCase()!="password" & testV ==3) 
+    if (colorB1.toLowerCase()!="code" & testV ==3) 
     history.go(-1);
     return " ";
     } 
@@ -787,7 +787,7 @@
               <a class="navbar-btn btn btn-xs text-black lift ms-sm-0 mt-sm-3 ms-lg-10 mt-lg-1" style="background-color:orange">
                 Member Access 
               </a> -->
-                <input type="button" class="navbar-btn btn btn-xs text-black lift ms-sm-0 mt-sm-3 ms-lg-10 mt-lg-1" style="background-color:orange"value="Member Access" onClick="passWord()">
+                <input type="button" class="navbar-btn btn btn-xs text-black lift ms-sm-0 mt-sm-3 ms-lg-10 mt-lg-1" style="background-color:orange"value="Member Access" onClick="colorBrite()">
             </li>
 
             <!-- Avatar 
