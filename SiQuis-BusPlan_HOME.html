@@ -1207,7 +1207,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-sm-3 mt-3">
+          <div class="col-sm-12 col-lg-3 mt-3">
             <nav id="toc" data-toggle="toc" class="sticky-top">
               <ul class="nav navbar-nav">
                 <!-- Heading -->
@@ -1288,7 +1288,7 @@
                   <a class="list-link" href="#Foot_1" data-scroll><small><b>Footnotes</a></b></small>
                 </li>
                 <li class="list-item mb-10">
-                  Download:
+                  Download:<br>
                   <a class="btn btn btn-xs btn-info text-white lift me-8 my-1" style="width: 200px" href="./SiQuis_BusPlan_020222.pdf">Detailed Business Plan</a> 
                   <a class="btn btn btn-xs btn-info text-white lift me-8 my-1" style="width: 200px" href="./SiQuis_PP_Deck_020222.pdf">PP Presentation</a> 
                   <a class="btn btn btn-xs btn-info text-white lift me-8 my-1" style="width: 200px" href="./SiQuis_Exec_Summary_020222.pdf">Executive Summary</a> 
@@ -1297,7 +1297,7 @@
             </nav>
           </div>
 
-          <div class="col-sm-9 mt-5">
+          <div class="col-sm-12 col-lg-9 mt-sm-1 mt-lg-5">
             <h1 class="display-4 mt-5" style="color:orange" id="TOP_HOME">
               <img src="https://i.postimg.cc/qq6pfdnP/Si-Quis-Icon.png" alt="" width="45" height="45" class="d-inline-block align-text-bottom"><b>Si Quis </b><span class="text-info"> Software</span>
             </h1>
@@ -1970,7 +1970,7 @@
 
             <h2 >Projections:</h2>
 
-            <div class="col-sm-12 col-md-12 mb-5">
+            <div class="col-12 mb-5">
               <img class="img-fluid border shadow w-100 mt-4 mb-3" src="https://i.postimg.cc/zXWxwfCR/Si-Quis-Pand-L2-1-22.png" alt="..." style="">
             </div>
 
@@ -2062,7 +2062,7 @@
             <h3 >End of Year Total Clients:</h3>
 
             <div x-data="revenue()" x-init="updateTotalClients()">
-              <div class="table-responsive">
+              <div class="">
                 <table class="table table-sm">
                   <thead>
                     <th scope="col" width="175">Description</th>
@@ -2365,14 +2365,16 @@
 
             <div class="">
               <div class="col-12">
-                <div class="text-start mt-4 mb-2 fs-5">
+                <div class="mt-4 mb-2 fs-5">
                   The Si Quis Platform is comprised of three instances. ADMIN 1 accessed by Si Quis Software team members to set up and manage accounts. Client ADMIN for our clients to configure and manage their site and the "Front-end" public-facing website anyone can access.  
                 </div>
-
-                <div class="d-flex mt-2 text-start mt-4 fs-5">
+                <div class="mt-5 mb-2">
+                  <b>The ADMIN 1 site contains the following:</b>
+                </div>
+                 <div class="d-md-flex">
                   <div class="col-sm-12 col-md-4">
-                    <b>The ADMIN 1 site contains <br>
-                      the following:</b><br>
+                    <div class="mt-4 fs-5">
+                      
                       • Account Set-up<br>
                       • Account Credentials<br>
                       • Billing module<br>
@@ -2385,19 +2387,19 @@
                       • Forums Management<br>
                       • Directory Management<br>
                       • Front-end design & management<br>
-                    
-                    And more...
+                      And more...
+                    </div>
                   </div>
-
-                  <div class="col-sm-12 col-md-8">
+                    
+                  <div class="col-sm-12 col-md-8 my-sm-2 my-md-5">
                     <img class="img-fluid border shadow mb-3" src="https://i.postimg.cc/LsP4TZTB/MACBookair.png" alt="..." style="">
                   </div>
                 </div>
-
-                <div class="d-flex text-start mt-4 pe-4 fs-5">
-                  <div class="col-sm-12 col-md-4 ">
-                    <b>The Client ADMIN site <br>
-                      contains the following:</b><br>
+                <b>The Client ADMIN site contains the following:</b><br>
+                <div class="d-md-flex">
+                  <div class="col-sm-12 col-md-4">
+                    <div class="mt-4 fs-5">
+                      
                       • Account Set-up <br>
                       • Account Authorizations<br>
                       • Billing module<br>
@@ -2410,11 +2412,11 @@
                       • Listings Management <br>
                       • Forums Management<br>
                       • Directory Management<br>
-                    
-                    And more...
+                      And more...
+                    </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-8 ">
+                  <div class="col-sm-12 col-md-8 mt-sm-2 mt-md-5">
                     <div class="mt-2">
                       <img class="img-fluid border shadow mb-3" src="https://i.postimg.cc/90qxkCD9/Mac-Bookair2.png" alt="..." style="">
                     </div>  
@@ -2439,6 +2441,7 @@
                   <img class="img-fluid border shadow mt-4 mb-3" src="https://i.postimg.cc/c4ZVkkRb/MCM-Macbook.png" alt="..." style="">
                 </div>
               </div>
+            </div>
 
             <hr>
             <h2 class="text-info" id="13_Team">13 | Team</h2>
